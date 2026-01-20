@@ -1,0 +1,155 @@
+{{ 'uwu-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="uwu-standard-features" id="section-{{ section.id }}">
+  <div class="uwu-standard-features__container">
+    <div class="uwu-standard-features__header">
+      {% if section.settings.title != blank %}
+        <h2 class="uwu-standard-features__title">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        <p class="uwu-standard-features__subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <div class="uwu-standard-features__grid">
+      {% for block in section.blocks %}
+        <div class="uwu-standard-feature" {{ block.shopify_attributes }}>
+          <div class="uwu-standard-feature__icon">
+            {% case block.settings.icon %}
+              {% when 'quality' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-5 12H9v-2h6v2zm5-7H4V4h16v3z"/>
+                </svg>
+              {% when 'shipping' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+              {% when 'design' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/>
+                </svg>
+              {% when 'eco' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z"/>
+                </svg>
+              {% when 'star' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              {% when 'support' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                </svg>
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+            {% endcase %}
+          </div>
+
+          <h3 class="uwu-standard-feature__title">{{ block.settings.title }}</h3>
+          
+          {% if block.settings.description != blank %}
+            <p class="uwu-standard-feature__description">{{ block.settings.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Standard Features",
+  "tag": "section",
+  "class": "standard-features-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Standard Manufacturing Features"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subtitle",
+      "default": "Included in every package tier as a standard of quality."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "quality", "label": "Quality / Box" },
+            { "value": "shipping", "label": "Shipping / Truck" },
+            { "value": "design", "label": "Design / Brush" },
+            { "value": "eco", "label": "Eco / Leaf" },
+            { "value": "star", "label": "Star" },
+            { "value": "support", "label": "Support / Help" },
+            { "value": "check", "label": "Checkmark" }
+          ],
+          "default": "quality"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Brief description of this feature and its benefits."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Standard Features",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "quality",
+            "title": "Quality Control",
+            "description": "Rigorous three-stage inspection protocol for every single garment produced."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "shipping",
+            "title": "Global Shipping",
+            "description": "International door-to-door delivery network optimized for fan fulfillment."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "design",
+            "title": "Design Support",
+            "description": "Collaborate with our world-class artists and designers."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "eco",
+            "title": "Eco-Sourcing",
+            "description": "Sustainable organic fabrics and verified ethical labor practices worldwide."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,56 @@
+{{ 'uwu-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="uwu-pricing-header" id="section-{{ section.id }}">
+  <div class="uwu-pricing-header__container">
+    {% if section.settings.badge_text != blank %}
+      <span class="uwu-pricing-header__badge">{{ section.settings.badge_text }}</span>
+    {% endif %}
+
+    <h1 class="uwu-pricing-header__headline">
+      {{ section.settings.headline_text }} <span class="uwu-pricing-header__headline-accent">{{ section.settings.headline_accent }}</span>
+    </h1>
+
+    {% if section.settings.subtitle != blank %}
+      <p class="uwu-pricing-header__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pricing Header",
+  "tag": "section",
+  "class": "pricing-header-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Professional Creator Solutions"
+    },
+    {
+      "type": "text",
+      "id": "headline_text",
+      "label": "Headline Text",
+      "default": "Choose your"
+    },
+    {
+      "type": "text",
+      "id": "headline_accent",
+      "label": "Headline Accent Word",
+      "default": "Package"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you can focus on your audience."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing Header"
+    }
+  ]
+}
+{% endschema %}

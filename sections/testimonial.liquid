@@ -1,0 +1,87 @@
+{{ 'uwu-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="uwu-testimonial" id="section-{{ section.id }}">
+  <div class="uwu-testimonial__container">
+    <div class="uwu-testimonial__card">
+      {% if section.settings.background_image != blank %}
+        <div class="uwu-testimonial__background" style="background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}');"></div>
+      {% endif %}
+      <div class="uwu-testimonial__overlay"></div>
+      
+      <div class="uwu-testimonial__content">
+        <svg class="uwu-testimonial__quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+        </svg>
+
+        {% if section.settings.quote != blank %}
+          <h2 class="uwu-testimonial__quote">"{{ section.settings.quote }}"</h2>
+        {% endif %}
+
+        <div class="uwu-testimonial__author">
+          {% if section.settings.author_image != blank %}
+            <div class="uwu-testimonial__author-image">
+              <img 
+                src="{{ section.settings.author_image | image_url: width: 112 }}" 
+                alt="{{ section.settings.author_name }}"
+                width="56"
+                height="56"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+          <div class="uwu-testimonial__author-info">
+            {% if section.settings.author_name != blank %}
+              <p class="uwu-testimonial__author-name">{{ section.settings.author_name }}</p>
+            {% endif %}
+            {% if section.settings.author_title != blank %}
+              <p class="uwu-testimonial__author-title">{{ section.settings.author_title }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonial",
+  "tag": "section",
+  "class": "testimonial-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "textarea",
+      "id": "quote",
+      "label": "Quote",
+      "default": "UwUMarket took my merch from basic screen-prints to a premium fashion line. The quality and global fulfillment are absolute game-changers."
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author Image"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name",
+      "default": "Sarah Jenkins"
+    },
+    {
+      "type": "text",
+      "id": "author_title",
+      "label": "Author Title",
+      "default": "Lifestyle Creator • 2.4M Fans"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial"
+    }
+  ]
+}
+{% endschema %}

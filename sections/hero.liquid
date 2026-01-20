@@ -1,0 +1,99 @@
+{{ 'uwu-sections.css' | asset_url | stylesheet_tag }}
+
+<section class="uwu-hero" id="section-{{ section.id }}">
+  <div class="uwu-hero__container">
+    {% if section.settings.badge_text != blank %}
+      <div class="uwu-hero__badge">
+        <span class="uwu-hero__badge-dot">
+          <span class="uwu-hero__badge-dot-ping"></span>
+          <span class="uwu-hero__badge-dot-core"></span>
+        </span>
+        {{ section.settings.badge_text }}
+      </div>
+    {% endif %}
+
+    <h1 class="uwu-hero__headline">
+      {{ section.settings.headline_line1 }}<br>
+      <span class="uwu-hero__headline-accent">{{ section.settings.headline_accent }}</span>
+    </h1>
+
+    {% if section.settings.subtitle != blank %}
+      <p class="uwu-hero__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    <div class="uwu-hero__buttons">
+      {% if section.settings.primary_button_text != blank %}
+        <a href="{{ section.settings.primary_button_url }}" class="uwu-hero__btn uwu-hero__btn--primary">
+          {{ section.settings.primary_button_text }}
+        </a>
+      {% endif %}
+
+      {% if section.settings.secondary_button_text != blank %}
+        <a href="{{ section.settings.secondary_button_url }}" class="uwu-hero__btn uwu-hero__btn--secondary">
+          {{ section.settings.secondary_button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "hero-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "Premium Merch Manufacturing"
+    },
+    {
+      "type": "text",
+      "id": "headline_line1",
+      "label": "Headline Line 1",
+      "default": "BUILD YOUR"
+    },
+    {
+      "type": "text",
+      "id": "headline_accent",
+      "label": "Headline Accent Word",
+      "default": "BRAND."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Turn your ideas into custom merch collections. We handle the design, ethical manufacturing, and global shipping so you can focus on creating."
+    },
+    {
+      "type": "text",
+      "id": "primary_button_text",
+      "label": "Primary Button Text",
+      "default": "View Product Packages"
+    },
+    {
+      "type": "url",
+      "id": "primary_button_url",
+      "label": "Primary Button URL"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_text",
+      "label": "Secondary Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_url",
+      "label": "Secondary Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}
