@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_fullwidth_banner_DRjRHN": {
+      "type": "ss-fullwidth-banner",
+      "name": "SS - Fullscreen Banner",
+      "settings": {
+        "desktop-img": "shopify://shop_images/Camimi-Desktop-Banner.jpg",
+        "desktop-url": "shopify://products/camimi-carnival-series-figures",
+        "mobile-img": "shopify://shop_images/Camimi-Mobile-Banner.jpg",
+        "mobile-url": "shopify://products/camimi-carnival-series-figures",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_scrolling_images_2_HnTFzT": {
+      "type": "ss-scrolling-images-2",
+      "blocks": {
+        "image_fLK7GP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-Cake1.png",
+            "text": ""
+          }
+        },
+        "image_wGkbBN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-Ice1.png",
+            "text": ""
+          }
+        },
+        "image_qHnPVR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-Hat1.png",
+            "text": ""
+          }
+        },
+        "image_iFYByY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-Circus1.png",
+            "text": ""
+          }
+        },
+        "image_EaNwgU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-Boba1.png",
+            "text": ""
+          }
+        },
+        "image_8LeXjh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Camimi-in-the-box1.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_fLK7GP",
+        "image_wGkbBN",
+        "image_qHnPVR",
+        "image_iFYByY",
+        "image_EaNwgU",
+        "image_8LeXjh"
+      ],
+      "name": "SS - Scrolling Images 2",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 45,
+        "slider_gap": 100,
+        "slider_gap_mobile": 10,
+        "slider_mt": 0,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "slide_padding_top": 0,
+        "slide_padding_top_mobile": 0,
+        "card_width": 200,
+        "card_width_mobile": 140,
+        "card_padding_vertical": 0,
+        "card_padding_horizontal": 10,
+        "card_radius": 0,
+        "use_shadow": false,
+        "image_ratio": "none",
+        "image_radius": 0,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 14,
+        "text_height": 130,
+        "text_mt": 0,
+        "heading_color": "#000000",
+        "card_bg": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": false
+      }
+    },
+    "scrolling_products_2_MHbPTK": {
+      "type": "scrolling-products-2",
+      "blocks": {
+        "card_UYRKnB": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_Pcwdea": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_4LRMWT": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_ba6bwX": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_braqkU": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_fAm9Mg": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_LRwmrB": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        },
+        "card_6xGBU8": {
+          "type": "card",
+          "settings": {
+            "product": "",
+            "custom_title": "Product title",
+            "custom_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_UYRKnB",
+        "card_Pcwdea",
+        "card_4LRMWT",
+        "card_ba6bwX",
+        "card_braqkU",
+        "card_fAm9Mg",
+        "card_LRwmrB",
+        "card_6xGBU8"
+      ],
+      "disabled": true,
+      "settings": {
+        "collection": "megalodon",
+        "collection_show": 30,
+        "scrolling_velocity": 120,
+        "scrolling_velocity_mobile": 80,
+        "scrolling_gap": 20,
+        "scrolling_gap_mobile": 20,
+        "reverse_direction": false,
+        "pause_hover": true,
+        "image_width": 240,
+        "image_width_mobile": 150,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 14,
+        "title_size_mobile": 13,
+        "title_height": 150,
+        "title_mt": 12,
+        "title_mt_mobile": 10,
+        "title_align": "center",
+        "title_align_mobile": "center",
+        "use_hover": true,
+        "title_hide_mobile": false,
+        "use_price": false,
+        "price_compare": true,
+        "image_border_color": "#000000",
+        "title_color": "#000000",
+        "price_color": "#000000",
+        "price_original_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "ss_fullwidth_banner_DRjRHN",
+    "ss_scrolling_images_2_HnTFzT",
+    "scrolling_products_2_MHbPTK",
+    "product-grid",
+    "banner"
+  ]
+}

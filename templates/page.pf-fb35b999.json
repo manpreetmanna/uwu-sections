@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "pf-fb35b999": {
+      "type": "pf-fb35b999",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "pf-fb35b999"
+  ]
+}

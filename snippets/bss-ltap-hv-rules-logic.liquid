@@ -1,0 +1,47 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+{% assign list_variant_restrict = '' | split: ',' %}
+{% assign check_disabled = false %}
+{% capture product_variant %}{% render 'bss-ltap-hv-rules' %}{% endcapture -%}
+{%- unless product_variant contains 'Liquid error' -%}
+  {% assign list_variant_restrict = product_variant | strip | split: ',' %}
+{%- endunless %}
+ {% if product.options_with_values.size == 1 %}
+  {% for variant_id in list_variant_restrict %}
+  {% assign variant_id_number = variant_id | plus: 0 %}
+  {% assign variant_lock = product.variants | where: 'id', variant_id_number | first %}
+  {% if value == variant_lock.option1 %}
+      {% assign check_disabled = true %}
+  {% endif %}
+  {% endfor %}
+{% else %}
+{% assign variant_selected = product.selected_or_first_available_variant %}
+{% assign last_option = variant_selected.options | last %}
+{% for variant_id in list_variant_restrict %}
+  {% assign variant_id_number = variant_id | plus: 0 %}
+  {% assign variant_lock = product.variants | where: 'id', variant_id_number | first %}
+  {% assign difference_count = 0 %}
+  {% assign difference = '' %}
+  {% if variant_lock.option1 == variant_selected.option1 %}
+    {% for item in variant_lock.options %}
+      {% unless variant_selected.options contains item %}
+        {% assign difference_count = difference_count | plus: 1 %}
+        {% assign difference = item %}
+      {% endunless %}
+    {% endfor %}
+    {% if difference_count == 1 and value == difference %}
+      {% assign check_disabled = true %}
+    {% endif %}
+    {% if difference_count == 0 and value == last_option %}
+      {% assign check_disabled = true %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% endif %}
+{{ check_disabled }}

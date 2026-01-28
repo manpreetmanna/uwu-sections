@@ -1,0 +1,19 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+[id*='MainProduct']:has(.bsscommerce-hv-message) [id*='Quantity-Form']{
+                display: none
+            }
+            [id*='MainProduct']:has(.bsscommerce-hv-message) [id*='ProductSubmitButton'],
+            [id*='MainProduct']:has(.bsscommerce-hv-message) .shopify-payment-button {
+                cursor: not-allowed;
+                opacity: .5;
+                pointer-events: none;
+            } .installments:has(#BsscommercePasswordForm) {
+            display: block
+        }

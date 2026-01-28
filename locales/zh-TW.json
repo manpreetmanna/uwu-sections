@@ -13,11 +13,11 @@
     "social": {
       "alt_text": {
         "share_on_facebook": "分享至 Facebook",
-        "share_on_twitter": "分享至 X",
-        "share_on_pinterest": "在 Pinterest 上發布 Pin 貼文"
+        "share_on_twitter": "在 Twitter 上發佈 Twitter 貼文",
+        "share_on_pinterest": "在 Pinterest 上發佈 Pin 貼文"
       },
       "links": {
-        "twitter": "X (Twitter)",
+        "twitter": "Twitter",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -88,7 +88,7 @@
         "one": "{{ count }} 則留言",
         "other": "{{ count }} 則留言"
       },
-      "moderated": "請注意，留言須先通過審核才能發布。",
+      "moderated": "請注意，留言須先通過審核才能發佈。",
       "comment_form_title": "發表留言",
       "name": "名稱",
       "email": "電子郵件",
@@ -97,7 +97,7 @@
       "back_to_blog": "返回網誌",
       "share": "分享此文章",
       "success": "您已成功留言！感謝您！",
-      "success_moderated": "您已成功留言。由於我們的網誌有人管理，因此過一段時間後才會進行發布。"
+      "success_moderated": "您已成功留言。由於我們的網誌有人管理，因此過一段時間後才會進行發佈。"
     }
   },
   "onboarding": {
@@ -119,10 +119,7 @@
         "maximum_of": "最多 {{ quantity }} 個",
         "multiples_of": "{{ quantity }} 的倍數",
         "in_cart_html": "購物車中有 <span class=\"quantity-cart\">{{ quantity }}</span> 個",
-        "note": "檢視數量規則",
-        "min_of": "最少 {{ quantity }} 個",
-        "max_of": "最多 {{ quantity }} 個",
-        "in_cart_aria_label": "數量 (購物車中有 {{ quantity }} 個)"
+        "note": "檢視數量規則"
       },
       "price": {
         "from_price_html": "從 {{ price }} 起",
@@ -156,8 +153,8 @@
         "load_video": "在圖庫檢視畫面播放影片 {{ index }}",
         "image_available": "現在可在圖庫檢視畫面中查看圖片 {{ index }}"
       },
-      "nested_label": "適用於 {{ parent_title }} 的 {{ title }}",
       "view_full_details": "查看完整資訊",
+      "include_taxes": "內含稅金。",
       "shipping_policy_html": "結帳時計算<a href=\"{{ link }}\">運費</a>。",
       "choose_options": "選擇選項",
       "choose_product_options": "選擇 {{ product_name }} 的選項",
@@ -174,12 +171,9 @@
         "title": "批發價",
         "note": "提供批發價",
         "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "{{ price }}/每項"
-      },
-      "taxes_included": "已包含稅額。",
-      "duties_included": "已包含關稅。",
-      "duties_and_taxes_included": "已包含關稅和稅額。"
+        "price_at_each": "{{ price }}/每項",
+        "price_range": "{{ minimum }} - {{ maximum }}"
+      }
     },
     "modal": {
       "label": "媒體庫"
@@ -208,7 +202,7 @@
       "reset": "重設",
       "sort_button": "排序",
       "sort_by_label": "排序依據：",
-      "to": "至",
+      "to": "給",
       "clear_filter": "移除篩選條件",
       "filter_selected_accessibility": "{{ type }} (已選取 {{ count }} 個篩選條件)",
       "show_more": "顯示更多內容",
@@ -217,6 +211,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "找不到頁面",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "找不到與「{{ terms }}」相符的結果。請檢查拼字或使用其他字詞。",
       "results_with_count": {
@@ -260,10 +258,6 @@
         "error_heading": "請調整以下內容：",
         "title": "聯絡表單"
       }
-    },
-    "404": {
-      "title": "找不到頁面",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -284,6 +278,10 @@
       "empty": "您的購物車是空的",
       "cart_error": "更新購物車時發生錯誤。請再試一次。",
       "cart_quantity_error_html": "您只能將 {{ quantity }} 項商品加入您的購物車。",
+      "taxes_and_shipping_policy_at_checkout_html": "結帳時計算稅金、折扣和<a href=\"{{ link }}\">運費</a>",
+      "taxes_included_but_shipping_at_checkout": "內含稅金，結帳時計算運費和折扣",
+      "taxes_included_and_shipping_policy_html": "內含稅金。結帳時計算<a href=\"{{ link }}\">運費</a>和折扣。",
+      "taxes_and_shipping_at_checkout": "結帳時計算稅金、折扣和運費",
       "headings": {
         "product": "產品",
         "price": "價格",
@@ -297,15 +295,7 @@
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">登入</a>以加速結帳。"
       },
       "estimated_total": "估計總金額",
-      "new_estimated_total": "新的估計總金額",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "已包含關稅和稅額。結帳時計算折扣和<a href=\"{{ link }}\">運費</a>。",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "已包含關稅和稅額。結帳時計算折扣和運費。",
-      "taxes_included_shipping_at_checkout_with_policy_html": "已包含稅額。結帳時計算折扣和<a href=\"{{ link }}\">運費</a>。",
-      "taxes_included_shipping_at_checkout_without_policy": "已包含稅額。結帳時計算折扣和運費。",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "已包含關稅。結帳時計算稅額、折扣和<a href=\"{{ link }}\">運費</a>。",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "已包含關稅。結帳時計算稅額、折扣和運費。",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "結帳時計算稅額、折扣和<a href=\"{{ link }}\">運費</a>。",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "結帳時計算稅額、折扣和運費。"
+      "new_estimated_total": "新的估計總金額"
     },
     "footer": {
       "payment": "付款方式"
@@ -369,10 +359,7 @@
       "remove_all_items_confirmation": "是否要從購物車移除全部 {{ quantity }} 個品項？",
       "remove_all": "全部移除",
       "cancel": "取消",
-      "remove_all_single_item_confirmation": "是否要從您的購物車移除 1 個品項？",
-      "min_error": "此品項下限為 {{ min }}",
-      "max_error": "此品項上限為 {{ max }}",
-      "step_error": "只能以 {{ step }} 為增量新增此品項"
+      "remove_all_single_item_confirmation": "是否要從您的購物車移除 1 個品項？"
     }
   },
   "localization": {
@@ -435,8 +422,7 @@
       "password": "密碼",
       "title": "登入",
       "sign_in": "登入",
-      "submit": "提交",
-      "alternate_provider_separator": "或者"
+      "submit": "提交"
     },
     "orders": {
       "title": "訂單記錄",
@@ -525,6 +511,51 @@
       "send_on_label": "發送時間 (選填)",
       "expanded": "禮品卡收件人表單已展開",
       "collapsed": "禮品卡收件人表單已收合"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
     }
   }
 }

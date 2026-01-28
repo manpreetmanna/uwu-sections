@@ -9,8 +9,6 @@ class CartDrawer extends HTMLElement {
 
   setHeaderCartIconAccessibility() {
     const cartLink = document.querySelector('#cart-icon-bubble');
-    if (!cartLink) return;
-
     cartLink.setAttribute('role', 'button');
     cartLink.setAttribute('aria-haspopup', 'dialog');
     cartLink.addEventListener('click', (event) => {
@@ -78,14 +76,23 @@ class CartDrawer extends HTMLElement {
       const sectionElement = section.selector
         ? document.querySelector(section.selector)
         : document.getElementById(section.id);
-
-      if (!sectionElement) return;
       sectionElement.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.id], section.selector);
     });
 
     setTimeout(() => {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
+      try { window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(true); } catch(_) {}
+      // Keep label in sync on removes/qty changes within drawer
+      const clickHandler = (e) => {
+        const isQty = e.target && (e.target.closest && e.target.closest('.quantity__button'));
+        const isRemove = e.target && (e.target.closest && e.target.closest('.cart-remove-button'));
+        if (isQty || isRemove) {
+          try { window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(true); } catch(_) {}
+        }
+      };
+      this.removeEventListener('click', clickHandler);
+      this.addEventListener('click', clickHandler);
     });
   }
 
@@ -127,7 +134,7 @@ class CartDrawerItems extends CartItems {
       {
         id: 'cart-icon-bubble',
         section: 'cart-icon-bubble',
-        selector: '.shopify-section',
+        selector: '#cart-icon-bubble',
       },
     ];
   }

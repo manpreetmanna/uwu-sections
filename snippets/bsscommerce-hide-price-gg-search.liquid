@@ -1,0 +1,9 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+{%- assign bss_product_collection = '' | split: ',' -%} {%- for collection in product.collections -%} {%- assign collection_id = collection.id | split: ',' -%} {%- assign delimeter = '|' | split: ',' -%} {%- assign bss_product_collection = bss_product_collection | concat: delimeter -%} {%- assign bss_product_collection = bss_product_collection | concat: collection_id -%} {%- endfor -%} {%- capture bsscommerce_hide_price_gg_search -%}{% render 'bss-ltap-hpogs-rules', product: product, old_template: old_template, bss_product_collection: bss_product_collection %}{%- endcapture -%} {%- unless bsscommerce_hide_price_gg_search contains 'Liquid error' -%} {{ bsscommerce_hide_price_gg_search | strip }} {%- else -%} {{ old_template }} {%- endunless -%}

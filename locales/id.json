@@ -13,11 +13,11 @@
     "social": {
       "alt_text": {
         "share_on_facebook": "Bagikan di Facebook",
-        "share_on_twitter": "Bagikan di X",
+        "share_on_twitter": "Tweet di Twitter",
         "share_on_pinterest": "Pin di Pinterest"
       },
       "links": {
-        "twitter": "X (Twitter)",
+        "twitter": "Twitter",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -119,10 +119,7 @@
         "maximum_of": "Maksimum {{ quantity }}",
         "multiples_of": "Nilai peningkatan {{ quantity }}",
         "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> di keranjang",
-        "note": "Lihat aturan kuantitas",
-        "min_of": "Min. {{ quantity }}",
-        "max_of": "Maks. {{ quantity }}",
-        "in_cart_aria_label": "Jumlah ({{ quantity }} di keranjang)"
+        "note": "Lihat aturan kuantitas"
       },
       "price": {
         "from_price_html": "Dari {{ price }}",
@@ -156,8 +153,8 @@
         "load_video": "Putar video {{ index }} di tampilan galeri",
         "image_available": "Gambar {{ index }} kini tersedia di tampilan galeri"
       },
-      "nested_label": "{{ title }} untuk {{ parent_title }}",
       "view_full_details": "Lihat detail lengkap",
+      "include_taxes": "Termasuk pajak.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Biaya pengiriman</a> dihitung saat checkout.",
       "choose_options": "Pilih opsi",
       "choose_product_options": "Pilih opsi untuk {{ product_name }}",
@@ -174,12 +171,9 @@
         "title": "Harga Volume",
         "note": "Harga volume tersedia",
         "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "di {{ price }}/satuan"
-      },
-      "taxes_included": "Termasuk pajak.",
-      "duties_included": "Termasuk bea cukai.",
-      "duties_and_taxes_included": "Termasuk bea cukai dan pajak."
+        "price_at_each": "harga {{ price }}/satuan",
+        "price_range": "{{ minimum }} - {{ maximum }}"
+      }
     },
     "modal": {
       "label": "Galeri media"
@@ -217,6 +211,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Halaman tidak ditemukan",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Tidak ada hasil ditemukan untuk “{{ terms }}”. Periksa ejaan atau gunakan kata atau frasa yang berbeda.",
       "results_with_count": {
@@ -260,10 +258,6 @@
         "error_heading": "Mohon sesuaikan:",
         "title": "Formulir kontak"
       }
-    },
-    "404": {
-      "title": "Halaman tidak ditemukan",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -284,6 +278,10 @@
       "empty": "Keranjang Anda kosong",
       "cart_error": "Terjadi kesalahan saat memperbarui keranjang. Silakan coba lagi.",
       "cart_quantity_error_html": "Hanya dapat menambahkan {{ quantity }} item ini ke keranjang Anda.",
+      "taxes_and_shipping_policy_at_checkout_html": "Pajak, Diskon dan <a href=\"{{ link }}\">biaya pengiriman</a> dihitung saat checkout",
+      "taxes_included_but_shipping_at_checkout": "Pajak yang berlaku dan biaya pengiriman serta diskon dihitung saat checkout",
+      "taxes_included_and_shipping_policy_html": "Termasuk pajak. <a href=\"{{ link }}\">Biaya pengiriman</a> dan diskon dihitung saat checkout.",
+      "taxes_and_shipping_at_checkout": "Pajak, diskon dan biaya pengiriman dihitung saat checkout",
       "headings": {
         "product": "Produk",
         "price": "Harga",
@@ -297,15 +295,7 @@
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Login</a> untuk checkout lebih cepat."
       },
       "estimated_total": "Estimasi total",
-      "new_estimated_total": "Estimasi total baru",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Termasuk bea cukai dan pajak. Diskon dan <a href=\"{{ link }}\">biaya pengiriman</a> dihitung saat checkout.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Termasuk bea cukai dan pajak. Diskon dan biaya pengiriman dihitung saat checkout.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Termasuk pajak. Diskon dan <a href=\"{{ link }}\">biaya pengiriman</a> dihitung saat checkout.",
-      "taxes_included_shipping_at_checkout_without_policy": "Termasuk pajak. Diskon dan biaya pengiriman dihitung saat checkout.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Termasuk bea cukai. Pajak, diskon, dan <a href=\"{{ link }}\">biaya pengiriman</a> dihitung saat checkout.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Termasuk bea cukai. Pajak, diskon, dan biaya pengiriman dihitung saat checkout.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Pajak, diskon, dan <a href=\"{{ link }}\">biaya pengiriman</a> dihitung saat checkout.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Pajak, diskon, dan biaya pengiriman dihitung saat checkout."
+      "new_estimated_total": "Estimasi total baru"
     },
     "footer": {
       "payment": "Metode pembayaran"
@@ -369,10 +359,7 @@
       "remove_all_items_confirmation": "Hapus semua item yang berjumlah {{ quantity }} dari keranjang Anda?",
       "remove_all": "Hapus semuanya",
       "cancel": "Batalkan",
-      "remove_all_single_item_confirmation": "Hapus 1 item dari keranjang Anda?",
-      "min_error": "Item ini memiliki minimal {{ min }}",
-      "max_error": "Item ini memiliki maksimum {{ max }}",
-      "step_error": "Anda hanya dapat menambahkan item ini secara inkremental sebesar {{ step }}"
+      "remove_all_single_item_confirmation": "Hapus 1 item dari keranjang Anda?"
     }
   },
   "localization": {
@@ -435,8 +422,7 @@
       "password": "Sandi",
       "title": "Login",
       "sign_in": "Masuk",
-      "submit": "Kirim",
-      "alternate_provider_separator": "atau"
+      "submit": "Kirim"
     },
     "orders": {
       "title": "Riwayat pesanan",
@@ -501,7 +487,7 @@
       "subtext": "Voucher Anda",
       "gift_card_code": "Kode voucher",
       "shop_link": "Kunjungi toko online",
-      "add_to_apple_wallet": "Tambahkan ke Dompet Apple",
+      "add_to_apple_wallet": "Tambahkan ke Apple Wallet",
       "qr_image_alt": "Kode QR — pindai untuk menukarkan voucher",
       "copy_code": "Salin kode voucher",
       "expired": "Kedaluwarsa",
@@ -525,6 +511,51 @@
       "send_on_label": "Kirim pada (opsional)",
       "expanded": "Formulir penerima voucher dibuka",
       "collapsed": "Formulir penerima voucher ditutup"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
     }
   }
 }

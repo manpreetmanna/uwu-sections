@@ -1,0 +1,330 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "fundpop_crowdfunding_app_block_UbmrKi": {
+          "type": "shopify://apps/fundpop-crowdfunding/blocks/app-block/b432f25d-5e22-41a1-a9cb-7b13841dfd9d",
+          "settings": {
+            "widget_pl": 20,
+            "widget_pr": 20,
+            "widget_pt": 16,
+            "widget_pb": 16,
+            "widget_box_shadow": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "wishlist_king_wishlist_button_block_cdGPAn": {
+          "type": "shopify://apps/swish-formerly-wishlist-king/blocks/wishlist-button-block/194f5011-a43c-4b22-b12e-eaf20dc4506a",
+          "settings": {
+            "button_style": "plain_accent_1",
+            "button_alignment": "center",
+            "button_content_alignment": "center",
+            "button_margin_top": 0,
+            "button_margin_bottom": 0,
+            "button_max_width": 0,
+            "button_padding_horizontal": 15,
+            "button_full_width": true,
+            "button_show_text": true,
+            "button_show_icon": true,
+            "icon_size": 18,
+            "icon_stroke_width": 1,
+            "icon_offset_vertical": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "collapsible_tab_jg4ij9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SIZE GUIDE",
+            "icon": "leather",
+            "content": "",
+            "page": "haori-size-chart"
+          }
+        },
+        "collapsible_tab_QKeTie": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "PRODUCT DETAILS",
+            "icon": "clipboard",
+            "content": "<ul><li>Thick but breathable 100% Cotton.</li><li>Unisex Fit.</li><li>180gsm</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_9Ba9Tw": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SUPPORTS CREATORS",
+            "icon": "check_mark",
+            "content": "<p>Every sale supports your favorite creator to continue to make content and offer high quality merch!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_9J6wHN": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "FULFILLMENT",
+            "icon": "truck",
+            "content": "<p>We make this product using Made-To-Order fulfillment methods.</p><p>This allows creators of all sizes to create merchandise on our platform, while also helping to reduce product waste and carbon emissions.</p><p>Standard made-to-order products: expect fulfillment 40 business days after purchase.</p><p>*If you order a mix of pre-order and made-to-order products, your order fulfillment timeline will reflect that of a pre-order product.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "fundpop_crowdfunding_app_block_UbmrKi",
+        "variant_picker",
+        "buy_buttons",
+        "wishlist_king_wishlist_button_block_cdGPAn",
+        "price",
+        "title",
+        "description",
+        "share",
+        "collapsible_tab_jg4ij9",
+        "collapsible_tab_QKeTie",
+        "collapsible_tab_9Ba9Tw",
+        "collapsible_tab_9J6wHN"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_hotspots_cKyx4U": {
+      "type": "ss-hotspots",
+      "blocks": {
+        "hotspot_AwxcXP": {
+          "type": "hotspot",
+          "settings": {
+            "vertical_position": 15,
+            "vertical_position_mobile": 12,
+            "horizontal_position": 25,
+            "horizontal_position_mobile": 25,
+            "type": "icon",
+            "title": "Hotspot",
+            "content": "<p>High quality construction!</p>",
+            "video_url": ""
+          }
+        },
+        "hotspot_6fmwJ6": {
+          "type": "hotspot",
+          "settings": {
+            "vertical_position": 41,
+            "vertical_position_mobile": 42,
+            "horizontal_position": 73,
+            "horizontal_position_mobile": 73,
+            "type": "icon",
+            "title": "Hotspot",
+            "content": "<p>Machine washable!</p>",
+            "video_url": ""
+          }
+        },
+        "hotspot_yxYhRX": {
+          "type": "hotspot",
+          "settings": {
+            "vertical_position": 69,
+            "vertical_position_mobile": 69,
+            "horizontal_position": 60,
+            "horizontal_position_mobile": 60,
+            "type": "icon",
+            "title": "Hotspot",
+            "content": "<p>Vivid and detailed print!</p>",
+            "video_url": ""
+          }
+        },
+        "hotspot_TQkKgD": {
+          "type": "hotspot",
+          "settings": {
+            "vertical_position": 90,
+            "vertical_position_mobile": 90,
+            "horizontal_position": 30,
+            "horizontal_position_mobile": 35,
+            "type": "icon",
+            "title": "Hotspot",
+            "content": "<p>Super soft and heavy weight cotton!</p>",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_AwxcXP",
+        "hotspot_6fmwJ6",
+        "hotspot_yxYhRX",
+        "hotspot_TQkKgD"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "montserrat_n7",
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "center",
+        "body_padding_vertical": 0,
+        "body_padding_horizontal": 0,
+        "body_radius": 0,
+        "body_border_thickness": 0,
+        "body_shadow": false,
+        "image": "shopify://shop_images/T-Shirt-Details.jpg",
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_shadow": false,
+        "item_padding_vertical": 6,
+        "item_padding_horizontal": 6,
+        "item_radius": 16,
+        "item_border_thickness": 0,
+        "item_animation": true,
+        "title_custom": false,
+        "title_font": "montserrat_n6",
+        "title_size": 14,
+        "title_size_mobile": 14,
+        "title_height": 100,
+        "item_image_width": 30,
+        "item_image_width_mobile": 30,
+        "item_image_radius": 16,
+        "item_content_width": 300,
+        "item_content_width_mobile": 190,
+        "item_content_padding_vertical": 12,
+        "item_content_padding_horizontal": 12,
+        "item_content_radius": 16,
+        "item_content_border_thickness": 0,
+        "text_custom": false,
+        "text_font": "montserrat_n6",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 100,
+        "text_mt": 0,
+        "item_bg": "#000000",
+        "item_border_color": "#ffffff",
+        "item_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "item_content_bg": "#ffffff",
+        "item_content_border_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "body_bg_color": "#f3f3f3",
+        "body_border_color": "#000000",
+        "body_shadow_color": "#000000",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 10,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "166370035735f197a8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    _learnq.push(['track', 'Added to Cart', cart])\n  }))\n} \n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch))\n$(document).ajaxComplete(function(event, request, settings){\n  if(settings.url == \"/cart/add.js\"){\n      addedToCart()\n  }\n})</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {}
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "ss_hotspots_cKyx4U",
+    "related-products",
+    "loox-product-reviews-app-section",
+    "166370035735f197a8",
+    "zp-product-footer-content"
+  ]
+}

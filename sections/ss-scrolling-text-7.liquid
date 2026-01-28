@@ -1,0 +1,691 @@
+{% comment %}
+---------------------------------------------------------
+Copyright © 2023 Section Store. All rights reserved.
+Unauthorized copying, modification, distribution, or use
+of this code or any portion of it, is strictly prohibited.
+Violators will be prosecuted to the fullest extent of the law.
+For inquiries or permissions, contact daniel@section.store
+---------------------------------------------------------
+{% endcomment %}
+
+{%- liquid 
+  assign padding_horizontal = section.settings.padding_horizontal
+  assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign border_color = section.settings.border_color
+  assign border_thickness = section.settings.border_thickness
+  assign margin_top = section.settings.margin_top
+  assign margin_bottom = section.settings.margin_bottom
+  assign margin_horizontal_mobile = section.settings.margin_horizontal_mobile
+  assign margin_horizontal = section.settings.margin_horizontal
+  assign background_color = section.settings.background_color
+  assign background_gradient = section.settings.background_gradient
+  assign full_width = section.settings.full_width
+  assign content_width = section.settings.content_width
+  assign section_radius = section.settings.section_radius
+
+  assign scrolling_velocity = section.settings.scrolling_velocity
+  assign scrolling_velocity_mobile = section.settings.scrolling_velocity_mobile
+  assign scrolling_rotate_mobile = section.settings.scrolling_rotate_mobile
+  assign scrolling_rotate = section.settings.scrolling_rotate
+
+  assign reverse_direction = section.settings.reverse_direction
+  assign pause_hover = section.settings.pause_hover
+
+  assign item_mr = section.settings.item_mr
+  assign item_mr_mobile = section.settings.item_mr_mobile
+  assign item_padding_vertical = section.settings.item_padding_vertical
+  assign item_padding_vertical_mobile = section.settings.item_padding_vertical_mobile
+  assign item_padding_horizontal = section.settings.item_padding_horizontal
+  assign item_padding_horizontal_mobile = section.settings.item_padding_horizontal_mobile
+  assign item_radius = section.settings.item_radius
+  assign item_border_thickness = section.settings.item_border_thickness
+  assign item_border_color = section.settings.item_border_color
+  assign item_bg_color = section.settings.item_bg_color
+  
+  assign text_custom = section.settings.text_custom
+  assign text_font = section.settings.text_font
+  assign text_size = section.settings.text_size
+  assign text_size_mobile = section.settings.text_size_mobile
+  assign text_height = section.settings.text_height
+  assign text_color = section.settings.text_color
+  
+-%}
+
+{%- style -%}
+  
+{{ text_font | font_face: font_display: 'swap' }}
+  
+.section-{{ section.id }} {
+  border-top: solid {{ border_color }} {{ border_thickness }}px;
+  border-bottom: solid {{ border_color }} {{ border_thickness }}px;
+  margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
+  margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
+  margin-left: {{ margin_horizontal_mobile }}rem;
+  margin-right: {{ margin_horizontal_mobile }}rem;
+  border-radius: {{ section_radius | times: 0.6 | round: 0 }}px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.section-{{ section.id }}-settings {
+  margin: 0 auto;
+  padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;
+  padding-left: {{ padding_horizontal_mobile }}rem;
+  padding-right: {{ padding_horizontal_mobile }}rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.scrolling-scrolling-wrap-{{ section.id }} {
+  width: 200vw;
+  position: relative;
+  left: -10px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-attachment: scroll !important;
+  transform: rotate({{ scrolling_rotate_mobile }}deg);
+  transform-origin: center;
+  overflow: hidden;
+  z-index: 3;
+}
+
+@media (max-width: 800px) {
+  .scrolling-scrolling-wrap-{{ section.id }} {
+    width: 300vw !important;
+    overflow: hidden !important;
+  }
+}
+
+.scrolling-scrolling-list-{{ section.id }} {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-attachment: scroll !important;
+  -webkit-animation: ticker{{ section.id | replace: '-', '' }} {{ scrolling_velocity_mobile }}s infinite linear;
+  animation: ticker{{ section.id | replace: '-', '' }} {{ scrolling_velocity_mobile }}s infinite linear;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 4;
+}
+
+.scrolling-scrolling-item-{{ section.id }} {
+  display: flex;
+  align-items: center;
+  background-attachment: scroll !important;
+  margin-right: {{ item_mr_mobile }}px;
+  flex-shrink: 0;
+  text-decoration: none;
+  padding: {{ item_padding_vertical_mobile }}px {{ item_padding_horizontal_mobile }}px;
+  border-radius: {{ item_radius }}px;
+  border: {{ item_border_thickness }}px solid {{ item_border_color }};
+  background-color: {{ item_bg_color }};
+  position: relative;
+  z-index: 5;
+}
+
+.scrolling-scrolling-text-{{ section.id }} {
+  display: inline-block;
+  margin: 0;
+  font-size: {{ text_size_mobile }}px;
+  color: {{ text_color }};
+  line-height: {{ text_height }}%;
+  text-transform: unset;
+  font-weight: 700;
+}
+
+@media(min-width: 1024px) {
+  .section-{{ section.id }} {
+    margin-top: {{ margin_top }}px;
+    margin-bottom: {{ margin_bottom }}px;
+    margin-left: {{ margin_horizontal }}rem;
+    margin-right: {{ margin_horizontal }}rem;
+    border-radius: {{ section_radius }}px;
+  }
+  
+  .section-{{ section.id }}-settings {
+    padding: 0;
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    padding-left: {{ padding_horizontal }}rem;
+    padding-right: {{ padding_horizontal }}rem;
+  }
+
+  .scrolling-scrolling-wrap-{{ section.id }} {
+    width: 150vw;
+    left: -10px;
+    transform: rotate({{ scrolling_rotate }}deg);
+  }
+  
+  .scrolling-scrolling-list-{{ section.id }} {
+    animation-duration: {{ scrolling_velocity }}s;
+  }
+
+  .scrolling-scrolling-item-{{ section.id }} {
+    margin-right: {{ item_mr }}px;
+    padding: {{ item_padding_vertical }}px {{ item_padding_horizontal }}px;
+  }
+  
+  .scrolling-scrolling-text-{{ section.id }} {
+    font-size: {{ text_size }}px;
+  }
+}
+  
+{%- endstyle -%}
+
+{% unless full_width %}
+  <style>
+    .section-{{ section.id }}-settings {
+      max-width: {{ content_width }}rem;
+    }
+  </style>
+{% endunless %}
+
+{% if margin_horizontal_mobile > 0 %}
+  <style>
+    .section-{{ section.id }} {
+      border-left: solid {{ border_color }} {{ border_thickness }}px;
+      border-right: solid {{ border_color }} {{ border_thickness }}px;
+    }
+    
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: 0px;
+        border-right: 0px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if margin_horizontal > 0 %}
+  <style>
+    @media(min-width: 1024px) {
+      .section-{{ section.id }} {
+        border-left: solid {{ border_color }} {{ border_thickness }}px;
+        border-right: solid {{ border_color }} {{ border_thickness }}px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if text_custom %}
+  <style>
+    .scrolling-scrolling-text-{{ section.id }} {
+      font-family: {{ text_font.family }}, {{ text_font.fallback_families }};
+      font-weight: {{ text_font.weight }};
+      font-style: {{ text_font.style }};
+    }
+  </style>
+{% endif %}
+
+{% if reverse_direction %}
+  <style>
+    @keyframes ticker{{ section.id | replace: '-', '' }} {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+{% else %}
+  <style>
+    @keyframes ticker{{ section.id | replace: '-', '' }} {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+{% endif %}
+
+{% if pause_hover %}
+  <style>
+    .scrolling-scrolling-wrap-{{ section.id }}:hover .scrolling-scrolling-list-{{ section.id }} {
+       animation-play-state: paused 
+    }
+  </style>
+{% endif %}
+
+
+<div class="section-{{ section.id }} scrolling-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
+    <div class="section-{{ section.id }}-settings">
+      <div class="scrolling-scrolling-wrap-{{ section.id }}">
+        <div class="scrolling-scrolling-list-{{ section.id }}">
+          {% for item in (1..5) %}
+            {% for block in section.blocks %}
+              <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %} class="scrolling-scrolling-item-{{ section.id }}">
+                {% if block.settings.text != blank %}
+                  <p class="scrolling-scrolling-text-{{ section.id }}">{{ block.settings.text }}</p>
+                {% endif %}
+              </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
+            {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="scrolling-scrolling-list-{{ section.id }}">
+          {% for item in (1..5) %}
+            {% for block in section.blocks %}
+              <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %} class="scrolling-scrolling-item-{{ section.id }}">
+                {% if block.settings.text != blank %}
+                  <p class="scrolling-scrolling-text-{{ section.id }}">{{ block.settings.text }}</p>
+                {% endif %}
+              </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "SS - Scrolling Text #7",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Scrolling Settings",
+         "info": "The theme editor may display incorrect scrolling speed; please verify on the live site."
+      },
+      {
+        "type": "range",
+        "id": "scrolling_velocity",
+        "min": 10,
+        "max": 150,
+        "step": 2,
+        "label": "Scrolling Speed",
+        "info": "⚡ <----------------> 🐌",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "scrolling_velocity_mobile",
+        "min": 10,
+        "max": 150,
+        "step": 2,
+        "label": "Scrolling Speed Mobile",
+        "info": "⚡ <----------------> 🐌",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "scrolling_rotate",
+        "min": -20,
+        "max": 20,
+        "step": 0.5,
+        "label": "Scrolling Rotate",
+        "default": -4
+      },
+      {
+        "type": "range",
+        "id": "scrolling_rotate_mobile",
+        "min": -20,
+        "max": 20,
+        "step": 0.5,
+        "label": "Scrolling Rotate - Mobile",
+        "default": -4
+      },
+      {
+        "type": "checkbox",
+        "id": "reverse_direction",
+        "label": "Reverse Scrolling Direction"
+      },
+      {
+        "type": "checkbox",
+        "id":"pause_hover",
+        "label": "Pause on Hover",
+        "default":true
+      },
+      {
+        "type": "header",
+        "content": "Item Settings"
+      },
+            {
+          "type": "range",
+          "id": "item_padding_vertical",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Item Padding Vertical",
+          "default": 32
+      },
+      {
+          "type": "range",
+          "id": "item_padding_vertical_mobile",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Item Padding Vertical - Mobile",
+          "default": 16
+      },
+      {
+          "type": "range",
+          "id": "item_padding_horizontal",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Item Padding Horizontal",
+          "default": 32
+      },
+      {
+          "type": "range",
+          "id": "item_padding_horizontal_mobile",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Item Padding Horizontal - Mobile",
+          "default": 16
+      },
+      {
+          "type": "range",
+          "id": "item_radius",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Item Border Radius",
+          "default": 100
+      },
+      {
+          "type": "range",
+          "id": "item_border_thickness",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "unit": "px",
+          "label": "Item Border Thickness",
+          "default": 0
+      },
+      {
+         "type": "range",
+         "id": "item_mr",
+         "min": 0,
+         "max": 100,
+         "step": 2,
+         "unit": "px",
+         "label": "Item Margin Right",
+         "default": 0
+      },
+      {
+         "type": "range",
+         "id": "item_mr_mobile",
+         "min": 0,
+         "max": 100,
+         "step": 2,
+         "unit": "px",
+         "label": "Item Margin Right - Mobile",
+         "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Text Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "text_custom",
+        "label": "Use Custom Font",
+        "default": false
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Text Font Family",
+        "default": "josefin_sans_n4"
+      },
+      {
+        "type": "range",
+        "id": "text_size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "text_size_mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size - Mobile",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "text_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Text Line Height",
+        "default": 150
+      },
+      {
+        "type": "header",
+        "content": "Scrolling Colors"
+      },
+      {
+        "type": "color",
+        "label": "Item Background Color",
+        "id": "item_bg_color",
+        "default": "#E5E5E5"
+      },
+      {
+        "type": "color",
+        "label": "Item Border Color",
+        "id": "item_border_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "text_color",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Section Colors"
+      },
+      {
+        "type": "color",
+        "label": "Section background",
+        "id": "background_color"
+      },
+      {
+        "type": "color_background",
+        "id": "background_gradient",
+        "label": "Section background gradient"
+      },
+      {
+        "type": "color",
+        "label": "Border",
+        "id": "border_color",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Section margin (outside)"
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin bottom",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Margin sides",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Margin sides mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Section padding (inside)"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 400,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 64
+      },
+      {
+         "type": "range",
+         "id": "padding_bottom",
+         "min": 0,
+         "max": 400,
+         "step": 4,
+         "unit": "px",
+         "label": "Padding bottom",
+         "default": 80
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "rem",
+        "label": "Padding sides",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_horizontal_mobile",
+        "min": 0,
+        "max": 15,
+        "step": 0.5,
+        "unit": "rem",
+        "label": "Padding sides mobile",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full Width",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "content_width",
+        "min": 0,
+        "max": 400,
+        "step": 10,
+        "unit": "rem",
+        "label": "Section content width",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "border_thickness",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Border thickness",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_radius",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Section Roundness",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Promotion text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "SS - Scrolling Text #7",
+        "blocks": [
+          {
+            "type": "text",
+            "settings": {
+              "text": "Promotion text 1"
+            }
+          },
+          {
+            "type": "text",
+            "settings": {
+              "text": "Promotion text 2"
+            }
+          },
+          {
+            "type": "text",
+            "settings": {
+              "text": "Promotion text 3"
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

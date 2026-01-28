@@ -1,0 +1,33 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign page_url = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |   replace:'\\/','/' |    replace:'%20',' ' |    replace:'\u0026','&' | replace:'\/', '/'  -%}
+{% assign page_url =  "https://" | append: page_url  %}
+{% assign pageUrlWithParams = page_url | remove: shop.url %}
+{% assign isApplyForceLogin = false %}
+{% assign bssLtapCurrentPage = canonical_url | remove: shop.url %}
+{% assign old_content_for_layout = content_for_layout %}
+{% assign customize = true %}
+
+{% unless request.design_mode or request.visual_preview_mode %}
+    {% assign bss_login_to_day_date = 'now' | date: '%s' %}
+    {% assign bsscommerce-password = "" %}
+    {% include 'bss-ltap-sntap-rules' %}
+    {% include 'bss-ltap-fl-rules' %}
+    {% if customize %}{% include 'bss-ltap-pc-rules' %}{% endif %}
+    {% include 'bss-ltap-sl-rules' %}
+{% endunless %}
+
+{% include 'bsscommerce-hide-product-rules-logic', no_data_returned: true %}
+{% if enable_noindex %}
+    <meta name="robots" content="noindex">
+{% endif %}
+
+{% include "bss-ltap-disable-registration-page" %}
+

@@ -1,0 +1,128 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+<script>
+    const variantSelects = document.querySelector('variant-selects');
+    const listVariantRestrict = {{ list_variant_restrict | json}}
+    if (variantSelects && listVariantRestrict.length) {
+    const updateVariantStatuses = () => {
+        setTimeout(() => {
+                const listVariant = {{product.variants | json}}
+                const selectedOptionOneVariants =  listVariant.filter(
+                (variant) => variantSelects.querySelector(':checked').value === variant.option1 && !listVariantRestrict.includes(`${variant.id}`)
+                );
+                const inputWrappers = [...variantSelects.querySelectorAll('.product-form__input')];
+                if (inputWrappers && inputWrappers.length == 1) {
+                    const availableOptionInputsValue = listVariant
+                    .filter(variant => listVariantRestrict.includes(`${variant.id}`))
+                    .map(variant => variant.option1);
+                    inputWrappers.forEach((item) => {
+                      const optionInputs = [...item.querySelectorAll('input[type="radio"], option')];
+                      optionInputs.forEach((input) => {
+                        if (availableOptionInputsValue.includes(input.getAttribute('value'))) {
+                           input.innerText = '[value] - Unavailable'.replace('[value]', input.getAttribute('value'));
+                        }
+                      })
+                    })
+                }
+                inputWrappers.forEach((option, index) => {
+                if (index === 0) return;
+                const optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
+                const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+                const availableOptionInputsValue = selectedOptionOneVariants
+                .filter((variant) => variant.available && variant[`option${index}`] === previousOptionSelected)
+                .map((variantOption) => variantOption[`option${index + 1}`]);
+                optionInputs.forEach((input) => {
+                if (availableOptionInputsValue.includes(input.getAttribute('value'))) {
+                    input.innerText = input.getAttribute('value');
+                    } else {
+                    input.innerText = '[value] - Unavailable'.replace('[value]', input.getAttribute('value'));
+                    }
+                });
+            });
+            })
+    }
+    updateVariantStatuses()
+    variantSelects.addEventListener('change', () =>{
+        updateVariantStatuses()
+    })
+    }
+
+    const variantRadios = document.querySelector('variant-radios');
+      if (variantRadios && listVariantRestrict.length) {
+        const updateVariantStatuses = () => {
+            setTimeout(() => {
+                    const listVariant = {{product.variants | json}}
+                    const selectedOptionOneVariants =  listVariant.filter(
+                    (variant) => variantRadios.querySelector(':checked').value === variant.option1 && !listVariantRestrict.includes(`${variant.id}`)
+                    );
+                    const inputWrappers = [...variantRadios.querySelectorAll('.product-form__input')];
+                    if (inputWrappers && inputWrappers.length == 1) {
+                        const availableOptionInputsValue = listVariant
+                        .filter(variant => listVariantRestrict.includes(`${variant.id}`))
+                        .map(variant => variant.option1);
+                        inputWrappers.forEach((item) => {
+                        const optionInputs = [...item.querySelectorAll('input[type="radio"], option')];
+                        optionInputs.forEach((input) => {
+                            if (availableOptionInputsValue.includes(input.getAttribute('value'))) {
+                                input.classList.add('disabled');
+                            }
+                        })
+                        })
+                    }
+                    inputWrappers.forEach((option, index) => {
+                    if (index === 0) return;
+                    const optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
+                    const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+                    const availableOptionInputsValue = selectedOptionOneVariants
+                    .filter((variant) => variant.available && variant[`option${index}`] === previousOptionSelected)
+                    .map((variantOption) => variantOption[`option${index + 1}`]);
+                    optionInputs.forEach((input) => {
+                    if (availableOptionInputsValue.includes(input.getAttribute('value'))) {
+                         input.classList.remove('disabled');
+                        } else {
+                        input.classList.add('disabled');
+                        }
+                    });
+                });
+                })
+        }
+        updateVariantStatuses()
+        variantRadios.addEventListener('change', () =>{
+           updateVariantStatuses()
+        })
+      }
+
+    {% if theme_name == 'Enterprise' %} 
+    const checkHideVariant = (currentVariantId) => {
+        const priceEl = document.querySelector('.product-info .product-info__price');
+        const hideVariantMessage = priceEl.querySelector('.bsscommerce-hv-message');
+        if (listVariantRestrict.includes(currentVariantId) && !hideVariantMessage) {
+            priceEl.insertAdjacentHTML("afterend", '<span class="bsscommerce-hv-message" style="font-size:22px; font-weight: 600">Lock</span>')
+        } else {
+            document.querySelectorAll('.bsscommerce-hv-message').forEach((item) => item.remove());
+        }
+    };
+    
+    const cartForm = document.querySelector("form[action='/cart/add'] input[name='id']");
+    if (cartForm) {
+        // First load check
+        checkHideVariant(cartForm.value);
+    
+        // Mutation observer to check for changes
+        const observer = new MutationObserver((mutationsList) => {
+            for (const mutation of mutationsList) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'value') {
+                    checkHideVariant(cartForm.value);
+                }
+            }
+        });
+        observer.observe(cartForm, { attributes: true, attributeFilter: ['value'] });
+    }
+    {% endif %}
+</script>

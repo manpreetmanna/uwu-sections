@@ -1,0 +1,712 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_NFGG7z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tkUbMK": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHINY MASCOT DROPS",
+            "heading_size": "h1"
+          }
+        },
+        "caption_kBcAhy": {
+          "type": "caption",
+          "settings": {
+            "caption": "COMING NOVMEBER 29th @ 12:00 AM CST",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tkUbMK",
+        "caption_kBcAhy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "ss_animated_sticker_effects_9FpTgH": {
+      "type": "ss-animated-sticker-effects",
+      "blocks": {
+        "sticker_fnJJnU": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/NOOMBA_FRONT_ent_1.png",
+            "url": "",
+            "image_size": 240,
+            "image_size_mobile": 100,
+            "image_border_radius": 0,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 85,
+            "sticker_horizontal_mobile": 90,
+            "sticker_vertical": -40,
+            "sticker_vertical_mobile": -100,
+            "sticker_animation": "spin_scroll",
+            "sticker_animation_speed": 7.1,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "sticker_fnJJnU"
+      ],
+      "settings": {
+        "lazy": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_countdown_timer_1_aXxhU6": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_qPj983": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "11",
+            "day": "29",
+            "hour": "06",
+            "minute": "00",
+            "hide_timer_on_completed": true,
+            "timer_completed_text": "",
+            "color": "#000000",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_qPj983"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": "200",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": true,
+        "overlay_opacity": 30,
+        "overlay_color": "#ffffff",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_gFaHWi": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-THrLPF\"></div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 28
+      }
+    },
+    "ss_animated_sticker_effects_CVJ8fU": {
+      "type": "ss-animated-sticker-effects",
+      "blocks": {
+        "sticker_jRLNtf": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/BAOABLE_FRONT_ent_1.png",
+            "url": "",
+            "image_size": 220,
+            "image_size_mobile": 90,
+            "image_border_radius": 0,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 10,
+            "sticker_horizontal_mobile": 5,
+            "sticker_vertical": -350,
+            "sticker_vertical_mobile": -440,
+            "sticker_animation": "spin_scroll",
+            "sticker_animation_speed": 7.1,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        },
+        "sticker_UGQfh8": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/NOOMBA_FRONT_ent_1.png",
+            "url": "",
+            "image_size": 220,
+            "image_size_mobile": 100,
+            "image_border_radius": 0,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 90,
+            "sticker_horizontal_mobile": 100,
+            "sticker_vertical": -550,
+            "sticker_vertical_mobile": -430,
+            "sticker_animation": "spin_scroll",
+            "sticker_animation_speed": 7.1,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "sticker_jRLNtf",
+        "sticker_UGQfh8"
+      ],
+      "settings": {
+        "lazy": true
+      }
+    },
+    "rich_text_i4kJyU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AY3K7G": {
+          "type": "heading",
+          "settings": {
+            "heading": "THESE CREATORS HAVE SHINY MASCOT DROPS",
+            "heading_size": "h2"
+          }
+        },
+        "caption_dDMnGC": {
+          "type": "caption",
+          "settings": {
+            "caption": "COMING NOVMEBER 29th @ 12:00 AM CST",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AY3K7G",
+        "caption_dDMnGC"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_PBzhXe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kaBKiL": {
+          "type": "heading",
+          "settings": {
+            "heading": "HOW DO SHINY DROPS WORK?",
+            "heading_size": "h2"
+          }
+        },
+        "text_H6jgya": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>THERE ARE 3 WAYS TO GET A SHINY PLUSHIE:</strong></p><p>1. Buy a regular plushie, and you might get lucky with a shiny one instead! (Odds may vary.)</p><p></p><p>2. After buying the regular plushie, you can purchase the shiny version directly! (No luck needed!)</p><p>3. If you purchased the regular plushie BEFORE Nov. 29th, you can automatically buy the shiny version!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kaBKiL",
+        "text_H6jgya"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_Ab9aWh": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_DgTPgA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I have purchased the original plushie and want a shiny version!",
+            "icon": "none",
+            "row_content": "<h6>Customers who have previously purchased the original plushie, whether during the shiny promotion or at any time in the past, will be able to purchase the shiny plushie directly. If that's you, just log in using the email you used to purchase the original plushie, and you will unlock the ability to buy the shiny!</h6>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aT4Md9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I have NOT purchased the original plushie!",
+            "icon": "none",
+            "row_content": "<h6>Customers who have not purchased the original can purchase the original for a chance to receive a shiny version! Or, you will have the option to add the shiny plushie to cart along with the original, if you don't want to rely on luck!</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_DgTPgA",
+        "collapsible_row_aT4Md9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_Bwexng": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_LBQjHH": {
+          "type": "caption",
+          "settings": {
+            "caption": "TRICKYWI",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_rtQABf": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHINY BOOBA",
+            "heading_size": "h1"
+          }
+        },
+        "text_6KJqqE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tricky is launching both the regular and SHINY Booba plushies!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_LBQjHH",
+        "heading_rtQABf",
+        "text_6KJqqE"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/booba-shiny-ex.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_33Xgj6": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_PyrLrY": {
+          "type": "caption",
+          "settings": {
+            "caption": "BAO THE WHALE",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_rWQ3mW": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHINY BAOBBLE",
+            "heading_size": "h1"
+          }
+        },
+        "text_LYD7Kh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bao is re-launching the original Baobble Buddy plushie along with the SHINY Baobble Buddy plushie!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_PyrLrY",
+        "heading_rWQ3mW",
+        "text_LYD7Kh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/shiny-gif2.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7rEgkd": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_W7wLw4": {
+          "type": "caption",
+          "settings": {
+            "caption": "NUMI",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_XGXUYT": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHINY NOOMBAS",
+            "heading_size": "h1"
+          }
+        },
+        "text_AEGizJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Numi is launching a JUMBO Noomba and 2 shiny Noombas... What version of the shiny Noomba will you get?</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_W7wLw4",
+        "heading_XGXUYT",
+        "text_AEGizJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/shiny-gif3.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_6zrxRL": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_76HziW": {
+          "type": "caption",
+          "settings": {
+            "caption": "VIENNA",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_eNV9Nt": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHINY COSMATE",
+            "heading_size": "h1"
+          }
+        },
+        "text_YMU8px": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vienna is re-launching the original Cosmate plushie AND the shiny version (farmer Cosmate) along with it, featuring a straw hat, straw accessory, and apple hind tattoo!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_76HziW",
+        "heading_eNV9Nt",
+        "text_YMU8px"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/shiny-gif4.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_circle_menu_qdFjB8": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_aqaXic": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Numi.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/numi"
+          }
+        },
+        "image_a8kPH9": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Bao.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/bao"
+          }
+        },
+        "image_afnjnR": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Trickywi.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/trickywi"
+          }
+        },
+        "image_kzzp4n": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Vienna.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/vienna"
+          }
+        }
+      },
+      "block_order": [
+        "image_aqaXic",
+        "image_a8kPH9",
+        "image_afnjnR",
+        "image_kzzp4n"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "icon_size": 200,
+        "icon_size_mobile": 130,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 0,
+        "icon_square": true,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 10,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#000000",
+        "icon_border_gradient": "",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "ss_hotspots_gzAE8M": {
+      "type": "ss-hotspots",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "center",
+        "body_padding_vertical": 0,
+        "body_padding_horizontal": 0,
+        "body_radius": 16,
+        "body_border_thickness": 0,
+        "body_shadow": false,
+        "image": "shopify://shop_images/0c295ae1-7d53-4880-820c-e781767a7b15_13b46dd7-fbda-49f3-ac55-20e3bfff5780.jpg",
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "image_radius": 16,
+        "image_border_thickness": 2,
+        "image_shadow": false,
+        "item_padding_vertical": 6,
+        "item_padding_horizontal": 6,
+        "item_radius": 16,
+        "item_border_thickness": 0,
+        "item_animation": true,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 14,
+        "title_size_mobile": 14,
+        "title_height": 100,
+        "item_image_width": 30,
+        "item_image_width_mobile": 30,
+        "item_image_radius": 16,
+        "item_content_width": 300,
+        "item_content_width_mobile": 190,
+        "item_content_padding_vertical": 12,
+        "item_content_padding_horizontal": 12,
+        "item_content_radius": 16,
+        "item_content_border_thickness": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 100,
+        "text_mt": 8,
+        "item_bg": "#000000",
+        "item_border_color": "#ffffff",
+        "item_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "item_content_bg": "#ffffff",
+        "item_content_border_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "body_bg_color": "#f3f3f3",
+        "body_border_color": "#000000",
+        "body_shadow_color": "#000000",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "rich_text_3tbzTP": {
+      "type": "rich-text",
+      "blocks": {
+        "button_daiPPy": {
+          "type": "button",
+          "settings": {
+            "button_label": "ACTIVATE CODE",
+            "button_link": "https://uwumarket.us/discount/BLACKFRIDAY",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_daiPPy"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_hPfWGJ": {
+      "type": "rich-text",
+      "blocks": {
+        "button_EcWx6G": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https://uwumarket.us/discount/BLACKFRIDAY",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_EcWx6G"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "rich_text_NFGG7z",
+    "ss_animated_sticker_effects_9FpTgH",
+    "main",
+    "ss_countdown_timer_1_aXxhU6",
+    "custom_liquid_gFaHWi",
+    "ss_animated_sticker_effects_CVJ8fU",
+    "rich_text_i4kJyU",
+    "rich_text_PBzhXe",
+    "collapsible_content_Ab9aWh",
+    "image_with_text_Bwexng",
+    "image_with_text_33Xgj6",
+    "image_with_text_7rEgkd",
+    "image_with_text_6zrxRL",
+    "ss_circle_menu_qdFjB8",
+    "ss_hotspots_gzAE8M",
+    "rich_text_3tbzTP",
+    "rich_text_hPfWGJ"
+  ]
+}

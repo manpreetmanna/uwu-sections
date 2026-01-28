@@ -1,10 +1,39 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
-      "type": "main-account"
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17210577840e51d449": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_king_wishlist_page_block_FFQK3H": {
+          "type": "shopify://apps/swish-formerly-wishlist-king/blocks/wishlist-page-block/194f5011-a43c-4b22-b12e-eaf20dc4506a",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "wishlist_king_wishlist_page_block_FFQK3H"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "17210577840e51d449"
   ]
 }

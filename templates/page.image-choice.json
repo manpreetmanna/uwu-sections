@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_NB74tb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bkLwLk": {
+          "type": "heading",
+          "settings": {
+            "heading": "CHOOSE YOUR FREE TREAT!",
+            "heading_size": "h1"
+          }
+        },
+        "caption_9kznUr": {
+          "type": "caption",
+          "settings": {
+            "caption": "CHOOSE A MONSTER BELOW TO UNLOCK A FREE ITEM WHEN YOU SPEND $75 OR MORE!",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bkLwLk",
+        "caption_9kznUr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_4UGGzH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Rca3Aw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ghost_1.png",
+            "title": "GHOSTY",
+            "text": "<p>Choose this monster to get a FREE T-SHIRT when you spend $75 or more!</p>",
+            "link_label": "FREE T-SHIRT",
+            "link": "https://uwumarket.us/discount/UWUWEEN%2520TSHIRT?redirect=/collections/t-shirts"
+          }
+        },
+        "column_pHfNGi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/vamp.png",
+            "title": "VAMPY",
+            "text": "<p>Choose this monster to get a FREE POSTER when you spend $75 or more!</p>",
+            "link_label": "FREE POSTER",
+            "link": "https://uwumarket.us/discount/UWUWEEN%2520POSTER?redirect=/collections/free-poster-selection"
+          }
+        },
+        "column_GYLiNT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/woof.png",
+            "title": "WHOOFY",
+            "text": "<p>Choose this monster to get a FREE BOOBA MOUSEPAD when you spend $75 or more!</p>",
+            "link_label": "FREE BOOBA MOUSEPAD",
+            "link": "https://uwumarket.us/discount/UWUWEEN%25203D%2520PAD?redirect=/collections/3d-mousepads"
+          }
+        }
+      },
+      "block_order": [
+        "column_Rca3Aw",
+        "column_pHfNGi",
+        "column_GYLiNT"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_NB74tb",
+    "multicolumn_4UGGzH"
+  ]
+}

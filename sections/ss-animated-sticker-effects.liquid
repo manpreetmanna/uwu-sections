@@ -1,0 +1,446 @@
+{% comment %}
+---------------------------------------------------------
+Copyright © 2023 Section Store. All rights reserved.
+Unauthorized copying, modification, distribution, or use
+of this code or any portion of it, is strictly prohibited.
+Violators will be prosecuted to the fullest extent of the law.
+For inquiries or permissions, contact daniel@section.store
+---------------------------------------------------------
+{% endcomment %}
+
+{%- liquid 
+
+  assign lazy = section.settings.lazy
+
+-%}
+
+{%- style -%}
+
+  .sticker-{{ section.id }} {
+    position: relative;
+  }
+  
+{%- endstyle -%}
+
+{% for block in section.blocks %}
+
+  <style>
+    .sticker-stamp-{{ block.id }} {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: {{ block.settings.sticker_horizontal_mobile }}%;
+      top: {{ block.settings.sticker_vertical_mobile }}px;
+      transform: translateX(-{{ block.settings.sticker_horizontal_mobile }}%);
+      width: {{ block.settings.image_size_mobile }}px;
+      height: {{ block.settings.image_size_mobile }}px;
+    }
+  
+    .sticker-stamp-inner-{{ block.id }} {
+      padding:10px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: {{ block.settings.image_border_radius }}%;
+      border: {{ block.settings.image_border_thickness }}px solid {{ block.settings.image_border_color }};
+      background-color: {{ block.settings.image_bg_color }};
+    }
+  
+    .sticker-stamp-inner-{{ block.id }} img,
+    .sticker-stamp-inner-{{ block.id }} svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    @media(min-width: 1024px) {
+      .sticker-stamp-{{ block.id }} {
+        width: {{ block.settings.image_size }}px;
+        height: {{ block.settings.image_size }}px;
+        left: {{ block.settings.sticker_horizontal }}%;
+        top: {{ block.settings.sticker_vertical }}px;
+        transform: translateX(-{{ block.settings.sticker_horizontal }}%);
+      }
+  
+    }
+  </style>
+
+  {% if block.settings.image_shadow %}
+    <style>
+      .sticker-stamp-inner-{{ block.id }} {
+        box-shadow: 0 0 10px {{ block.settings.image_shadow_color }};
+      }
+    </style>
+  {% endif %}
+
+  {% if block.settings.sticker_animation == "pulse" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.075); }
+        100% { transform: scale(1); }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "spin" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "float" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-10px); }
+        100% { transform: translateY(0); }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "float_up" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "shake" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+          0%, 100% { transform: translateX(0); }
+          10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+          20%, 40%, 60%, 80% { transform: translateX(10px); }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "fade" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+          0% { opacity: 0.75; }
+          50% { opacity: 1; }
+          100% { opacity: 0.75; }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "glow" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { box-shadow: 0 0 10px {{ block.settings.image_shadow_color }}; }
+        50% { box-shadow: 0 0 20px {{ block.settings.image_shadow_color }}; }
+        100% { box-shadow: 0 0 10px {{ block.settings.image_shadow_color }}; }
+      }
+    </style>
+  {% elsif block.settings.sticker_animation == "wiggle" %}
+    <style>
+      @keyframes stickerAnimation{{ block.id }} {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(-5deg); }
+        50% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  {% endif %}
+
+  {% unless block.settings.sticker_animation == "none" %}
+    <style>
+      .sticker-stamp-inner-{{ block.id }} {
+        animation: stickerAnimation{{ block.id }} {{ block.settings.sticker_animation_speed }}s linear infinite;
+      }
+    </style>
+  {% endunless %}
+
+  {% if block.settings.sticker_hide_mobile %}
+    <style>
+      .sticker-stamp-{{ block.id }} {
+        display: none !important;
+      }
+
+      @media(min-width: 1024px) {
+        .sticker-stamp-{{ block.id }} {
+          display: block !important;
+        }
+      }
+    </style>
+  {% endif %}
+  
+{% endfor %}
+
+<div class="sticker-{{ section.id }}">
+  {% for block in section.blocks %}
+    <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %} class="sticker-stamp-{{ block.id }}">
+      <div class="sticker-stamp-inner-{{ block.id }}">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+        {% else %}
+          {{ 'image' | placeholder_svg_tag }}
+        {% endif %}
+      </div>
+    </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
+  {% endfor %}
+</div>
+
+      
+<script>
+  function initStampSticker2() {
+    {% for block in section.blocks %}
+      {% if block.settings.sticker_animation == "spin_scroll" %}
+        if(document.querySelector('.sticker-stamp-inner-{{ block.id }}')) {
+          window.addEventListener('scroll', function() {
+            var scrollY = window.scrollY / 6;
+            document.querySelector('.sticker-stamp-inner-{{ block.id }}').style.transform = 'rotate(' + scrollY + 'deg)';
+          });
+        }
+      {% elsif block.settings.sticker_animation == "float_up_scroll" %}
+        if(document.querySelector('.sticker-stamp-inner-{{ block.id }}')) {
+          window.addEventListener('scroll', function() {
+            var scrollY = window.scrollY / 4;
+            document.querySelector('.sticker-stamp-inner-{{ block.id }}').style.transform = 'translateY(' + (scrollY * -1) + 'px)';
+          });
+        }
+      {% endif %}
+    {% endfor %}
+  }
+
+  document.addEventListener('DOMContentLoaded', initStampSticker2);
+
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initStampSticker2);
+     document.addEventListener('shopify:section:load', initStampSticker2);
+  }
+</script>
+{% schema %}
+  {
+    "name": "SS - Animated Sticker",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "lazy",
+        "label": "Lazy load",
+        "info": "Lazy load images for speed optimisation",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "sticker",
+        "name": "Sticker",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Sticker Settings"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticker_hide_mobile",
+            "label": "Hide Sticker on Mobile"
+          },
+          {
+            "type": "header",
+            "content": "Sticker Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          },
+          {
+            "type": "range",
+            "id": "image_size",
+            "min": 0,
+            "max": 1000,
+            "step": 10,
+            "unit": "px",
+            "label": "Image Size",
+            "default": 170
+          },
+          {
+            "type": "range",
+            "id": "image_size_mobile",
+            "min": 0,
+            "max": 1000,
+            "step": 10,
+            "unit": "px",
+            "label": "Image Size - Mobile",
+            "default": 150
+          },
+          {
+            "type": "range",
+            "id": "image_border_radius",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Image Border Radius",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "image_border_thickness",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "unit": "px",
+            "label": "Image Border Thickness",
+            "default": 0
+          },
+          {
+            "type": "checkbox",
+            "id": "image_shadow",
+            "label": "Use Image Box Shadow",
+            "default": false
+          },
+          {
+            "type": "header",
+            "content": "Sticker Position"
+          },
+          {
+            "type": "range",
+            "id": "sticker_horizontal",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "%",
+            "label": "Sticker Horizontal Position",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "sticker_horizontal_mobile",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "%",
+            "label": "Sticker Horizontal Position - Mobile",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "sticker_vertical",
+            "min": -1000,
+            "max": 0,
+            "step": 10,
+            "unit": "px",
+            "label": "Sticker Vertical Position",
+            "default": -120
+          },
+          {
+            "type": "range",
+            "id": "sticker_vertical_mobile",
+            "min": -1000,
+            "max": 0,
+            "step": 10,
+            "unit": "px",
+            "label": "Sticker Vertical Position - Mobile",
+            "default": -120
+          },
+          {
+            "type": "header",
+            "content": "Sticker Animation"
+          },
+          {
+            "type": "select",
+            "id": "sticker_animation",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "spin",
+                "label": "Spin"
+              },
+              {
+                "value": "spin_scroll",
+                "label": "Spin on Scroll"
+              },
+              {
+                "value": "wiggle",
+                "label": "Wiggle"
+              },
+              {
+                "value": "pulse",
+                "label": "Pulse"
+              },
+              {
+                "value": "fade",
+                "label": "Fade"
+              },
+              {
+                "value": "float",
+                "label": "Float"
+              },
+              {
+                "value": "float_up",
+                "label": "Float Up"
+              },
+              {
+                "value": "float_up_scroll",
+                "label": "Float Up on Scroll"
+              },
+              {
+                "value": "shake",
+                "label": "Shake"
+              },
+              {
+                "value": "glow",
+                "label": "Glow"
+              }
+            ],
+            "default": "spin",
+            "label": "Sticker Animation"
+          },
+          {
+            "type": "range",
+            "id": "sticker_animation_speed",
+            "min": 0.5,
+            "max": 8,
+            "step": 0.1,
+            "label": "Animation Speed",
+            "info": "⚡ <----------------> 🐌",
+            "default": 4
+          },
+          {
+            "type": "header",
+            "content": "Sticker Colors"
+          },
+          {
+            "type": "color",
+            "label": "Sticker Background Color",
+            "id": "image_bg_color"
+          },
+          {
+            "type": "color",
+            "label": "Sticker Border Color",
+            "id": "image_border_color",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "label": "Sticker Shadow Color",
+            "id": "image_shadow_color",
+            "default": "#000000"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "SS - Animated Sticker Effects",
+        "blocks": [
+          {
+            "type": "sticker"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

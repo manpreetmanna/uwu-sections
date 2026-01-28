@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_fullwidth_banner_GtjHMx": {
+      "type": "ss-fullwidth-banner",
+      "settings": {
+        "desktop-img": "shopify://shop_images/artifact_banner_52f77bce-2a30-4f92-ab9f-dd27840a9c63.png",
+        "desktop-url": "",
+        "mobile-img": "shopify://shop_images/artifact_banner_mobile_fecd9675-6d7f-4087-b463-97409e30435a.png",
+        "mobile-url": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_countdown_timer_1_YHqqAQ": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_zP9NdG": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "04",
+            "day": "04",
+            "hour": "17",
+            "minute": "00",
+            "hide_timer_on_completed": true,
+            "timer_completed_text": "",
+            "color": "#000000",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_zP9NdG"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": "300",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": true,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "1721077099dee325a5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_dKjy97": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_featured_carousel_RYtgY3": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_dKjy97",
+        "judge_me_reviews_featured_carousel_RYtgY3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "ss_fullwidth_banner_GtjHMx",
+    "ss_countdown_timer_1_YHqqAQ",
+    "banner",
+    "product-grid",
+    "1721077099dee325a5"
+  ]
+}

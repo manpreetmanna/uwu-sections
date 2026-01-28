@@ -1,0 +1,591 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_tdmCDe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4nzdK6": {
+          "type": "heading",
+          "settings": {
+            "heading": "UwU BLACK FRIDAY",
+            "heading_size": "h1"
+          }
+        },
+        "caption_fdBcrG": {
+          "type": "caption",
+          "settings": {
+            "caption": "COMING NOVMEBER 29th @ 12:00 AM CST",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "button_dGwrhE": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https://uwumarket.us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4nzdK6",
+        "caption_fdBcrG",
+        "button_dGwrhE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_countdown_timer_1_aXxhU6": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_qPj983": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "11",
+            "day": "29",
+            "hour": "06",
+            "minute": "00",
+            "hide_timer_on_completed": true,
+            "timer_completed_text": "",
+            "color": "#000000",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_qPj983"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": "200",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": true,
+        "overlay_opacity": 30,
+        "overlay_color": "#ffffff",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_bg8jd7": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<center><a title=\"Add to Calendar\" class=\"addeventatc\" data-id=\"dP10002311\" href=\"https://www.addevent.com/event/dP10002311\" target=\"_blank\">Add to Calendar</a> <script type=\"text/javascript\" src=\"https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js\" async defer></script><center>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
+    "custom_liquid_gFaHWi": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-Vdgz4t\"></div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 52
+      }
+    },
+    "ss_hotspots_wqNhtR": {
+      "type": "ss-hotspots",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "center",
+        "body_padding_vertical": 0,
+        "body_padding_horizontal": 0,
+        "body_radius": 16,
+        "body_border_thickness": 0,
+        "body_shadow": false,
+        "image": "shopify://shop_images/0c295ae1-7d53-4880-820c-e781767a7b15.jpg",
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "image_radius": 16,
+        "image_border_thickness": 0,
+        "image_shadow": false,
+        "item_padding_vertical": 6,
+        "item_padding_horizontal": 6,
+        "item_radius": 16,
+        "item_border_thickness": 0,
+        "item_animation": true,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 14,
+        "title_size_mobile": 14,
+        "title_height": 100,
+        "item_image_width": 30,
+        "item_image_width_mobile": 30,
+        "item_image_radius": 16,
+        "item_content_width": 300,
+        "item_content_width_mobile": 190,
+        "item_content_padding_vertical": 12,
+        "item_content_padding_horizontal": 12,
+        "item_content_radius": 16,
+        "item_content_border_thickness": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 100,
+        "text_mt": 8,
+        "item_bg": "#000000",
+        "item_border_color": "#ffffff",
+        "item_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "item_content_bg": "#ffffff",
+        "item_content_border_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "body_bg_color": "#f3f3f3",
+        "body_border_color": "#000000",
+        "body_shadow_color": "#000000",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "rich_text_NFGG7z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tkUbMK": {
+          "type": "heading",
+          "settings": {
+            "heading": "CREATOR DROPS",
+            "heading_size": "h1"
+          }
+        },
+        "caption_kBcAhy": {
+          "type": "caption",
+          "settings": {
+            "caption": "COMING NOVMEBER 29th @ 12:00 AM CST",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tkUbMK",
+        "caption_kBcAhy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "ss_circle_menu_qdFjB8": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_aqaXic": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Numi.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/numi"
+          }
+        },
+        "image_a8kPH9": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Bao.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/bao"
+          }
+        },
+        "image_kzzp4n": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Vienna.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/vienna"
+          }
+        },
+        "image_afnjnR": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Trickywi.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/trickywi"
+          }
+        },
+        "image_hUrHjq": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Fefe.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/fefe"
+          }
+        },
+        "image_ULWmbj": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-PorcelainMaid.jpg",
+            "bubble_text": "",
+            "bubble_link": ""
+          }
+        },
+        "image_JyAyhV": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Camila.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/camila"
+          }
+        },
+        "image_xjjJy4": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Riikami.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/riikami"
+          }
+        },
+        "image_FVCkC3": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Strawb.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/strawb"
+          }
+        },
+        "image_pLYjR6": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Rev.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/rev"
+          }
+        },
+        "image_eN7RRH": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/Black-Friday-2024-Creator-Drop-Highlight-Circles-Linechu.jpg",
+            "bubble_text": "",
+            "bubble_link": "shopify://collections/linechu"
+          }
+        }
+      },
+      "block_order": [
+        "image_aqaXic",
+        "image_a8kPH9",
+        "image_kzzp4n",
+        "image_afnjnR",
+        "image_hUrHjq",
+        "image_ULWmbj",
+        "image_JyAyhV",
+        "image_xjjJy4",
+        "image_FVCkC3",
+        "image_pLYjR6",
+        "image_eN7RRH"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "icon_size": 200,
+        "icon_size_mobile": 130,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 0,
+        "icon_square": true,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 10,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#000000",
+        "icon_border_gradient": "",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "ss_hotspots_gzAE8M": {
+      "type": "ss-hotspots",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "center",
+        "body_padding_vertical": 0,
+        "body_padding_horizontal": 0,
+        "body_radius": 16,
+        "body_border_thickness": 0,
+        "body_shadow": false,
+        "image": "shopify://shop_images/bda0b3fe-0126-4197-8f56-ca0177ad26f2.jpg",
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "image_radius": 16,
+        "image_border_thickness": 2,
+        "image_shadow": false,
+        "item_padding_vertical": 6,
+        "item_padding_horizontal": 6,
+        "item_radius": 16,
+        "item_border_thickness": 0,
+        "item_animation": true,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 14,
+        "title_size_mobile": 14,
+        "title_height": 100,
+        "item_image_width": 30,
+        "item_image_width_mobile": 30,
+        "item_image_radius": 16,
+        "item_content_width": 300,
+        "item_content_width_mobile": 190,
+        "item_content_padding_vertical": 12,
+        "item_content_padding_horizontal": 12,
+        "item_content_radius": 16,
+        "item_content_border_thickness": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 100,
+        "text_mt": 8,
+        "item_bg": "#000000",
+        "item_border_color": "#ffffff",
+        "item_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "item_content_bg": "#ffffff",
+        "item_content_border_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "body_bg_color": "#f3f3f3",
+        "body_border_color": "#000000",
+        "body_shadow_color": "#000000",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "rich_text_3tbzTP": {
+      "type": "rich-text",
+      "blocks": {
+        "button_daiPPy": {
+          "type": "button",
+          "settings": {
+            "button_label": "ACTIVATE CODE",
+            "button_link": "https://uwumarket.us/discount/BLACKFRIDAY",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_daiPPy"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "ss_hotspots_XbUn9F": {
+      "type": "ss-hotspots",
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "left",
+        "heading_align_mobile": "center",
+        "body_padding_vertical": 0,
+        "body_padding_horizontal": 0,
+        "body_radius": 16,
+        "body_border_thickness": 0,
+        "body_shadow": false,
+        "image": "shopify://shop_images/03ee7ebd-870d-423e-83dd-e46577b2958f.jpg",
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "image_radius": 16,
+        "image_border_thickness": 2,
+        "image_shadow": false,
+        "item_padding_vertical": 6,
+        "item_padding_horizontal": 6,
+        "item_radius": 16,
+        "item_border_thickness": 0,
+        "item_animation": true,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 14,
+        "title_size_mobile": 14,
+        "title_height": 100,
+        "item_image_width": 30,
+        "item_image_width_mobile": 30,
+        "item_image_radius": 16,
+        "item_content_width": 300,
+        "item_content_width_mobile": 190,
+        "item_content_padding_vertical": 12,
+        "item_content_padding_horizontal": 12,
+        "item_content_radius": 16,
+        "item_content_border_thickness": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 100,
+        "text_mt": 8,
+        "item_bg": "#000000",
+        "item_border_color": "#ffffff",
+        "item_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "item_content_bg": "#ffffff",
+        "item_content_border_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "body_bg_color": "#f3f3f3",
+        "body_border_color": "#000000",
+        "body_shadow_color": "#000000",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "rich_text_hPfWGJ": {
+      "type": "rich-text",
+      "blocks": {
+        "button_EcWx6G": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https://uwumarket.us/discount/BLACKFRIDAY",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_EcWx6G"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "rich_text_tdmCDe",
+    "main",
+    "ss_countdown_timer_1_aXxhU6",
+    "custom_liquid_bg8jd7",
+    "custom_liquid_gFaHWi",
+    "ss_hotspots_wqNhtR",
+    "rich_text_NFGG7z",
+    "ss_circle_menu_qdFjB8",
+    "ss_hotspots_gzAE8M",
+    "rich_text_3tbzTP",
+    "ss_hotspots_XbUn9F",
+    "rich_text_hPfWGJ"
+  ]
+}

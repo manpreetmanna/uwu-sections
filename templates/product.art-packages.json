@@ -1,0 +1,1437 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_NgCBJh": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>The Art Submission Package</strong> allows you to host your own merchandise collection on UwU Market using your already existing artwork. Submit your commercial artwork and we will build your collection on a wide variety of sellable products.",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "text_GL4XHJ": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"mailto:commissions@uwumarket.us\" title=\"mailto:commissions@uwumarket.us\">Have any questions? Email commissions@uwumarket.us</a>",
+            "text_style": "body"
+          }
+        },
+        "wishlist_king_wishlist_button_block_7dmpXw": {
+          "type": "shopify://apps/swish-formerly-wishlist-king/blocks/wishlist-button-block/194f5011-a43c-4b22-b12e-eaf20dc4506a",
+          "disabled": true,
+          "settings": {
+            "button_style": "plain_accent_1",
+            "button_alignment": "center",
+            "button_content_alignment": "center",
+            "button_margin_top": 0,
+            "button_margin_bottom": 0,
+            "button_max_width": 0,
+            "button_padding_horizontal": 15,
+            "button_full_width": true,
+            "button_show_text": true,
+            "button_show_icon": true,
+            "icon_size": 18,
+            "icon_stroke_width": 1,
+            "icon_offset_vertical": 0
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "collapsible_tab_4VYzjn": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "NO APPLICATION",
+            "icon": "check_mark",
+            "content": "<p>With the<strong> UwU Market Community Support Program</strong>, you get 3 amazing things:</p><p>1. A guaranteed a merch drop on the UwU Market Platform!</p><p>2. Beatiful art by an UwU Verified artist!</p><p>3. INCLUDED commercial rights to the artwork!</p><p>ALL with no application process needed.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_4JeMyH": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "COMMISSION PROTECTION",
+            "icon": "check_mark",
+            "content": "<p>Commission art worry-free with UwU Market's verified artists! You can be sure that when you pay for art, you get the art you want and on time! That's part of the UwU Certified Artist Guarantee.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Ecj6zR": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "COMMERCIAL RIGHTS",
+            "icon": "check_mark",
+            "content": "<p>You get full commercial reuse rights on any art piece you commission through the Community Support Program.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_pqDaH7": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "SUPPORTS ARTISTS",
+            "icon": "check_mark",
+            "content": "<p>UwU Market has hundreds of artists waiting for more drops, so we built the Community Support Program division of our company! With this program, you can support more independent artists who are verified under the UwU Market Artist Certification process. These artists are the bedrock of our community, so let's support them!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "text_NgCBJh",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "text_GL4XHJ",
+        "wishlist_king_wishlist_button_block_7dmpXw",
+        "share",
+        "collapsible_tab_4VYzjn",
+        "collapsible_tab_4JeMyH",
+        "collapsible_tab_Ecj6zR",
+        "collapsible_tab_pqDaH7"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_JxRdzJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RTCTw7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Turn Your Art Into Merch!",
+            "heading_size": "h1"
+          }
+        },
+        "text_X3h4X8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You'll just submit your artwork to your dedicated product development agent on our team, and we will build you a custom merch collection with it!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RTCTw7",
+        "text_X3h4X8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 16
+      }
+    },
+    "ss_gallery_4_rtnNg3": {
+      "type": "ss-gallery-4",
+      "blocks": {
+        "item_wMgJVN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/art-to-merch-graphic_f4e191db-f176-43c8-a349-becf7fea4f5e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_wMgJVN"
+      ],
+      "name": "SS - Gallery #4",
+      "settings": {
+        "items_row": 1,
+        "items_row_mobile": 1,
+        "items_gap": 0,
+        "items_gap_mobile": 8,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "modal_overlay": 1,
+        "close_size": 42,
+        "close_icon_size_mobile": 24,
+        "close_icon_size": 24,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "arrow_size": 42,
+        "arrow_size_mobile": 42,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 14,
+        "pagination_size_mobile": 14,
+        "pagination_height": 130,
+        "image_border_color": "#000000",
+        "modal_bg_color": "#171717",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#ffffff",
+        "close_icon_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_gallery_4_q8R6NP": {
+      "type": "ss-gallery-4",
+      "blocks": {
+        "item_nCkkcY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/two---tone-tile.jpg"
+          }
+        },
+        "item_j3FYPj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/bust-up-tile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_nCkkcY",
+        "item_j3FYPj"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_row": 2,
+        "items_row_mobile": 2,
+        "items_gap": 30,
+        "items_gap_mobile": 8,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "modal_overlay": 1,
+        "close_size": 42,
+        "close_icon_size_mobile": 24,
+        "close_icon_size": 24,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "arrow_size": 42,
+        "arrow_size_mobile": 42,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 14,
+        "pagination_size_mobile": 14,
+        "pagination_height": 130,
+        "image_border_color": "#000000",
+        "modal_bg_color": "#171717",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#ffffff",
+        "close_icon_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_steps_3_LgjpxU": {
+      "type": "ss-steps-3",
+      "blocks": {
+        "step_HeUX3t": {
+          "type": "step",
+          "settings": {
+            "title": "Submit Your Order",
+            "text": "After you add this service to cart and check out, you will be emailed to fill out the onboarding form!"
+          }
+        },
+        "step_xVxt7Y": {
+          "type": "step",
+          "settings": {
+            "title": "Get Your Dedicated UwU Team Member",
+            "text": "Within 24-48 hrs, you will be contacted by your dedicated UwU Market merch manager!"
+          }
+        },
+        "step_Y8aLNk": {
+          "type": "step",
+          "settings": {
+            "title": "Submit Your Artwork",
+            "text": "You will submit your artwork to your merch manager and they will start building your UwU Market collection!"
+          }
+        },
+        "step_6mP3ED": {
+          "type": "step",
+          "settings": {
+            "title": "Approve Your Products",
+            "text": "We get your feedback until the merch collection is absolutely perfect..."
+          }
+        },
+        "step_Cg36U8": {
+          "type": "step",
+          "settings": {
+            "title": "We Launch Your New Merch Collection",
+            "text": "Once you approve the products, we will set a drop date and the merch will go live!"
+          }
+        }
+      },
+      "block_order": [
+        "step_HeUX3t",
+        "step_xVxt7Y",
+        "step_Y8aLNk",
+        "step_6mP3ED",
+        "step_Cg36U8"
+      ],
+      "settings": {
+        "heading": "<h2>HOW IT WORKS</h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 30,
+        "heading_size_mobile": 20,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "body_gap": 24,
+        "body_gap_mobile": 20,
+        "body_mt": 48,
+        "body_mt_mobile": 16,
+        "content_maxwidth": 320,
+        "content_align": "center",
+        "number_width": 92,
+        "number_width_mobile": 52,
+        "number_border_thickness": 2,
+        "number_custom": false,
+        "number_font": "josefin_sans_n4",
+        "number_size": 48,
+        "number_size_mobile": 24,
+        "number_height": 100,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 20,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "title_mt": 32,
+        "title_mt_mobile": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_mt": 16,
+        "text_mt_mobile": 8,
+        "steps_border_color": "#000000",
+        "number_border_color": "#000000",
+        "number_bg_color": "#ffbade",
+        "number_color": "#000000",
+        "title_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 140,
+        "border_thickness": 0
+      }
+    },
+    "rich_text_inhm34": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KK8re7": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Products Can You Make?",
+            "heading_size": "h1"
+          }
+        },
+        "text_x9cU8R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select from a wide variety of products that you can put your artwork on.</p>"
+          }
+        },
+        "button_Yz6prK": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KK8re7",
+        "text_x9cU8R",
+        "button_Yz6prK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "ss_gallery_4_VKY83f": {
+      "type": "ss-gallery-4",
+      "blocks": {
+        "item_QaBd7J": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/blankets_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_QaBd7J"
+      ],
+      "name": "SS - Gallery #4",
+      "settings": {
+        "items_row": 1,
+        "items_row_mobile": 1,
+        "items_gap": 0,
+        "items_gap_mobile": 8,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "modal_overlay": 1,
+        "close_size": 42,
+        "close_icon_size_mobile": 24,
+        "close_icon_size": 24,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "arrow_size": 42,
+        "arrow_size_mobile": 42,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 14,
+        "pagination_size_mobile": 14,
+        "pagination_height": 130,
+        "image_border_color": "#000000",
+        "modal_bg_color": "#171717",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#ffffff",
+        "close_icon_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_slider_7_fhDcTw": {
+      "type": "ss-slider-7",
+      "blocks": {
+        "card_qkAP8b": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Hoodies</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Hoodiebackblue_72ad3d73-c79d-492c-97d4-7f923e2f001e.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_fWiQLB": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>T-Shirts</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/T-Shirt_b266d6a7-2f06-49dc-9acd-f1aedf6bf8ff.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_LtRhQ3": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>3D Mousepads</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Booba_ac2b89ba-6890-476c-bb6c-d66a04634564.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_yaMfVY": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Dakimakuras</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Daki_mock_AmeDaki.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_8BwXfc": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Haoris</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Numi_Haori-Back.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_qNtYBp": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>XL Mousepads</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Emeiko_XXL-Mousepad.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_zBC6aa": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Sweatpants</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Sweatpants_4_ff53b8de-e752-43ce-8c7c-deb89f070b1b.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_3PTeEt": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Keychains</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/CassMutt_Keychain_Sayowl_Mock.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_NKyGir": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Rugs</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Teafiee_Rug.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_66YhaE": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Phone Cases</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Suki_PhoneCase_Cgator_Mock.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_GUyyHi": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Standees</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/AiMomozaki_Standee_Khrn-nfz.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_qej6FW": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Stickers</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Lauporrit_StickerLarge.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_eVLfUE": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Posters</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Poster_Mock_File_ShylyannaFeet12.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        },
+        "card_qr6XhL": {
+          "type": "card",
+          "settings": {
+            "tag": "",
+            "heading": "<h3>Drinkware</h3>",
+            "text": "<p>NO MINIMUMS. NEVER RUNS OUT OF STOCK.</p>",
+            "image": "shopify://shop_images/Tumbler_Mock_NoStraw_c569f3cb-22e7-4927-b8d1-0e2102850ce1.jpg",
+            "url": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#000000",
+            "tag_color": "#6e6e73",
+            "heading_color": "#1d1d1f",
+            "text_color": "#1d1d1f",
+            "image_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "card_qkAP8b",
+        "card_fWiQLB",
+        "card_LtRhQ3",
+        "card_yaMfVY",
+        "card_8BwXfc",
+        "card_qNtYBp",
+        "card_zBC6aa",
+        "card_3PTeEt",
+        "card_NKyGir",
+        "card_66YhaE",
+        "card_GUyyHi",
+        "card_qej6FW",
+        "card_eVLfUE",
+        "card_qr6XhL"
+      ],
+      "disabled": true,
+      "name": "SS - Slider #7",
+      "settings": {
+        "slider_view": 3,
+        "slider_view_mobile": 1.3,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_mt": 24,
+        "slider_mt_mobile": 20,
+        "card_padding_top": 30,
+        "card_padding_top_mobile": 30,
+        "card_padding_bottom": 0,
+        "card_padding_bottom_mobile": 0,
+        "card_radius": 0,
+        "card_border_thickness": 1,
+        "card_shadow": false,
+        "card_height": false,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "start",
+        "content_padding_horizontal": 30,
+        "content_padding_horizontal_mobile": 30,
+        "tag_custom": false,
+        "tag_font": "josefin_sans_n4",
+        "tag_size": 12,
+        "tag_size_mobile": 12,
+        "tag_height": 130,
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 28,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_mt": 0,
+        "heading_mt_mobile": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 12,
+        "text_height": 100,
+        "text_mt": 10,
+        "text_mt_mobile": 10,
+        "image_mt": 20,
+        "image_mt_mobile": 20,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_padding_horizontal": 0,
+        "image_padding_horizontal_mobile": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "pagination_padding_vertical": 10,
+        "pagination_padding_vertical_mobile": 10,
+        "pagination_padding_horizontal": 10,
+        "pagination_padding_horizontal_mobile": 10,
+        "pagination_radius": 10,
+        "pagination_border_thickness": 0,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 16,
+        "pagination_size_mobile": 16,
+        "pagination_height": 130,
+        "pagination_show_desktop": false,
+        "pagination_show_mobile": false,
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 1,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "pagination_bg_color": "#ffffff",
+        "pagination_border_color": "#000000",
+        "pagination_color": "#969696",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f8f8f8",
+        "arrow_bg_hover_color": "#fafafa",
+        "arrow_border_color": "#eaeaea",
+        "arrow_border_hover_color": "#cbcbcb",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 8,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_steps_3_Qkaj7V": {
+      "type": "ss-steps-3",
+      "blocks": {
+        "step_eCe7dJ": {
+          "type": "step",
+          "settings": {
+            "title": "Choose Your Package",
+            "text": "You choose which art package you want based on your needs!"
+          }
+        },
+        "step_wRmWEP": {
+          "type": "step",
+          "settings": {
+            "title": "Work With Our Art Team",
+            "text": "We pair you with the right artist so you don't have to spend hours searching for one yourself!"
+          }
+        },
+        "step_f3jWJE": {
+          "type": "step",
+          "settings": {
+            "title": "Approve Your Art",
+            "text": "Our art team works with you 1 on 1 until the artwork you commissioned is perfect!"
+          }
+        },
+        "step_hCtF9J": {
+          "type": "step",
+          "settings": {
+            "title": "We Deliver Commercial Art",
+            "text": "You get the finished artwork with full commercial rights!"
+          }
+        },
+        "step_MGQG4A": {
+          "type": "step",
+          "settings": {
+            "title": "We Launch Your New Merch Collection",
+            "text": "Put the artwork on products, set a drop day for your new collection, and sell on UwU Market!"
+          }
+        }
+      },
+      "block_order": [
+        "step_eCe7dJ",
+        "step_wRmWEP",
+        "step_f3jWJE",
+        "step_hCtF9J",
+        "step_MGQG4A"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<h2>HOW IT WORKS</h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 30,
+        "heading_size_mobile": 20,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "body_gap": 24,
+        "body_gap_mobile": 20,
+        "body_mt": 48,
+        "body_mt_mobile": 16,
+        "content_maxwidth": 320,
+        "content_align": "center",
+        "number_width": 92,
+        "number_width_mobile": 52,
+        "number_border_thickness": 2,
+        "number_custom": false,
+        "number_font": "josefin_sans_n4",
+        "number_size": 48,
+        "number_size_mobile": 24,
+        "number_height": 100,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 20,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "title_mt": 32,
+        "title_mt_mobile": 0,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_mt": 16,
+        "text_mt_mobile": 8,
+        "steps_border_color": "#000000",
+        "number_border_color": "#000000",
+        "number_bg_color": "#ffbade",
+        "number_color": "#000000",
+        "title_color": "#000000",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 140,
+        "border_thickness": 0
+      }
+    },
+    "ss_gallery_4_JKyKh8": {
+      "type": "ss-gallery-4",
+      "blocks": {
+        "item_QqVYMD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/art-to-merch-graphic_f4e191db-f176-43c8-a349-becf7fea4f5e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_QqVYMD"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_row": 4,
+        "items_row_mobile": 2,
+        "items_gap": 0,
+        "items_gap_mobile": 8,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "modal_overlay": 1,
+        "close_size": 42,
+        "close_icon_size_mobile": 24,
+        "close_icon_size": 24,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "arrow_size": 42,
+        "arrow_size_mobile": 42,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 14,
+        "pagination_size_mobile": 14,
+        "pagination_height": 130,
+        "image_border_color": "#000000",
+        "modal_bg_color": "#171717",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#ffffff",
+        "close_icon_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_product_comparison_table_f7npy4": {
+      "type": "ss-product-comparison-table",
+      "blocks": {
+        "item_eeKpfx": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Price",
+            "first_column": "$169",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        },
+        "item_jkVNyD": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Art Included",
+            "first_column": "NO",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        },
+        "item_yPGQ4G": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Bring Your Own Art",
+            "first_column": "YES",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        },
+        "item_QeT6w9": {
+          "type": "item",
+          "settings": {
+            "row_heading": "UwU Merch Drop Included",
+            "first_column": "✔",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        },
+        "item_YUhh6e": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Dedicated UwU Team Member",
+            "first_column": "✔",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        },
+        "item_phamtA": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Product Catalog",
+            "first_column": "Made-To-Order",
+            "second_column": "",
+            "third_column": "",
+            "four_column": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_eeKpfx",
+        "item_jkVNyD",
+        "item_yPGQ4G",
+        "item_QeT6w9",
+        "item_YUhh6e",
+        "item_phamtA"
+      ],
+      "settings": {
+        "table_position": "below_buy",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "table_column_width": 50,
+        "table_column_width_mobile": 50,
+        "table_column_height": 40,
+        "table_column_height_mobile": 40,
+        "table_mt": 0,
+        "table_column_active": "1",
+        "table_radius": 0,
+        "table_border_thickness": 1,
+        "table_column_active_radius": 0,
+        "table_column_active_border_thickness": 1,
+        "table_column_active_shadow": true,
+        "first_heading": "Art Submission Package",
+        "second_heading": "",
+        "third_heading": "",
+        "four_heading": "",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 14,
+        "table_heading_size_mobile": 9,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 10,
+        "table_heading_padding_horizontal_mobile": 10,
+        "table_heading_padding_vertical": 10,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 10,
+        "table_row_padding_horizontal_mobile": 8,
+        "table_row_padding_vertical": 10,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 14,
+        "table_row_heading_size_mobile": 9,
+        "table_row_heading_height": 130,
+        "table_row_heading_align": "left",
+        "table_row_text_custom": false,
+        "table_row_text_font": "assistant_n4",
+        "table_row_text_size": 14,
+        "table_row_text_size_mobile": 11,
+        "table_row_text_height": 130,
+        "table_row_text_align": "center",
+        "stars_count": 0,
+        "review": "",
+        "review_custom": true,
+        "review_font": "montserrat_n9",
+        "review_size": 12,
+        "review_size_mobile": 10,
+        "review_height": 130,
+        "review_align": "center",
+        "badge": "THIS PACKAGE",
+        "badge_mobile": "THIS PACKAGE",
+        "badge_custom": false,
+        "badge_font": "josefin_sans_n4",
+        "badge_size": 12,
+        "badge_size_mobile": 12,
+        "badge_height": 100,
+        "badge_padding_vertical": 8,
+        "badge_padding_horizontal": 8,
+        "badge_radius": 0,
+        "badge_border_thickness": 0,
+        "table_border_color": "#e1e1f0",
+        "table_heading_color": "#2e2f3c",
+        "table_heading_active_color": "#2e2f3c",
+        "table_column_active_bg_color": "",
+        "table_column_active_border_color": "#2e2f3c",
+        "table_row_heading_color": "#2e2f3c",
+        "table_row_text_color": "#2e2f3c",
+        "table_row_active_text_color": "#2e2f3c",
+        "stars_color": "#ffba00",
+        "review_color": "#2e2f3c",
+        "badge_color": "#ffffff",
+        "badge_bg_color": "#000000",
+        "badge_border_color": "#000000",
+        "heading_color": "#2e2f3c",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0
+      }
+    },
+    "ss_product_comparison_table_nBA8fF": {
+      "type": "ss-product-comparison-table",
+      "blocks": {
+        "item_M4wtwY": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Price",
+            "first_column": "$169",
+            "second_column": "$369",
+            "third_column": "*Quote",
+            "four_column": ""
+          }
+        },
+        "item_Efy6DX": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Art Included",
+            "first_column": "NO",
+            "second_column": "YES",
+            "third_column": "YES",
+            "four_column": ""
+          }
+        },
+        "item_WLeAPT": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Bring Your Own Art",
+            "first_column": "YES",
+            "second_column": "YES",
+            "third_column": "YES",
+            "four_column": ""
+          }
+        },
+        "item_6ahtqQ": {
+          "type": "item",
+          "settings": {
+            "row_heading": "UwU Merch Drop Included",
+            "first_column": "✔",
+            "second_column": "✔",
+            "third_column": "✔",
+            "four_column": ""
+          }
+        },
+        "item_hbXUBT": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Dedicated UwU Team Member",
+            "first_column": "✔",
+            "second_column": "✔",
+            "third_column": "✔",
+            "four_column": ""
+          }
+        },
+        "item_Pr8Rhj": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Product Catalog",
+            "first_column": "Made-To-Order",
+            "second_column": "Made-To-Order",
+            "third_column": "UNLIMITED",
+            "four_column": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_M4wtwY",
+        "item_Efy6DX",
+        "item_WLeAPT",
+        "item_6ahtqQ",
+        "item_hbXUBT",
+        "item_Pr8Rhj"
+      ],
+      "disabled": true,
+      "settings": {
+        "table_position": "below_buy",
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "table_column_width": 50,
+        "table_column_width_mobile": 50,
+        "table_column_height": 40,
+        "table_column_height_mobile": 40,
+        "table_mt": 0,
+        "table_column_active": "1",
+        "table_radius": 0,
+        "table_border_thickness": 1,
+        "table_column_active_radius": 0,
+        "table_column_active_border_thickness": 1,
+        "table_column_active_shadow": true,
+        "first_heading": "Art Submission",
+        "second_heading": "Creator Complete",
+        "third_heading": "Enterprise",
+        "four_heading": "",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 14,
+        "table_heading_size_mobile": 9,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 10,
+        "table_heading_padding_horizontal_mobile": 10,
+        "table_heading_padding_vertical": 10,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 10,
+        "table_row_padding_horizontal_mobile": 8,
+        "table_row_padding_vertical": 10,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 14,
+        "table_row_heading_size_mobile": 9,
+        "table_row_heading_height": 130,
+        "table_row_heading_align": "left",
+        "table_row_text_custom": false,
+        "table_row_text_font": "assistant_n4",
+        "table_row_text_size": 14,
+        "table_row_text_size_mobile": 11,
+        "table_row_text_height": 130,
+        "table_row_text_align": "center",
+        "stars_count": 0,
+        "review": "UwU Certified Artist Guarantee!",
+        "review_custom": true,
+        "review_font": "montserrat_n9",
+        "review_size": 12,
+        "review_size_mobile": 10,
+        "review_height": 130,
+        "review_align": "center",
+        "badge": "THIS PACKAGE",
+        "badge_mobile": "THIS PACKAGE",
+        "badge_custom": false,
+        "badge_font": "josefin_sans_n4",
+        "badge_size": 12,
+        "badge_size_mobile": 12,
+        "badge_height": 100,
+        "badge_padding_vertical": 8,
+        "badge_padding_horizontal": 8,
+        "badge_radius": 0,
+        "badge_border_thickness": 0,
+        "table_border_color": "#e1e1f0",
+        "table_heading_color": "#2e2f3c",
+        "table_heading_active_color": "#2e2f3c",
+        "table_column_active_bg_color": "",
+        "table_column_active_border_color": "#2e2f3c",
+        "table_row_heading_color": "#2e2f3c",
+        "table_row_text_color": "#2e2f3c",
+        "table_row_active_text_color": "#2e2f3c",
+        "stars_color": "#ffba00",
+        "review_color": "#2e2f3c",
+        "badge_color": "#000000",
+        "badge_bg_color": "#e1e1f0",
+        "badge_border_color": "#000000",
+        "heading_color": "#2e2f3c",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "166370035735f197a8": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    _learnq.push(['track', 'Added to Cart', cart])\n  }))\n} \n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch))\n$(document).ajaxComplete(function(event, request, settings){\n  if(settings.url == \"/cart/add.js\"){\n      addedToCart()\n  }\n})</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "rich_text_JxRdzJ",
+    "ss_gallery_4_rtnNg3",
+    "ss_gallery_4_q8R6NP",
+    "ss_steps_3_LgjpxU",
+    "rich_text_inhm34",
+    "ss_gallery_4_VKY83f",
+    "ss_slider_7_fhDcTw",
+    "ss_steps_3_Qkaj7V",
+    "ss_gallery_4_JKyKh8",
+    "ss_product_comparison_table_f7npy4",
+    "ss_product_comparison_table_nBA8fF",
+    "related-products",
+    "loox-product-reviews-app-section",
+    "166370035735f197a8",
+    "zp-product-footer-content"
+  ]
+}

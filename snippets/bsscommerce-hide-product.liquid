@@ -1,0 +1,9 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+{% capture bsscommerce_hide_product %} {% render 'bsscommerce-hide-product-rules-logic', product: product, collection: collection, collec_id_custom: collec_id_custom %} {% endcapture %} {% unless bsscommerce_hide_product contains "Liquid error" %} {% if bsscommerce_hide_product contains "true" %}true <script id="bss-ltap-login-require"> if (typeof metaInforElements === "undefined") { let metaInforElements = document.querySelectorAll("[property^='og:']"); if (metaInforElements.length) { metaInforElements.forEach(element => { element.remove(); }); } setTimeout(function() { let allScript = document.getElementsByTagName('script'); if (allScript.length) { for (let i = 0; i < allScript.length; i++) { let item = allScript[i]; if (item.innerHTML.includes('window.ShopifyAnalytics = window.ShopifyAnalytics')) { item.remove(); } } } let analyticsScript = document.querySelector("script.analytics"); if (analyticsScript) { let analyticsText = analyticsScript.innerHTML; let tracks = analyticsText.match(/window.ShopifyAnalytics.lib.track(\([^;]+\));/g); if (tracks) { let priceReg = /^.*"price":"([0-9.]+)".*$/g; for (let track of tracks) { const match = priceReg.exec(track); if (match && match.length >= 2) { const price = match[1]; const newTrack = track.replace(price, "Hidden by installed app"); analyticsText = analyticsText.replace(track, newTrack); } } analyticsScript.innerHTML = analyticsText; } } }, 2000); setTimeout(()=>{ if (window.ShopifyAnalytics) { window.ShopifyAnalytics.meta = 'Hidden by installed app'; } }, 500); } </script>{% endif %} {% else %} {% endunless %}

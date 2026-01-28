@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_anKbPe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-StZJGW\"></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_video_banner_hf4ipT": {
+      "type": "ss-video-banner",
+      "blocks": {
+        "slide_qzdkxV": {
+          "type": "slide",
+          "settings": {
+            "autoplay": true,
+            "video": "shopify://files/videos/0222 (1)(5).mp4",
+            "video_url": "",
+            "title": "",
+            "subtitle": "",
+            "button": "",
+            "button_url": "shopify://collections/all",
+            "second_button": "",
+            "second_button_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qzdkxV"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": 320,
+        "height_mobile": 120,
+        "overlay_opacity": 0,
+        "interval": 5,
+        "image_object_fit": "cover",
+        "vertical_alignment": "center",
+        "horizontal_alignment": "center",
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 50,
+        "title_size_mobile": 32,
+        "title_height": 130,
+        "subtitle_custom": false,
+        "subtitle_font": "josefin_sans_n4",
+        "subtitle_size": 16,
+        "subtitle_size_mobile": 16,
+        "subtitle_height": 130,
+        "subtitle_mt": 20,
+        "buttons_mt": 20,
+        "buttons_gap": 20,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 16,
+        "button_height": 120,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 32,
+        "button_padding_horizontal_mobile": 32,
+        "button_radius": 0,
+        "button_border_thickness": 0,
+        "button_color": "#000000",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#ffffff",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "second_button_color": "#000000",
+        "second_button_hover_color": "#ffffff",
+        "second_button_bg_color": "#ffffff",
+        "second_button_bg_hover_color": "#000000",
+        "second_button_border_color": "#000000",
+        "second_button_border_hover_color": "#000000",
+        "title_color": "#ffffff",
+        "subtitle_color": "#ffffff",
+        "overlay_color": "#000000",
+        "background_color": "#535353",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 3,
+        "padding_horizontal_mobile": 1.5,
+        "margin_top": 4,
+        "margin_bottom": 4,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "section_width": 120,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": ""
+      }
+    },
+    "ss_countdown_timer_1_9kQ6kC": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_3qrBL7": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "02",
+            "day": "27",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer_on_completed": true,
+            "timer_completed_text": "",
+            "color": "#ffffff",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_3qrBL7"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "height": "200",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": false,
+        "overlay_opacity": 30,
+        "overlay_color": "#000000",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "video_jm9c9f": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/0222.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "1721077099dee325a5": {
+      "type": "apps",
+      "blocks": {
+        "planet_shopify_planet_4RxhUh": {
+          "type": "shopify://apps/planet/blocks/shopify-planet/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+            "badgeMode": "info",
+            "customText": "",
+            "showMoreInfo": "none",
+            "showLogo": false,
+            "showStats": true,
+            "showProjects": true,
+            "backgroundColor": "#f2f6f3",
+            "textColor": "#476e54",
+            "borderColor": "#8fc09f",
+            "fullWidth": true,
+            "marginTop": 0,
+            "marginBottom": 0,
+            "borderRadius": 4
+          }
+        }
+      },
+      "block_order": [
+        "planet_shopify_planet_4RxhUh"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_anKbPe",
+    "ss_video_banner_hf4ipT",
+    "banner",
+    "ss_countdown_timer_1_9kQ6kC",
+    "product-grid",
+    "video_jm9c9f",
+    "1721077099dee325a5"
+  ]
+}

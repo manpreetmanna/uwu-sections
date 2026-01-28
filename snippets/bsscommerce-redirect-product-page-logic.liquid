@@ -1,0 +1,30 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Sat Nov 29 2025
+{% endcomment -%}
+{% assign bss_product_is_hide = false %}
+{% assign bss_hide_product_redirect_page = "/" %}
+{% assign bss_hide_product_redirect_type = 0 %}
+{% assign bss_hide_product_on_pages = "" %}
+{% assign bss_login_to_day_date = 'now' | date: '%s' %}
+{% assign bss_product_collection = "" | split: ',' %}
+{% for collection in product.collections %}
+    {% assign collection_id = collection.id | split:',' %}
+    {% assign delimeter = "|" | split:',' %}
+    {% assign bss_product_collection = bss_product_collection | concat:delimeter %}
+    {% assign bss_product_collection = bss_product_collection | concat:collection_id %}
+{% endfor %}
+{% unless request.design_mode or request.visual_preview_mode %}
+    {% unless isHidePriceApplied  %} {% unless bss_product_is_hide %} {% assign bss_login_from_date_41854 = 'Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% assign bss_login_to_date_41854 = 'Thu Dec 31 2099 23:59:59 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% if bss_login_from_date_41854 < bss_login_to_day_date and bss_login_to_day_date < bss_login_to_date_41854 %} {% unless false %} {% assign product_tags = product.tags | join: ',' | downcase  %} {% if product.id == 8746468901091 %} {% unless false %}{% if true %} {% assign bss_product_is_hide = true %} {% assign bss_hide_product_redirect_page  = "/collections/shiny-mascots" | strip %} {% assign bss_hide_product_redirect_type = 0 %} {% if bss_hide_product_redirect_type == 0 %} {% assign bss_hide_product_redirect_page  = "/" | strip %} {% endif %} {% if bss_hide_product_redirect_type == 2 %} {% assign bss_hide_product_redirect_page  = "" %} {% endif %} {% assign bss_hide_product_on_pages = "0,1,2,3" %} {% assign bss_product_is_hide = true %} {% assign bss_hide_product_on_gg_search = false %} {% if template.name == "product" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "index" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "collection" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "list-collections" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "search" %}{% assign bss_product_is_hide = true %}{% endif %} {% endif %}{% endunless %} {% endif %} {% endunless %} {% endif %} {% endunless %} {% endunless %} {% unless isHidePriceApplied  %} {% unless bss_product_is_hide %} {% assign bss_login_from_date_40897 = 'Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% assign bss_login_to_date_40897 = 'Thu Dec 31 2099 23:59:59 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% if bss_login_from_date_40897 < bss_login_to_day_date and bss_login_to_day_date < bss_login_to_date_40897 %} {% unless false %} {% assign product_tags = product.tags | join: ',' | downcase  %} {% if product.id == 8716918784227 %} {% unless false %}{% if true %} {% assign bss_product_is_hide = true %} {% assign bss_hide_product_redirect_page  = "" | strip %} {% assign bss_hide_product_redirect_type = 0 %} {% if bss_hide_product_redirect_type == 0 %} {% assign bss_hide_product_redirect_page  = "/" | strip %} {% endif %} {% if bss_hide_product_redirect_type == 2 %} {% assign bss_hide_product_redirect_page  = "" %} {% endif %} {% assign bss_hide_product_on_pages = "1,2,3" %} {% assign bss_product_is_hide = false %} {% assign bss_hide_product_on_gg_search = false %} {% if template.name == "product" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "index" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "collection" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "list-collections" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "search" %}{% assign bss_product_is_hide = true %}{% endif %} {% endif %}{% endunless %} {% endif %} {% endunless %} {% endif %} {% endunless %} {% endunless %} {% unless isHidePriceApplied  %} {% unless bss_product_is_hide %} {% assign bss_login_from_date_33454 = 'Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% assign bss_login_to_date_33454 = 'Thu Dec 31 2099 23:59:59 GMT+0000 (Coordinated Universal Time)' | date: '%s' %} {% if bss_login_from_date_33454 < bss_login_to_day_date and bss_login_to_day_date < bss_login_to_date_33454 %} {% unless false %} {% assign product_tags = product.tags | join: ',' | downcase  %} {% if product_tags contains "free item" %} {% unless false %}{% if true %} {% assign bss_product_is_hide = true %} {% assign bss_hide_product_redirect_page  = "" | strip %} {% assign bss_hide_product_redirect_type = 0 %} {% if bss_hide_product_redirect_type == 0 %} {% assign bss_hide_product_redirect_page  = "/" | strip %} {% endif %} {% if bss_hide_product_redirect_type == 2 %} {% assign bss_hide_product_redirect_page  = "" %} {% endif %} {% assign bss_hide_product_on_pages = "1,2,3" %} {% assign bss_product_is_hide = false %} {% assign bss_hide_product_on_gg_search = false %} {% if template.name == "product" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "index" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "collection" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "list-collections" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "search" %}{% assign bss_product_is_hide = true %}{% endif %} {% endif %}{% endunless %} {% endif %} {% endunless %} {% endif %} {% endunless %} {% endunless %}
+{% endunless %}
+{% if bss_product_is_hide == true or bss_product_is_hide contains "true" %}
+    {% if bss_hide_product_on_gg_search %} 
+        {{ bss_hide_product_redirect_page }}, <meta name="robots" content="noindex">
+    {% else %}
+        {{ bss_hide_product_redirect_page }}
+    {% endif %}
+{% endif %}

@@ -1,0 +1,410 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_fullwidth_banner_GtjHMx": {
+      "type": "ss-fullwidth-banner",
+      "settings": {
+        "desktop-img": "shopify://shop_images/death-in-spring-desktop-banner.jpg",
+        "desktop-url": "",
+        "mobile-img": "shopify://shop_images/death-in-spring-mobile-banner.jpg",
+        "mobile-url": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_animated_sticker_effects_bMewa7": {
+      "type": "ss-animated-sticker-effects",
+      "blocks": {
+        "sticker_fykGGH": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/Untitled_design_34.png",
+            "url": "",
+            "image_size": 300,
+            "image_size_mobile": 200,
+            "image_border_radius": 50,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 50,
+            "sticker_horizontal_mobile": 50,
+            "sticker_vertical": -240,
+            "sticker_vertical_mobile": -200,
+            "sticker_animation": "float_up",
+            "sticker_animation_speed": 3,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "sticker_fykGGH"
+      ],
+      "settings": {
+        "lazy": true
+      }
+    },
+    "custom_liquid_HHYRWC": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-WT5ufF\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_PVGNiq": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<center><a title=\"Add to Calendar\" class=\"addeventatc\" data-id=\"vx25473929\" href=\"https://www.addevent.com/event/vx25473929\" target=\"_blank\">Add to Calendar</a> <script type=\"text/javascript\" src=\"https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js\" async defer></script><center>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "ss_countdown_timer_1_YHqqAQ": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_zP9NdG": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "04",
+            "day": "15",
+            "hour": "19",
+            "minute": "00",
+            "hide_timer_on_completed": true,
+            "timer_completed_text": "",
+            "color": "#000000",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_zP9NdG"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": "300",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": true,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 52,
+        "padding_bottom": 12
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_gic8Vc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TiCcFN": {
+          "type": "heading",
+          "settings": {
+            "heading": "ARTIST HIGHLIGHT",
+            "heading_size": "h1"
+          }
+        },
+        "text_kGxhtr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This collection was brought to you by these very talented artists:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TiCcFN",
+        "text_kGxhtr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_GnGiri": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nGQz6i": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOBSTER",
+            "heading_size": "h1"
+          }
+        },
+        "text_Bxx6La": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://x.com/lbstranian\">@lbstranian</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_t96gWq": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nGQz6i",
+        "text_Bxx6La",
+        "button_t96gWq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/qx1r7m4K_400x400_b0bbe458-b221-4f96-9265-ea4494dbeed8.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_aXpJ6P": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NDRfRb": {
+          "type": "heading",
+          "settings": {
+            "heading": "coconatt0",
+            "heading_size": "h1"
+          }
+        },
+        "text_NR79bY": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://x.com/ccntt0_\">@ccntt0_</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_EmaeWq": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NDRfRb",
+        "text_NR79bY",
+        "button_EmaeWq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMG_4319.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_zHRbpP": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RmzU3V": {
+          "type": "heading",
+          "settings": {
+            "heading": "KAKU10KA",
+            "heading_size": "h1"
+          }
+        },
+        "text_xVPJhd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://x.com/kaku10ka\">@kaku10ka</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_AJPYrg": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RmzU3V",
+        "text_xVPJhd",
+        "button_AJPYrg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/sdfsf.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_cKU8xy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_m4chEG": {
+          "type": "heading",
+          "settings": {
+            "heading": "HATSUKI",
+            "heading_size": "h1"
+          }
+        },
+        "text_3JjkVJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://x.com/hatsukishouji\">@hatsukishouji</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_DTtgV6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_m4chEG",
+        "text_3JjkVJ",
+        "button_DTtgV6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/profilepicture_-_Hatsuki_Shouji.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1721077099dee325a5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_dKjy97": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_featured_carousel_RYtgY3": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_dKjy97",
+        "judge_me_reviews_featured_carousel_RYtgY3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "ss_fullwidth_banner_GtjHMx",
+    "ss_animated_sticker_effects_bMewa7",
+    "custom_liquid_HHYRWC",
+    "custom_liquid_PVGNiq",
+    "ss_countdown_timer_1_YHqqAQ",
+    "banner",
+    "product-grid",
+    "rich_text_gic8Vc",
+    "image_with_text_GnGiri",
+    "image_with_text_aXpJ6P",
+    "image_with_text_zHRbpP",
+    "image_with_text_cKU8xy",
+    "1721077099dee325a5"
+  ]
+}

@@ -1,0 +1,141 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "quantity_selector_G9ym9e": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_tab_kac99J": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "PRODUCT DETAILS",
+            "icon": "check_mark",
+            "content": "<p>ADVANCED® has teamed up with Ice Shaker to bring you the ultimate upgrade for your shaker.<br/><br/>The Ice Shaker's 26oz double wall vacuum insulated bottle will hold ice for over 30 hours in a 75 degree room when filled with just ice.<br/><br/>The Ice Shaker features a removable twist in agitator for more mixing power, a sturdy handle for easy carrying and fill lines inside the bottle for measuring. <br/><br/>Sweat proof design means you keep your hands and gear dry while kitchen grade non-odor absorbing stainless steel means this shaker is easy to clean and keep clean. Ice Shaker's sturdy leak proof BPA free pop top is easy to open while still being secure enough to close and shake.<br/><br/>Premium Quality Double Wall Vacuum Insulated Shaker Bottle that will keep your drink hot for up to 12 hours or cold for 30+ hours.<br/>Kitchen grade premium stainless steel cup that does not absorb odor. No more smelly shaker bottles! Odor resistant metal cup makes it perfect for Focus and Energy, juices, protein powder shakes, BCAAs, coffee, smoothies, martinis, cocktails, ice tea, and water. <br/>Sweat proof bottle! No more wet cold hands and sweat rings all over your tables. The double wall vacuum insulated bottle prevents condensation from building up on the bottle by preventing cold or heat from transferring to the outside of the bottle.<br/>Shaker Lid: Easy to hold carrying handle, easy open pop top and comes with a removable agitator that twists into the lid. The shaker lid blends with ease. Lids are spill/leak proof and BPA free.<br/>Durable powder coating <br/>Tapered bottle design that is easy to fill with measurement markings inside the bottle and fits all standard size cup holders. Bring your Ice Shaker cup to the gym, office, pool, beach, camping, hunting, fishing, tailgating, yoga, biking, road trips, hiking, sports games, everywhere!<br/>Washing Instructions:<br/><br/>Our bottles and tumblers are top rack dishwasher safe. We do however recommend that you use low heat drying. Lids are dishwasher safe however, there is a rubber seal inside of our 26oz Shaker lids  that may need to be removed and cleaned from time to time. To do this, simply use a butter knife(or similar dull object) and gently pry the seal out. Wash the seal and insert it back into the bottom of the lid. When you do this, be sure that the seal is not twisted and is sitting flat to ensure that there will not be any leakage.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_FzrPP7": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "INFO",
+            "icon": "leaf",
+            "content": "<p>Do not exceed recommended dose. Not intended by persons with a medical condition. Consult your physician before using this product if you are pregnant or nursing or taking any medication. Do not use if you have high blood pressure or heart problems or are considering becoming pregnant.<br/><br/>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.<br/><br/>What is Proposition 65?<br/><br/>Proposition 65 requires businesses to provide warnings to Californians about significant exposures to chemicals. These chemicals can be in the products that Californians purchase, in their homes or workplaces, or that are released into the environment. By requiring that this information be provided, Proposition 65 enables Californians to make informed decisions about their exposures to these chemicals. Proposition 65 also prohibits California businesses from knowingly discharging significant amounts of listed chemicals into sources of drinking water. Proposition 65 requires California to publish a list of chemicals known to cause cancer, birth defects or other reproductive harm. This list, which must be updated at least once a year, has grown to include approximately 900 chemicals since it was first published in 1987. Proposition 65 became law in November 1986, when California voters approved it by a 63-37 percent margin. The official name of Proposition 65 is the Safe Drinking Water and Toxic Enforcement Act of 1986.<br/><br/>California’s Proposition 65 entitles California consumers to special warnings.<br/><br/>WARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "buy_buttons",
+        "quantity_selector_G9ym9e",
+        "price",
+        "title",
+        "description",
+        "collapsible_tab_kac99J",
+        "collapsible_tab_FzrPP7"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "166370035735f197a8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    _learnq.push(['track', 'Added to Cart', cart])\n  }))\n} \n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch))\n$(document).ajaxComplete(function(event, request, settings){\n  if(settings.url == \"/cart/add.js\"){\n      addedToCart()\n  }\n})</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {}
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "related-products",
+    "loox-product-reviews-app-section",
+    "166370035735f197a8",
+    "zp-product-footer-content"
+  ]
+}

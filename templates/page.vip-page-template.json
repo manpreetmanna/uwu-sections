@@ -1,0 +1,545 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_bRmNMt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fVpNtR": {
+          "type": "heading",
+          "settings": {
+            "heading": "UWU VIP MEMBERSHIP",
+            "heading_size": "h0"
+          }
+        },
+        "text_D99t9L": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>FREE SHIPPING - VIP DISCOUNT - MONTHLY STORE CREDIT</h2>"
+          }
+        },
+        "button_RYepiD": {
+          "type": "button",
+          "settings": {
+            "button_label": "SUBSCRIBE",
+            "button_link": "shopify://products/uwu-vip-membership",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fVpNtR",
+        "text_D99t9L",
+        "button_RYepiD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-a6fe5b74-3747-4a64-b86d-a984f6ffd7f3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "video_yV6NWh": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-a6fe5b74-3747-4a64-b86d-a984f6ffd7f3",
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_feature_14_RpD6aV": {
+      "type": "ss-feature-14",
+      "blocks": {
+        "card_LppUDD": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Free-Shipping-Icon.gif",
+            "title": "FREE SHIPPING",
+            "text": "VIP members enjoy free shipping on all orders WORLD WIDE! PLUS get free shipping protection as well.",
+            "title_color": "#232323",
+            "text_color": "#232323"
+          }
+        },
+        "card_CiPXrA": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Credit-Icon.gif",
+            "title": "STORE CREDIT",
+            "text": "VIP members get $10 of store credit every single month!",
+            "title_color": "#232323",
+            "text_color": "#232323"
+          }
+        },
+        "card_eE7b74": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Discount-Icon.gif",
+            "title": "VIP DISCOUNT",
+            "text": "VIP members enjoy Buy One Get One 50% OFF all UwU Market products at all times!",
+            "title_color": "#232323",
+            "text_color": "#232323"
+          }
+        },
+        "card_tRfT3b": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/secret-shop-icon.gif",
+            "title": "SECRET STORE",
+            "text": "VIP members have access to the Secret Store which includes rare, limited products! (COMING SOON)",
+            "title_color": "#232323",
+            "text_color": "#232323"
+          }
+        },
+        "card_qKCeCf": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Skip.gif",
+            "title": "CANCEL ANYTIME",
+            "text": "VIP members have the option to skip a month at any time!",
+            "title_color": "#232323",
+            "text_color": "#232323"
+          }
+        }
+      },
+      "block_order": [
+        "card_LppUDD",
+        "card_CiPXrA",
+        "card_eE7b74",
+        "card_tRfT3b",
+        "card_qKCeCf"
+      ],
+      "settings": {
+        "content_maxwidth": 67,
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 20,
+        "sub_heading_size_mobile": 15,
+        "sub_heading_height": 130,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "heading": "<h3>MEMBERSHIP BENEFITS</h3>",
+        "heading_custom": true,
+        "heading_font": "montserrat_n8",
+        "heading_size": 40,
+        "heading_size_mobile": 32,
+        "heading_height": 130,
+        "heading_mt": 16,
+        "heading_mt_mobile": 16,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "text": "",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 18,
+        "text_height": 150,
+        "text_mt": 36,
+        "text_mt_mobile": 24,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "slider_view": 5,
+        "slider_view_mobile": 1.5,
+        "slider_gap": 8,
+        "slider_gap_mobile": 8,
+        "slider_mt": 60,
+        "slider_mt_mobile": 48,
+        "card_padding_vertical": 40,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 16,
+        "card_padding_horizontal_mobile": 12,
+        "card_radius": 8,
+        "card_border_thickness": 0,
+        "card_shadow": false,
+        "icon_width": 50,
+        "icon_width_mobile": 50,
+        "icon_align": "center",
+        "icon_align_mobile": "center",
+        "title_custom": true,
+        "title_font": "montserrat_n9",
+        "title_size": 18,
+        "title_size_mobile": 16,
+        "title_height": 150,
+        "title_mt": 32,
+        "title_mt_mobile": 24,
+        "title_align": "center",
+        "title_align_mobile": "center",
+        "card_text_custom": true,
+        "card_text_font": "montserrat_n5",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_mt": 12,
+        "card_text_mt_mobile": 12,
+        "card_text_align": "center",
+        "card_text_align_mobile": "center",
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 50,
+        "arrow_icon_size_mobile": 50,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": false,
+        "arrow_show_mobile": false,
+        "dots_size": 15,
+        "dots_size_mobile": 15,
+        "dots_mt": 18,
+        "dots_show_desktop": false,
+        "dots_show_mobile": true,
+        "sub_heading_color": "#000000",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#000000",
+        "arrow_bg_hover_color": "#333333",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#333333",
+        "dots_color": "#999999",
+        "dots_border_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 18,
+        "padding_horizontal_mobile": 2,
+        "full_width": true,
+        "content_width": 130,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_animated_sticker_effects_AytPfy": {
+      "type": "ss-animated-sticker-effects",
+      "blocks": {
+        "sticker_p7mLeF": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/trio_stickers2.png",
+            "url": "",
+            "image_size": 360,
+            "image_size_mobile": 140,
+            "image_border_radius": 0,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 95,
+            "sticker_horizontal_mobile": 100,
+            "sticker_vertical": -820,
+            "sticker_vertical_mobile": -680,
+            "sticker_animation": "spin_scroll",
+            "sticker_animation_speed": 1.7,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        },
+        "sticker_zwfjVt": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/NEURO_SAMA_PIXEL_STICKER_1.png",
+            "url": "",
+            "image_size": 300,
+            "image_size_mobile": 150,
+            "image_border_radius": 50,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 5,
+            "sticker_horizontal_mobile": 0,
+            "sticker_vertical": -80,
+            "sticker_vertical_mobile": -100,
+            "sticker_animation": "spin_scroll",
+            "sticker_animation_speed": 4,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "sticker_p7mLeF",
+        "sticker_zwfjVt"
+      ],
+      "settings": {
+        "lazy": true
+      }
+    },
+    "rich_text_wd67rQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3DXE4L": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOMER REVIEWS",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3DXE4L"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "1718639926ab6753bb": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "custom_liquid_DrqRQ8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 4,
+        "padding_bottom": 52
+      }
+    },
+    "ss_animated_sticker_effects_4Xqm69": {
+      "type": "ss-animated-sticker-effects",
+      "blocks": {
+        "sticker_iDxGWg": {
+          "type": "sticker",
+          "settings": {
+            "sticker_hide_mobile": false,
+            "image": "shopify://shop_images/linechu-3.png",
+            "url": "",
+            "image_size": 370,
+            "image_size_mobile": 180,
+            "image_border_radius": 0,
+            "image_border_thickness": 0,
+            "image_shadow": false,
+            "sticker_horizontal": 90,
+            "sticker_horizontal_mobile": 100,
+            "sticker_vertical": -120,
+            "sticker_vertical_mobile": -110,
+            "sticker_animation": "float_up",
+            "sticker_animation_speed": 3.9,
+            "image_bg_color": "",
+            "image_border_color": "#000000",
+            "image_shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "sticker_iDxGWg"
+      ],
+      "settings": {
+        "lazy": true
+      }
+    },
+    "rich_text_cDj4Jw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wyqE6m": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUBSCRIBE TODAY",
+            "heading_size": "h0"
+          }
+        },
+        "text_nFckdD": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_8DTJDT": {
+          "type": "button",
+          "settings": {
+            "button_label": "JOIN NOW",
+            "button_link": "shopify://products/uwu-vip-membership",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wyqE6m",
+        "text_nFckdD",
+        "button_8DTJDT"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ss_before_after_image_g9tAJG": {
+      "type": "ss-before-after-image",
+      "blocks": {
+        "text_kX7Wp6": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "heading": "👇 SLIDE TO SEE THE SAVINGS",
+            "content": "",
+            "text_position": "center",
+            "color": "#ffffff"
+          }
+        },
+        "images_NLFgbr": {
+          "type": "images",
+          "settings": {
+            "desktop_height": 720,
+            "mobile_height": 380,
+            "border_radius": 12,
+            "before_image": "shopify://shop_images/Untitled-1_0436bb3d-4305-463d-810d-20e2da3981bd.png",
+            "after_image": "shopify://shop_images/Untitled-121_96a847e4-6140-455d-a117-5e06c1f504a7.png",
+            "cover": false,
+            "before_text": "",
+            "after_text": "",
+            "before_text_color": "#ffffff",
+            "after_text_color": "#ffffff",
+            "before_after_text_position": "bottom",
+            "drag_initial_position": 50,
+            "drag_cursor_bg": "#ffffff",
+            "drag_cursor_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_kX7Wp6",
+        "images_NLFgbr"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section-width": 85
+      }
+    },
+    "ss_before_after_image_e64pB9": {
+      "type": "ss-before-after-image",
+      "blocks": {
+        "images_hTaBCK": {
+          "type": "images",
+          "settings": {
+            "desktop_height": 720,
+            "mobile_height": 380,
+            "border_radius": 12,
+            "before_image": "shopify://shop_images/vip_comparison_hoodies_769dbb18-5dd0-46e1-9c96-b12a454671a9.jpg",
+            "after_image": "shopify://shop_images/vip_comparison_hoodies.jpg",
+            "cover": false,
+            "before_text": "",
+            "after_text": "",
+            "before_text_color": "#ffffff",
+            "after_text_color": "#ffffff",
+            "before_after_text_position": "bottom",
+            "drag_initial_position": 50,
+            "drag_cursor_bg": "#ffffff",
+            "drag_cursor_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "images_hTaBCK"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section-width": 85
+      }
+    },
+    "ss_before_after_image_HGGgQj": {
+      "type": "ss-before-after-image",
+      "blocks": {
+        "images_enMrBM": {
+          "type": "images",
+          "settings": {
+            "desktop_height": 720,
+            "mobile_height": 380,
+            "border_radius": 12,
+            "before_image": "shopify://shop_images/vip_comparison_posters_23c1a7d6-6d64-4984-adea-dc3a30bbf64a.jpg",
+            "after_image": "shopify://shop_images/vip_comparison_posters.jpg",
+            "cover": false,
+            "before_text": "",
+            "after_text": "",
+            "before_text_color": "#ffffff",
+            "after_text_color": "#ffffff",
+            "before_after_text_position": "bottom",
+            "drag_initial_position": 50,
+            "drag_cursor_bg": "#ffffff",
+            "drag_cursor_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "images_enMrBM"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "section-width": 85
+      }
+    }
+  },
+  "order": [
+    "rich_text_bRmNMt",
+    "video_yV6NWh",
+    "main",
+    "ss_feature_14_RpD6aV",
+    "ss_animated_sticker_effects_AytPfy",
+    "rich_text_wd67rQ",
+    "1718639926ab6753bb",
+    "custom_liquid_DrqRQ8",
+    "ss_animated_sticker_effects_4Xqm69",
+    "rich_text_cDj4Jw",
+    "ss_before_after_image_g9tAJG",
+    "ss_before_after_image_e64pB9",
+    "ss_before_after_image_HGGgQj"
+  ]
+}

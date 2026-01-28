@@ -1,6 +1,6 @@
-<!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
-  <head>
+{% capture bsscommerce_login_require_template %}{% include 'bsscommerce_login_require' %}{% endcapture %}{% unless bsscommerce_login_require_template contains "Liquid error" %}{{ bsscommerce_login_require_template }}{% endunless %}<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>{{ 'bss-hide-variant.css' | asset_url | stylesheet_tag }}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,15 +31,12 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-
+    <script src="{{ 'product-form.js' | asset_url }}" type="module" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {{ content_for_header }}
+    {%- render 'header-scripts.zipifypages', apprxhbl: zp_apprxhbl, renderctx: 'thm' -%}{{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -256,25 +253,15 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
-
-    {%- if settings.cart_type == 'drawer' -%}
-      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
-      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-      {{ 'component-price.css' | asset_url | stylesheet_tag }}
-      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+    {%- if product.tags contains 'PETITION' -%}
+    {{ 'petition-checkout.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
@@ -292,17 +279,274 @@
     {%- endif -%}
 
     <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  
+  {% render 'shogun-head' %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async type="text/javascript" src="https://app.viralsweep.com/assets/js/store.js?id=193918_816977"></script>
+  {% include 'pagefly-app-header' %}</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
+      <style>
+        #slidecarthq .footer-row, #slidecarthq .footer .button {
+        display: none;
+        }
+      </style>
+    
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
@@ -310,8 +554,18 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
+      
+  {% capture pagefly_content_for_layout %}
+     {% assign sm_show_content = true %} {% include 'simplee-memberships' %}
+                                              {% if sm_show_content %}
+                                                    {{ content_for_layout }}
+                                                {% else %}
+                                                    {%  echo shop.metafields.simplee.restricted %}
+                                                {% endif %}
+  {% endcapture %}
+  {% render 'pagefly-render-section', pagefly_content_for_layout: pagefly_content_for_layout %}
+  
+    {% capture bsscommerce_passcode_to_see_price_product_custom %}{% render 'bss-passcode-to-see-price-js.liquid' %}{% endcapture %}{% unless bsscommerce_passcode_to_see_price_product_custom contains "Liquid error" %}{% render 'bss-passcode-to-see-price-js.liquid' %}{% endunless %}{% capture bsscommerce_login_to_see_price_product_custom %}{% render 'bsscommerce-login-to-see-price-custom-js.liquid' %}{% endcapture %}{% unless bsscommerce_login_to_see_price_product_custom contains "Liquid error" %}{% render 'bsscommerce-login-to-see-price-custom-js.liquid' %}{% endunless %}{% capture bss_ltap_fl_redirect %}{% render 'bss-ltap-fl-redirect.liquid' %}{% endcapture %}{% unless bss_ltap_fl_redirect contains "Liquid error" %}{% render 'bss-ltap-fl-redirect.liquid' %}{% endunless %}</main>
 
     {% sections 'footer-group' %}
 
@@ -319,6 +573,431 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
+
+        <script>
+      window.storefrontToken = '{{ settings.storefront_api_token }}';
+      window.cartDiscountCodes = [
+        {%- for discount in cart.discount_applications -%}
+          {%- if discount.type == 'discount_code' -%}
+            "{{ discount.title }}"{%- unless forloop.last -%},{%- endunless -%}
+          {%- endif -%}
+        {%- endfor -%}
+      ];
+    </script>
+
+    {%- assign __has_petition = false -%}
+    {%- for __it in cart.items -%}
+      {%- if __it.product.tags contains 'PETITION' -%}
+        {%- assign __has_petition = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <script>
+      window.cartHasPetition = {{ __has_petition | json }};
+      // Unified protection controller
+      window.setProtection = async function (enabled) {
+        try {
+          const cartRes = await fetch('/cart.js?ts=' + Date.now(), { credentials: 'same-origin', cache: 'no-store' });
+          const cartData = await cartRes.json();
+          const items = Array.isArray(cartData.items) ? cartData.items : [];
+          const hasProt = items.some(function (i) { return (i.product_id === 8936417853667) || (i.variant_id === 46997990703331) || (i.id === 46997990703331); });
+          if (enabled && !hasProt) {
+            const formBody = new URLSearchParams({ id: '46997990703331', quantity: '1' });
+            await fetch('/cart/add.js', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }, credentials: 'same-origin', body: formBody.toString() });
+          } else if (!enabled && hasProt) {
+            // Find protection line key via change.js by setting quantity 0
+            const protectionLine = items.find(function (i) { return (i.product_id === 8936417853667) || (i.variant_id === 46997990703331) || (i.id === 46997990703331); });
+            if (protectionLine) {
+              const body = new URLSearchParams({ updates: `{ "${protectionLine.key}": 0 }` });
+              await fetch('/cart/update.js', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }, credentials: 'same-origin', body: body.toString() });
+            }
+          }
+        } catch (e) { console.warn('setProtection failed', e); }
+        // Refresh labels/totals rows if available
+        try { window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(); } catch(_) {}
+      };
+      // Ensure protection after any theme cart update events
+      (function ensureProtectionOnCartUpdate(){
+        try {
+          if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined' && PUB_SUB_EVENTS.cartUpdate) {
+            if (!window.__protSub) {
+              window.__protSub = true;
+              subscribe(PUB_SUB_EVENTS.cartUpdate, async function(){
+                try { await window.setProtection(true); } catch(_) {}
+              });
+            }
+          }
+        } catch(_) {}
+      })();
+
+      // Keep PROTECTED CHECKOUT label with amount even if third-parties re-render it
+      (function observeProtectedButtons(){
+        function attachObserver(btn){
+          if (!btn || btn.__protLblObs) return;
+          const obs = new MutationObserver(() => {
+            try {
+              const txt = (btn.textContent || '').trim();
+              if (/PROTECTED CHECKOUT/i.test(txt) && !/•/.test(txt)) {
+                window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(true);
+              }
+            } catch(_) {}
+          });
+          obs.observe(btn, { childList: true, characterData: true, subtree: true });
+          btn.__protLblObs = obs;
+        }
+        const attachAll = () => {
+          attachObserver(document.getElementById('CartDrawer-ProtectedCheckout'));
+          attachObserver(document.getElementById('CartPage-ProtectedCheckout'));
+          document.querySelectorAll('.upcart-checkout-button, a.UpcartDesignSettings__button[href*="/checkout"]').forEach(attachObserver);
+        };
+        const mo = new MutationObserver(attachAll);
+        mo.observe(document.body, { childList: true, subtree: true });
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', attachAll); else attachAll();
+        document.addEventListener('shopify:section:load', attachAll);
+      })();
+
+      // Global fetch interceptor to ensure protection after any 3rd-party add-to-cart
+      (function patchFetchForProtection(){
+        if (window.__fetchPatched) return; window.__fetchPatched = true;
+        const origFetch = window.fetch;
+        window.fetch = async function patchedFetch(input, init){
+          try {
+            const url = (typeof input === 'string') ? input : (input && input.url) || '';
+            const method = (init && (init.method || init.method === '' ? init.method : (input && input.method))) || 'GET';
+            const isAdd = /\/cart\/add\.js(\?|$)/.test(url) && /^post$/i.test(method || 'post');
+            const bodyStr = (init && init.body && typeof init.body === 'string') ? init.body : '';
+            const isProtAdd = bodyStr.includes('46997990703331');
+            const res = await origFetch.apply(this, arguments);
+            // After any non-protection add, ensure protection exists
+            if (isAdd && !isProtAdd && !window.__addingProtection) {
+              try { await window.setProtection(true); } catch(_) {}
+            }
+            return res;
+          } catch (e) {
+            return origFetch.apply(this, arguments);
+          }
+        };
+      })();
+
+      // Upcart relabel with scoped observer (lightweight)
+      (function upcartRelabel(){
+        const process = () => {
+          document.querySelectorAll('.upcart-checkout-button, a.UpcartDesignSettings__button[href*="/checkout"]').forEach(btn => {
+            if (!btn) return;
+            const t = (btn.textContent || '').trim();
+            if (/CHECKOUT/i.test(t) && !/PROTECTED CHECKOUT/i.test(t)) btn.textContent = t.replace(/CHECKOUT.*/i, 'PROTECTED CHECKOUT');
+            if (!btn.dataset.protectedClickBound) {
+              btn.dataset.protectedClickBound = '1';
+              btn.addEventListener('click', function(e){ if (window.cartHasPetition) return; e.preventDefault(); e.stopPropagation && e.stopPropagation(); e.stopImmediatePropagation && e.stopImmediatePropagation(); window.protectedCheckoutHandler && window.protectedCheckoutHandler(e); }, true);
+            }
+            if (btn.parentNode && !btn.parentNode.querySelector('.protected-secondary-cta')) {
+              const link = document.createElement('a');
+              link.href = '/checkout'; link.className = 'protected-secondary-cta link js-checkout-without-protection'; link.textContent = 'Checkout Without Protection';
+              link.addEventListener('click', function(e){ e.preventDefault(); if (window.checkoutWithoutProtectionHandler) window.checkoutWithoutProtectionHandler(e); });
+              btn.parentNode.insertBefore(link, btn.nextSibling);
+            }
+          });
+          try { window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(); } catch(_) {}
+        };
+        const debounce = (fn, d=400) => { let t; return () => { clearTimeout(t); t = setTimeout(fn, d); }; };
+        const run = debounce(process, 300);
+        const container = document.getElementById('slidecarthq') || document.body;
+        const mo = new MutationObserver(run);
+        mo.observe(container, { childList: true, subtree: true });
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', process); else setTimeout(process, 150);
+      })();
+      // Define checkout handlers globally (no cart mutation; use Storefront API)
+      if (!window.protectedCheckoutHandler) {
+              window.protectedCheckoutHandler = async function (event) {
+        const btn = event && event.currentTarget ? event.currentTarget : null;
+        try {
+          if (event) {
+            event.preventDefault && event.preventDefault();
+            event.stopPropagation && event.stopPropagation();
+            event.stopImmediatePropagation && event.stopImmediatePropagation();
+          }
+          if (btn) { if (btn.disabled) return; btn.disabled = true; btn.classList && btn.classList.add('loading'); }
+
+          const cartRes = await fetch('/cart.js?ts=' + Date.now(), { credentials: 'same-origin', cache: 'no-store' });
+          const cartData = await cartRes.json();
+          
+          const items = Array.isArray(cartData.items) ? cartData.items : [];
+          const protectionVariantId = '46997990703331';
+          const hasProt = items.some(i => (i.product_id === 8936417853667) || ((i.variant_id || i.id) == protectionVariantId));
+
+          const isCartPage = (window.location.pathname === '/cart') || (document.body && document.body.classList && document.body.classList.contains('template-cart'));
+
+          // Build Storefront cart lines from current cart
+          const toLines = () => {
+            const lines = items.map(it => ({ merchandiseId: `gid://shopify/ProductVariant/${it.variant_id || it.id}`, quantity: it.quantity }));
+            if (!hasProt) lines.push({ merchandiseId: `gid://shopify/ProductVariant/${protectionVariantId}`, quantity: 1 });
+            return lines;
+          };
+
+          // Extract discount codes, note, and attributes
+          const discountCodes = window.cartDiscountCodes || [];
+          const note = cartData.note || '';
+          const attributes = Object.entries(cartData.attributes || {}).map(([key, value]) => ({ key, value: String(value) }));
+
+          // Prefer Storefront cartCreate on cart page (avoid any /cart/add.js that triggers drawers)
+          if (isCartPage && window.storefrontToken) {
+            try {
+              const sfHeaders = { 'Content-Type': 'application/json', 'X-Shopify-Storefront-Access-Token': window.storefrontToken };
+              const cartCreateMutation = `mutation cartCreate($lines: [CartLineInput!]!, $discountCodes: [String!], $note: String, $attributes: [AttributeInput!]) { cartCreate(input: { lines: $lines, discountCodes: $discountCodes, note: $note, attributes: $attributes }) { cart { checkoutUrl } userErrors { field message } } }`;
+              
+              const payload = { query: cartCreateMutation, variables: { lines: toLines(), discountCodes, note, attributes } };
+              
+              const cRes = await fetch('/api/2025-04/graphql.json', { method: 'POST', headers: sfHeaders, body: JSON.stringify(payload) });
+              const cJson = await cRes.json();
+              
+              const checkoutUrl = cJson?.data?.cartCreate?.cart?.checkoutUrl;
+              const userErrors = cJson?.data?.cartCreate?.userErrors || [];
+              
+              if (cRes.ok && checkoutUrl && !userErrors.length) { 
+                window.location.href = checkoutUrl; 
+                return; 
+              }
+              console.warn('cartCreate failed on cart page', cJson?.errors || userErrors);
+              // Do NOT fallback to /cart/add.js on cart page to avoid drawer pop; proceed without adding
+              window.location.href = '/checkout';
+              return;
+            } catch (e) {
+              console.warn('Storefront cartCreate error on cart page', e);
+              window.location.href = '/checkout';
+              return;
+            }
+          }
+
+          // Non-cart contexts (drawer/upsell): try Storefront first; fallback to AJAX add then checkout
+          if (window.storefrontToken) {
+            try {
+              const sfHeaders = { 'Content-Type': 'application/json', 'X-Shopify-Storefront-Access-Token': window.storefrontToken };
+              const cartCreateMutation = `mutation cartCreate($lines: [CartLineInput!]!, $discountCodes: [String!], $note: String, $attributes: [AttributeInput!]) { cartCreate(input: { lines: $lines, discountCodes: $discountCodes, note: $note, attributes: $attributes }) { cart { checkoutUrl } userErrors { field message } } }`;
+              const cRes = await fetch('/api/2025-04/graphql.json', { method: 'POST', headers: sfHeaders, body: JSON.stringify({ query: cartCreateMutation, variables: { lines: toLines(), discountCodes, note, attributes } }) });
+              const cJson = await cRes.json();
+              const checkoutUrl = cJson?.data?.cartCreate?.cart?.checkoutUrl;
+              const userErrors = cJson?.data?.cartCreate?.userErrors || [];
+              if (cRes.ok && checkoutUrl && !userErrors.length) { window.location.href = checkoutUrl; return; }
+            } catch (_) {}
+          }
+
+          // Fallback for non-cart contexts: add to current cart and go to /checkout
+          if (!hasProt) {
+            const formBody = new URLSearchParams({ id: protectionVariantId, quantity: '1' });
+            const addRes = await fetch('/cart/add.js', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }, credentials: 'same-origin', body: formBody.toString() });
+            if (!addRes.ok) { console.error('Add protection failed', await addRes.text()); }
+          }
+          window.location.href = '/checkout';
+        } catch (err) {
+          console.error('Protected checkout failed', err);
+          window.location.href = '/checkout';
+        } finally {
+          if (btn) { btn.disabled = false; btn.classList && btn.classList.remove('loading'); }
+        }
+      };
+      }
+
+      if (!window.checkoutWithoutProtectionHandler) {
+        window.checkoutWithoutProtectionHandler = async function(event){
+          const link = event && event.currentTarget ? event.currentTarget : null;
+          try {
+            if (event) {
+              event.preventDefault && event.preventDefault();
+              event.stopPropagation && event.stopPropagation();
+              event.stopImmediatePropagation && event.stopImmediatePropagation();
+            }
+            if (link) { link.classList && link.classList.add('loading'); }
+            const cartRes = await fetch('/cart.js?ts=' + Date.now(), { credentials: 'same-origin', cache: 'no-store' });
+            const cartData = await cartRes.json();
+            const items = Array.isArray(cartData.items) ? cartData.items : [];
+            const protItem = items.find(i => (i.product_id === 8936417853667) || ((i.variant_id || i.id) == 46997990703331));
+            if (protItem) {
+              const body = new URLSearchParams({ id: protItem.key, quantity: '0' });
+              await fetch('/cart/change.js', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }, credentials: 'same-origin', body: body.toString() });
+            }
+            window.location.href = '/checkout';
+          } catch (e) {
+            console.error('Checkout without protection failed', e);
+            window.location.href = '/checkout';
+          } finally {
+            if (link) { link.classList && link.classList.remove('loading'); }
+          }
+        }
+      }
+
+      // Helper: update PROTECTED CHECKOUT labels to include protection cost (throttled + cached)
+      window.__protLblState = window.__protLblState || { running: false, lastRun: 0, priceCents: null, cartTotal: null };
+      window.updateProtectedCheckoutLabels = async function (force) {
+        const st = window.__protLblState;
+        const now = Date.now();
+        if (st.running && !force) return;
+        if (!force && (now - (st.lastRun || 0) < 5000)) return; // throttle when not forced
+        st.running = true;
+        try {
+          if (window.cartHasPetition) return;
+          
+          // Use cart total from page if available to avoid extra fetch
+          const pageTotal = document.querySelector('.totals__total-value');
+          let totalCents = 0;
+          let hasProtectionAlready = false;
+          
+          if (pageTotal && st.cartTotal !== null && (now - st.lastRun) < 10000) {
+            totalCents = st.cartTotal;
+          } else {
+            const cartRes = await fetch('/cart.js?ts=' + now, { credentials: 'same-origin', cache: 'no-store' });
+            const cartData = await cartRes.json();
+            const items = Array.isArray(cartData.items) ? cartData.items : [];
+            totalCents = Number(cartData.total_price || 0);
+            st.cartTotal = totalCents;
+            hasProtectionAlready = items.some(function (i) { return (i.product_id === 8936417853667) || (i.variant_id === 46997990703331) || (i.id === 46997990703331); });
+          }
+
+          // Add protection price to label ONLY when it's not already in cart
+          let protectionCents = 0;
+          if (!hasProtectionAlready) {
+            if (typeof st.priceCents === 'number' && st.priceCents > 0) {
+              protectionCents = st.priceCents;
+            } else {
+              protectionCents = 399; // Default $3.99 fallback
+              try {
+                const vRes = await fetch('/variants/46997990703331.json', { credentials: 'same-origin', cache: 'no-store' });
+                if (vRes.ok) {
+                  const vJson = await vRes.json();
+                  const priceStr = vJson?.variant?.price || '3.99';
+                  protectionCents = Math.round(parseFloat(priceStr) * 100);
+                  st.priceCents = protectionCents;
+                }
+              } catch (_) {}
+            }
+          }
+          const newTotal = totalCents + protectionCents;
+          // Format without currency code to match theme money filter
+          let formatted = (newTotal / 100).toFixed(2);
+          try {
+            const totalsNode = document.querySelector('.totals__total-value');
+            if (totalsNode) {
+              const text = totalsNode.textContent.trim();
+              const symbolMatch = text.match(/^[^\d.,]+/);
+              const symbol = symbolMatch ? symbolMatch[0] : '';
+              formatted = symbol + (newTotal / 100).toFixed(2);
+            }
+          } catch(_) {}
+
+          const targets = [
+            document.getElementById('CartDrawer-ProtectedCheckout'),
+            document.getElementById('CartPage-ProtectedCheckout'),
+          ];
+          const upBtn = document.querySelector('.upcart-checkout-button');
+          if (upBtn) targets.push(upBtn);
+
+          targets.forEach(function(btn){
+            if (!btn || btn.textContent === ('PROTECTED CHECKOUT • ' + formatted)) return;
+            btn.textContent = 'PROTECTED CHECKOUT • ' + formatted;
+          });
+        } catch (e) { /* ignore */ }
+        finally { st.lastRun = Date.now(); st.running = false; }
+      };
+
+      // Debounced updater for quantity/totals changes (reduced watchers)
+      (function wireProtectedCheckoutLabelUpdates(){
+        const debounce = (fn, d=300) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), d); }; };
+        const run = debounce(() => { window.updateProtectedCheckoutLabels && window.updateProtectedCheckoutLabels(); }, 300);
+        document.addEventListener('click', function(e){
+          const el = e.target.closest && e.target.closest('.quantity__button');
+          if (el) run();
+        });
+        document.addEventListener('change', function(e){
+          if (e.target && e.target.classList && e.target.classList.contains('quantity__input')) run();
+        });
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+        document.addEventListener('shopify:section:load', run);
+        document.addEventListener('shopify:section:reorder', run);
+      })();
+
+      // Simplified third-party drawer attachment (reduced DOM watching)
+      (function attachProtectedCheckoutToExternalDrawer(){
+        let lastRun = 0;
+        const processButton = function(button){
+          if (!button) return;
+
+          // Relabel text once
+          try {
+            const txt = (button.textContent || '').trim();
+            if (/CHECKOUT/i.test(txt) && !/PROTECTED CHECKOUT/i.test(txt)) {
+              button.textContent = txt.replace(/CHECKOUT.*/i, 'PROTECTED CHECKOUT');
+            }
+          } catch(_) {}
+
+          // Bind click once
+          if (button.dataset.protectedClickBound !== '1') {
+            button.dataset.protectedClickBound = '1';
+            button.addEventListener('click', function(e){
+              if (window.cartHasPetition) return;
+              e.preventDefault();
+              e.stopPropagation && e.stopPropagation();
+              e.stopImmediatePropagation && e.stopImmediatePropagation();
+              window.protectedCheckoutHandler && window.protectedCheckoutHandler(e);
+            }, true);
+          }
+
+          // Inject secondary CWP link once
+          if (button.parentNode && !button.parentNode.querySelector('.protected-secondary-cta')) {
+            const link = document.createElement('a');
+            link.href = '/checkout';
+            link.className = 'protected-secondary-cta link js-checkout-without-protection';
+            link.setAttribute('aria-label', 'Checkout Without Protection');
+            link.textContent = 'Checkout Without Protection';
+            link.addEventListener('click', function(e){
+              e.preventDefault(); if (window.checkoutWithoutProtectionHandler) window.checkoutWithoutProtectionHandler(e);
+            });
+            button.parentNode.insertBefore(link, button.nextSibling);
+          }
+        };
+
+        // Delegate click handler instead of mutation observer
+        document.addEventListener('click', function(e){
+          const btn = e.target.closest('.upcart-checkout-button, a.UpcartDesignSettings__button[href*="/checkout"]');
+          if (btn) processButton(btn);
+        }, true);
+        
+        // Initial scan on load
+        const scan = () => {
+          const now = Date.now();
+          if (now - lastRun < 1000) return;
+          lastRun = now;
+          document.querySelectorAll('.upcart-checkout-button, a.UpcartDesignSettings__button[href*="/checkout"]').forEach(processButton);
+        };
+        
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', scan);
+        } else {
+          setTimeout(scan, 100);
+        }
+      })();
+
+      // Bind Checkout Without Protection links rendered in sections
+      (function bindCheckoutWithoutProtectionLinks(){
+        const tryBind = () => {
+          const selectors = [
+            '.js-checkout-without-protection',
+            '.cart__secondary-cta a[href="/checkout"]'
+          ];
+          document.querySelectorAll(selectors.join(',')).forEach((el) => {
+            if (el.dataset.cwpBound === '1') return;
+            el.dataset.cwpBound = '1';
+            el.addEventListener('click', function(e){
+              e.preventDefault(); if (window.checkoutWithoutProtectionHandler) window.checkoutWithoutProtectionHandler(e);
+            });
+          });
+        };
+        const mo = new MutationObserver(tryBind);
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tryBind); else tryBind();
+      })();
+    </script>
 
     <script>
       window.shopUrl = '{{ request.origin }}';
@@ -349,9 +1028,6 @@
         itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
         viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
         each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
-        min_error: `{{- 'sections.quick_order_list.min_error' | t: min: '[min]' }}`,
-        max_error: `{{- 'sections.quick_order_list.max_error' | t: max: '[max]' }}`,
-        step_error: `{{- 'sections.quick_order_list.step_error' | t: step: '[step]' }}`,
       };
 
       window.accessibilityStrings = {
@@ -365,12 +1041,27 @@
       };
     </script>
 
-    {%- if settings.predictive_search_enabled -%}
+        {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {%- if settings.cart_type == 'drawer' -%}
-      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-  </body>
+
+   {%- render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: oneclickupsellapp -%}</body>
 </html>
+{% if template.name == "index" %}
+<style>
+.card-information .price{
+display:none !important
+}
+</style>
+
+  <style>
+  #slidecarthq .button.full {
+    display: none;
+}
+    .nvd-standard-widget-t-three {
+      background: transparent !important;
+    border: none !important;
+      }
+  </style>
+{% endif %}

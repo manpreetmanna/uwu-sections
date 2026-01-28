@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_WdhBaX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3KL8QN": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Sugi Parsley Plushie Keychain!",
+            "heading_size": "h1"
+          }
+        },
+        "text_wpnFNX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>But if there was, would you sign up for SMS notifications?</p>"
+          }
+        },
+        "button_QbmJjK": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3KL8QN",
+        "text_wpnFNX",
+        "button_QbmJjK"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_BzURLA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-SEBeV4\"></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "ss_countdown_timer_1_MeENHk": {
+      "type": "ss-countdown-timer-1",
+      "blocks": {
+        "timer_p9jNMH": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "04",
+            "day": "24",
+            "hour": "15",
+            "minute": "00",
+            "hide_timer_on_completed": false,
+            "timer_completed_text": "",
+            "color": "#000000",
+            "days_text": "Days",
+            "hours_text": "Hours",
+            "minutes_text": "Minutes",
+            "seconds_text": "Seconds"
+          }
+        }
+      },
+      "block_order": [
+        "timer_p9jNMH"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": "200",
+        "height_mobile": "200",
+        "no_image_bg_color": "#ffffff",
+        "blur": true,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "border_radius": 15,
+        "lazy_load": true,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_gallery_4_QhKGKj": {
+      "type": "ss-gallery-4",
+      "blocks": {
+        "item_gT737J": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0535.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_gT737J"
+      ],
+      "settings": {
+        "items_row": 1,
+        "items_row_mobile": 1,
+        "items_gap": 20,
+        "items_gap_mobile": 8,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "modal_overlay": 1,
+        "close_size": 42,
+        "close_icon_size_mobile": 24,
+        "close_icon_size": 24,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "arrow_size": 42,
+        "arrow_size_mobile": 42,
+        "pagination_custom": false,
+        "pagination_font": "josefin_sans_n4",
+        "pagination_size": 14,
+        "pagination_size_mobile": 14,
+        "pagination_height": 130,
+        "image_border_color": "#000000",
+        "modal_bg_color": "#171717",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#ffffff",
+        "close_icon_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 50,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_WdhBaX",
+    "custom_liquid_BzURLA",
+    "ss_countdown_timer_1_MeENHk",
+    "ss_gallery_4_QhKGKj"
+  ]
+}

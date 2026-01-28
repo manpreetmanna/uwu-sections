@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "17406786590334e8cc": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_verified_badge_fJfKag": {
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_verified_badge_fJfKag"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Items",
+            "menu": "footer"
+          }
+        },
+        "4d63df0e-fdd0-4b33-bd8c-e2f1cd5cc7ed": {
+          "type": "text",
+          "settings": {
+            "heading": "Work with us.",
+            "subtext": "<p><strong>Are you a content creator who wants to have a merch collection? </strong><a href=\"/pages/work-with-us\" title=\"Work With Us\"><strong>Apply Here</strong></a></p>"
+          }
+        },
+        "footer-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Support",
+            "subtext": "<p><strong>Hours:</strong> </p><p>Monday-Friday 10AM-5PM CST</p><p><a href=\"https://uwu-market.reamaze.com/chat-with-us/55537\" target=\"_blank\" title=\"https://uwu-market.reamaze.com/chat-with-us/55537\">Contact Us</a></p><p></p>"
+          }
+        },
+        "6acb115c-5b4a-453a-8499-9f45f4a5ffc3": {
+          "type": "text",
+          "settings": {
+            "heading": "Disclaimer",
+            "subtext": "<p><em>This site is not a part of the Facebook website or Meta, Inc. Additionally, this site is not endorsed in any way by Meta. Facebook is a trademark of Meta, Inc.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "4d63df0e-fdd0-4b33-bd8c-e2f1cd5cc7ed",
+        "footer-1",
+        "6acb115c-5b4a-453a-8499-9f45f4a5ffc3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "17406786590334e8cc"
+  ]
+}

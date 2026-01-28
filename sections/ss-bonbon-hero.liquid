@@ -1,0 +1,408 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    max-width: {{ section.settings.section-width }}rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding: 0 5rem;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<style>
+  .banner-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .banner-svg--tablet,
+  .banner-svg--desktop {
+    display: none;
+  }
+  @media screen and (min-width: 750px) {
+    .banner-svg--mobile {
+      display: none;
+    }
+    .banner-svg--tablet {
+      display: block;
+      top: 0;
+      bottom: unset;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .banner-svg--tablet {
+      display: none;
+    }
+    .banner-svg--desktop {
+      display: block;
+    }
+  }
+  .banner-heading {
+    font-size: calc(var(--heading-size) * 0.5625);
+    font-weight: 800;
+    line-height: 106%;
+    color: var(--text-color);
+    margin: 0;
+  }
+  .banner-subheading {
+    font-size: calc(var(--subheading-size) * 0.75);
+    line-height: 140%;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 750px) {
+    .banner-heading {
+      font-size: calc(var(--heading-size) * 1);
+    }
+    .banner-subheading {
+      font-size: calc(var(--subheading-size) * 1);
+      margin-bottom: 1.5rem;
+    }
+  }
+  .banner-cta {
+    width: 291px;
+    height: 78px;
+    background: var(--button-bg);
+    color: var(--button-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    text-decoration: none;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+    padding: {{section.settings.image_padding}}px 0;
+  }
+  .banner-image--desktop {
+    display: none;
+  }
+  @media screen and (min-width: 750px) {
+    .banner-image--mobile-and-tablet {
+      display: none;
+    }
+    .banner-image--desktop {
+      display: block;
+    }
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 750px) {
+    .banner-content {
+      text-align: left; 
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .banner-desktop-flex {
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+  }
+  .banner-{{ section.id }} {
+    background: var(--mobile-bg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  @media screen and (min-width: 750px) {
+    .banner-{{ section.id }} {
+      background: var(--desktop-bg);
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+</style>
+
+<div 
+  style="
+    background-color:{{ section.settings.background-color }};
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    --text-color: {{ section.settings.text-color }};
+    --heading-size: {{ section.settings.heading-size }}px;
+    --subheading-size: {{ section.settings.subheading-size }}px;
+    --button-bg: {{ section.settings.button-bg }};
+    --button-text-color: {{ section.settings.button-text-color }};
+  "
+  class="banner-{{ section.id }}"
+>
+  {% assign svg_bg_color = section.settings.svg-bg-color %}
+  <template id="banner-bg-mobile">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="390"
+      height="667"
+      viewBox="0 0 390 667"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_1_290)">
+      <path d="M227.253 665.562C105.765 671.909 2.62593 645.287 -33.7578 631.182V-49.8032H507.246C551.011 169.699 612.283 609.232 507.246 611.348C375.949 613.993 379.113 657.629 227.253 665.562Z" 
+        fill="{{ svg_bg_color }}" stroke="{{ svg_bg_color }}"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_1_290">
+      <rect width="390" height="667" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+  </template>
+  <template id="banner-bg-desktop">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1512"
+      height="589"
+      viewBox="0 0 1512 589"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_1_275)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1545 0H-25V147H-10V487.137L-42 487.137L-66 555.439H-12C99.3333 529.606 398.8 491.34 706 544.931C1090 611.919 1342 594.844 1534 544.931V487.137V147H1545V0Z" 
+        fill="{{ svg_bg_color }}"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_1_275">
+      <rect width="1512" height="589" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+  </template>  
+  <script>
+    (function() {
+      // use #banner-bg-mobile if screen width is less than 750px
+      // use #banner-bg-desktop if screen width is greater than 750px
+      var banner = document.querySelector('.banner-{{ section.id }}');
+      var bannerBgMobile = document.querySelector('#banner-bg-mobile').content.cloneNode(true);
+      var bannerBgDesktop = document.querySelector('#banner-bg-desktop').content.cloneNode(true);
+      
+      var serializer = new XMLSerializer();
+      var bannerBgMobileString = serializer.serializeToString(bannerBgMobile);
+      var bannerBgDesktopString = serializer.serializeToString(bannerBgDesktop);
+
+      var encodedBannerBgMobile = encodeURIComponent(bannerBgMobileString);
+      var encodedBannerBgDesktop = encodeURIComponent(bannerBgDesktopString);
+    
+      // set --mobile-bg and --desktop-bg css variables
+      banner.style.setProperty('--mobile-bg', 'url("data:image/svg+xml,' + encodedBannerBgMobile + '")');
+      banner.style.setProperty('--desktop-bg', 'url("data:image/svg+xml,' + encodedBannerBgDesktop + '")');
+    })()
+  </script>
+  
+  <div class="page-width section-{{ section.id }}-padding banner-desktop-flex">
+    <div class="banner-content">
+      <h1 class="banner-heading">{{ section.settings.heading }}</h1>
+      <img
+        class="banner-image banner-image--mobile-and-tablet"
+        src="{{ section.settings.image | img_url: '500x' }}"
+        srcset="
+          {{ section.settings.image | img_url: '500x' }} 500w,
+          {{ section.settings.image | img_url: '800x' }} 800w,
+          {{ section.settings.image | img_url: '1200x' }} 1200w,
+          {{ section.settings.image | img_url: '1600x' }} 1600w,
+          {{ section.settings.image | img_url: '2000x' }} 2000w,
+          {{ section.settings.image | img_url: 'master' }} 2400w
+        "
+        alt="{{ section.settings.image.alt }}"
+      >
+      <div class="banner-subheading">{{ section.settings.subheading }}</div>
+      <a class="banner-cta" href="{{ section.settings.url }}">{{ section.settings.url_text }}</a>
+    </div>
+    <img 
+      class="banner-image banner-image--desktop"
+      src="{{ section.settings.image | img_url: '500x' }}"
+      srcset="
+        {{ section.settings.image | img_url: '500x' }} 500w,
+        {{ section.settings.image | img_url: '800x' }} 800w,
+        {{ section.settings.image | img_url: '1200x' }} 1200w,
+        {{ section.settings.image | img_url: '1600x' }} 1600w,
+        {{ section.settings.image | img_url: '2000x' }} 2000w,
+        {{ section.settings.image | img_url: 'master' }} 2400w
+      "
+      alt="{{ section.settings.image.alt }}"
+    />
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "SS - Banner",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section setting:"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "BUBBLE TEA TIME CHAMPS N’ VIBERS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Get that bubbly feeling going with our fantastic bubble tea!"
+    },
+    {
+      "type": "text",
+      "id": "url_text",
+      "label": "URL text",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "text",
+      "id": "url",
+      "label": "URL"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "svg-bg-color",
+      "label": "SVG background color",
+      "default": "#F7EAF9"
+    },
+    {
+      "type": "color",
+      "id": "text-color",
+      "label": "Heading color",
+      "default": "#432A54"
+    },
+    {
+      "type": "color",
+      "id": "button-bg",
+      "label": "Button background color",
+      "default": "#432A54"
+    },
+    {
+      "type": "color",
+      "id": "button-text-color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading-size",
+      "min": 12,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "subheading-size",
+      "min": 12,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Subheading font size",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Image padding"
+    },
+    {
+      "type": "range",
+      "id": "image_padding",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Image padding",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Background color"
+    },
+    {
+      "type": "color",
+      "label": "Section background color",
+      "id": "background-color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Section width"
+    },
+    {
+      "type": "range",
+      "id": "section-width",
+      "min": 80,
+      "max": 200,
+      "step": 5,
+      "unit": "rem",
+      "label": "Section width",
+      "default": 120
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS - BonBon Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
