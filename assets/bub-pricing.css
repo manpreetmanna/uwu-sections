@@ -129,17 +129,27 @@
 .bub-scope.bub-pricing .pricing-split {
   display: flex;
   flex-direction: column-reverse;
-  gap: 24px;
+  gap: 0;
   grid-column: 1 / -1;
-}
-
-.bub-scope.bub-pricing .pricing-split__media {
   border-radius: 20px;
   border: 1px solid var(--border-light);
   overflow: hidden;
   background: #fff;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.bub-scope.bub-pricing .pricing-split__media {
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+  background: #fff;
   min-height: 260px;
+}
+
+.bub-scope.bub-pricing .pricing-split__content.pricing-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .bub-scope.bub-pricing .pricing-split__image {
