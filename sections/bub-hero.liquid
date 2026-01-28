@@ -4,7 +4,13 @@
   rel="stylesheet"
 >
 
-<section class="hero bub-hero bub-scope">
+{%- assign background_image = section.settings.background_image -%}
+<section
+  class="hero bub-hero bub-scope{% if background_image != blank %} has-bg{% endif %}{% if section.settings.invert_text %} is-inverted{% endif %}"
+  {% if background_image != blank or section.settings.overlay_opacity != blank %}
+    style="{% if background_image != blank %}background-image: url({{ background_image | image_url: width: 2400 }});{% endif %}--hero-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"
+  {% endif %}
+>
   <div class="container hero-content">
     <div class="pill">
       <span class="pill-dot">
@@ -57,6 +63,27 @@
       "id": "pill_text",
       "label": "Pill text",
       "default": "Premium Merch Manufacturing"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "label": "Background overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "invert_text",
+      "label": "Invert text color on image",
+      "default": false
     },
     {
       "type": "text",

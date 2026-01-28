@@ -5,6 +5,7 @@
   <div class="container">
     <div class="feature-grid">
       {% for block in section.blocks %}
+        {% assign modal_id = 'BubFeatureModal-' | append: section.id | append: '-' | append: block.id %}
         <article class="feature-card" {{ block.shopify_attributes }}>
           <div class="feature-icon">
             <span class="material-symbols-outlined">{{ block.settings.icon | escape }}</span>
@@ -12,12 +13,51 @@
           <h4>{{ block.settings.title | escape }}</h4>
           <p>{{ block.settings.description | escape | newline_to_br }}</p>
           {% if block.settings.footer_text != blank %}
-            <div class="feature-footer">
-              <span>{{ block.settings.footer_text | escape }}</span>
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </div>
+            {% if block.settings.popup_image != blank %}
+              <modal-opener data-modal="#{{ modal_id }}">
+                <button class="feature-footer feature-footer-button" type="button">
+                  <span>{{ block.settings.footer_text | escape }}</span>
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </modal-opener>
+            {% else %}
+              <div class="feature-footer">
+                <span>{{ block.settings.footer_text | escape }}</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            {% endif %}
           {% endif %}
         </article>
+        {% if block.settings.popup_image != blank %}
+          <modal-dialog id="{{ modal_id }}" class="bub-feature-modal">
+            <div
+              class="bub-feature-modal__dialog"
+              role="dialog"
+              aria-modal="true"
+              aria-label="{{ block.settings.title | escape }}"
+            >
+              <button
+                id="ModalClose-{{ modal_id }}"
+                type="button"
+                class="bub-feature-modal__close"
+                aria-label="Close"
+              >
+                <span class="material-symbols-outlined">close</span>
+              </button>
+              <div class="bub-feature-modal__media">
+                {{
+                  block.settings.popup_image
+                  | image_url: width: 1800
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '540, 720, 960, 1200, 1600, 1800',
+                    sizes: '90vw',
+                    alt: block.settings.title
+                }}
+              </div>
+            </div>
+          </modal-dialog>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -55,6 +95,11 @@
           "id": "footer_text",
           "label": "Footer text",
           "default": "Network Effect"
+        },
+        {
+          "type": "image_picker",
+          "id": "popup_image",
+          "label": "Popup image or GIF"
         }
       ]
     }

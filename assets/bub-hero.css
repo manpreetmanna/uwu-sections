@@ -8,8 +8,25 @@
   background: #fff;
 }
 
+.bub-scope.bub-hero.has-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bub-scope.bub-hero.has-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: var(--hero-overlay-opacity, 0);
+  z-index: 1;
+}
+
 .bub-scope.bub-hero .hero-content {
   max-width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .bub-scope.bub-hero .pill {
@@ -70,6 +87,26 @@
   max-width: 768px;
   margin: 0 auto 48px;
   line-height: 3rem !important;
+}
+
+.bub-scope.bub-hero.is-inverted .hero-title,
+.bub-scope.bub-hero.is-inverted .hero-subtitle,
+.bub-scope.bub-hero.is-inverted .pill {
+  color: #fff !important;
+}
+
+.bub-scope.bub-hero.is-inverted .pill {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.bub-scope.bub-hero.is-inverted .btn-secondary {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bub-scope.bub-hero.is-inverted .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .bub-scope.bub-hero .hero-actions {
