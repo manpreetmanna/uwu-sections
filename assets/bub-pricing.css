@@ -1,13 +1,13 @@
-.bub-scope .bub-pricing {
+.bub-scope.bub-pricing {
   padding: 0 0 96px;
 }
 
-.bub-scope .bub-pricing .pricing-grid {
+.bub-scope.bub-pricing .pricing-grid {
   display: grid;
   gap: 24px;
 }
 
-.bub-scope .bub-pricing .pricing-card {
+.bub-scope.bub-pricing .pricing-card {
   border-radius: 20px;
   border: 1px solid var(--border-light);
   padding: 32px;
@@ -18,83 +18,83 @@
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
-.bub-scope .bub-pricing .pricing-card h3 {
+.bub-scope.bub-pricing .pricing-card h3 {
   font-size: 22px !important;
   margin: 0 0 8px;
   font-weight: 700 !important;
 }
 
-.bub-scope .bub-pricing .pricing-card p {
+.bub-scope.bub-pricing .pricing-card p {
   margin: 0;
   color: #64748b !important;
   font-size: 14px !important;
 }
 
-.bub-scope .bub-pricing .pricing-card:hover {
+.bub-scope.bub-pricing .pricing-card:hover {
   border-color: rgba(237, 36, 142, 0.5);
 }
 
-.bub-scope .bub-pricing .pricing-head {
+.bub-scope.bub-pricing .pricing-head {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.bub-scope .bub-pricing .pricing-value {
+.bub-scope.bub-pricing .pricing-value {
   display: flex;
   align-items: baseline;
   gap: 6px;
   margin-top: 1rem;
 }
 
-.bub-scope .bub-pricing .price {
+.bub-scope.bub-pricing .price {
   font-size: 36px !important;
   font-weight: 700 !important;
 }
 
-.bub-scope .bub-pricing .price-note {
+.bub-scope.bub-pricing .price-note {
   font-size: 15px !important;
   opacity: 0.4;
 }
 
-.bub-scope .bub-pricing .highlight {
+.bub-scope.bub-pricing .highlight {
   color: var(--primary) !important;
 }
 
-.bub-scope .bub-pricing .pricing-features {
+.bub-scope.bub-pricing .pricing-features {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.bub-scope .bub-pricing .feature-line {
+.bub-scope.bub-pricing .feature-line {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 14px !important;
 }
 
-.bub-scope .bub-pricing .feature-line strong {
+.bub-scope.bub-pricing .feature-line strong {
   font-weight: 700 !important;
 }
 
-.bub-scope .bub-pricing .feature-line .material-symbols-outlined {
+.bub-scope.bub-pricing .feature-line .material-symbols-outlined {
   color: var(--primary) !important;
   font-size: 20px !important;
 }
 
-.bub-scope .bub-pricing .feature-line.strong {
+.bub-scope.bub-pricing .feature-line.strong {
   font-weight: 500 !important;
 }
 
-.bub-scope .bub-pricing .pricing-card.featured {
+.bub-scope.bub-pricing .pricing-card.featured {
   border: 3px solid var(--primary);
   transform: scale(1.03);
   position: relative;
   box-shadow: 0 20px 40px -10px rgba(237, 36, 142, 0.25);
 }
 
-.bub-scope .bub-pricing .featured-badge {
+.bub-scope.bub-pricing .featured-badge {
   position: absolute;
   top: -18px;
   left: 50%;
@@ -109,23 +109,23 @@
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
 }
 
-.bub-scope .bub-pricing .pricing-card.enterprise {
+.bub-scope.bub-pricing .pricing-card.enterprise {
   background: var(--dark-charcoal);
   color: #fff !important;
 }
 
-.bub-scope .bub-pricing .pricing-card.enterprise p {
+.bub-scope.bub-pricing .pricing-card.enterprise p {
   color: rgba(248, 250, 252, 0.6) !important;
 }
 
 @media (min-width: 768px) {
-  .bub-scope .bub-pricing .pricing-grid {
+  .bub-scope.bub-pricing .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .bub-scope .bub-pricing .pricing-grid {
+  .bub-scope.bub-pricing .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,4 +1,4 @@
-.bub-scope .bub-hero {
+.bub-scope.bub-hero {
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -8,11 +8,11 @@
   background: #fff;
 }
 
-.bub-scope .bub-hero .hero-content {
+.bub-scope.bub-hero .hero-content {
   max-width: 100%;
 }
 
-.bub-scope .bub-hero .pill {
+.bub-scope.bub-hero .pill {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -28,13 +28,13 @@
   margin-bottom: 32px;
 }
 
-.bub-scope .bub-hero .pill-dot {
+.bub-scope.bub-hero .pill-dot {
   position: relative;
   width: 8px;
   height: 8px;
 }
 
-.bub-scope .bub-hero .pill-dot-ping {
+.bub-scope.bub-hero .pill-dot-ping {
   position: absolute;
   inset: 0;
   border-radius: 999px;
@@ -43,7 +43,7 @@
   animation: ping 1.3s ease-in-out infinite;
 }
 
-.bub-scope .bub-hero .pill-dot-core {
+.bub-scope.bub-hero .pill-dot-core {
   position: relative;
   display: block;
   width: 8px;
@@ -52,7 +52,7 @@
   background: var(--primary);
 }
 
-.bub-scope .bub-hero .hero-title {
+.bub-scope.bub-hero .hero-title {
   font-size: 3.5rem !important;
   font-weight: 900 !important;
   line-height: 0.85 !important;
@@ -62,7 +62,7 @@
   font-style: italic !important;
 }
 
-.bub-scope .bub-hero .hero-subtitle {
+.bub-scope.bub-hero .hero-subtitle {
   font-size: clamp(18px, 2.5vw, 24px) !important;
   font-weight: 300 !important;
   color: rgba(26, 26, 26, 0.5) !important;
@@ -71,7 +71,7 @@
   line-height: 2rem !important;
 }
 
-.bub-scope .bub-hero .hero-actions {
+.bub-scope.bub-hero .hero-actions {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -79,16 +79,16 @@
 }
 
 @media (min-width: 768px) {
-  .bub-scope .bub-hero .hero-content {
+  .bub-scope.bub-hero .hero-content {
     max-width: 960px;
   }
 
-  .bub-scope .bub-hero .hero-actions {
+  .bub-scope.bub-hero .hero-actions {
     flex-direction: row;
     justify-content: center;
   }
 
-  .bub-scope .bub-hero .hero-title {
+  .bub-scope.bub-hero .hero-title {
     font-size: 8rem !important;
     line-height: 1 !important;
   }
