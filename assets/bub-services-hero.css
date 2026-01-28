@@ -24,6 +24,7 @@
   font-size: clamp(40px, 6vw, 60px) !important;
   font-weight: 700 !important;
   margin: 0 0 24px;
+  font-family: "Epilogue", sans-serif !important;
 }
 
 .bub-scope.bub-services-hero .services-subtitle {
