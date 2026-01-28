@@ -138,54 +138,6 @@
         "subtitle": "Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you can focus on your audience."
       }
     },
-    "bub_services_features_CPfYpy": {
-      "type": "bub-services-features",
-      "blocks": {
-        "feature_Nh36mK": {
-          "type": "feature",
-          "settings": {
-            "icon": "inventory_2",
-            "title": "Quality Control",
-            "description": "Rigorous three-stage inspection protocol for every single garment produced."
-          }
-        },
-        "feature_TmKjyE": {
-          "type": "feature",
-          "settings": {
-            "icon": "local_shipping",
-            "title": "Global Shipping",
-            "description": "International door-to-door delivery network optimized for fan fulfillment."
-          }
-        },
-        "feature_F4J6it": {
-          "type": "feature",
-          "settings": {
-            "icon": "brush",
-            "title": "Design Support",
-            "description": "Collaborate with our world-class artists and designers"
-          }
-        },
-        "feature_XgwQQQ": {
-          "type": "feature",
-          "settings": {
-            "icon": "eco",
-            "title": "Eco-Sourcing",
-            "description": "Sustainable organic fabrics and verified ethical labor practices worldwide."
-          }
-        }
-      },
-      "block_order": [
-        "feature_Nh36mK",
-        "feature_TmKjyE",
-        "feature_F4J6it",
-        "feature_XgwQQQ"
-      ],
-      "name": "Bub Services Features",
-      "settings": {
-        "section_title": "Standard Manufacturing Features",
-        "section_description": "Included in every package tier as a standard of quality."
-      }
-    },
     "bub_pricing_RttTPj": {
       "type": "bub-pricing",
       "blocks": {
@@ -259,6 +211,54 @@
       ],
       "name": "Bub Pricing",
       "settings": {}
+    },
+    "bub_services_features_CPfYpy": {
+      "type": "bub-services-features",
+      "blocks": {
+        "feature_Nh36mK": {
+          "type": "feature",
+          "settings": {
+            "icon": "inventory_2",
+            "title": "Quality Control",
+            "description": "Rigorous three-stage inspection protocol for every single garment produced."
+          }
+        },
+        "feature_TmKjyE": {
+          "type": "feature",
+          "settings": {
+            "icon": "local_shipping",
+            "title": "Global Shipping",
+            "description": "International door-to-door delivery network optimized for fan fulfillment."
+          }
+        },
+        "feature_F4J6it": {
+          "type": "feature",
+          "settings": {
+            "icon": "brush",
+            "title": "Design Support",
+            "description": "Collaborate with our world-class artists and designers"
+          }
+        },
+        "feature_XgwQQQ": {
+          "type": "feature",
+          "settings": {
+            "icon": "eco",
+            "title": "Eco-Sourcing",
+            "description": "Sustainable organic fabrics and verified ethical labor practices worldwide."
+          }
+        }
+      },
+      "block_order": [
+        "feature_Nh36mK",
+        "feature_TmKjyE",
+        "feature_F4J6it",
+        "feature_XgwQQQ"
+      ],
+      "name": "Bub Services Features",
+      "settings": {
+        "section_title": "Standard Manufacturing Features",
+        "section_description": "Included in every package tier as a standard of quality."
+      }
     }
   },
   "order": [
@@ -268,7 +268,7 @@
     "bub_features_QdyeLF",
     "bub_testimonial_L9rQWB",
     "bub_services_hero_xmQNhn",
-    "bub_services_features_CPfYpy",
-    "bub_pricing_RttTPj"
+    "bub_pricing_RttTPj",
+    "bub_services_features_CPfYpy"
   ]
 }
