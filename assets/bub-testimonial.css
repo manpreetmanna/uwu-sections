@@ -12,9 +12,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
+}
+
+.bub-scope.bub-testimonial .testimonial-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.2;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  transition: transform 1s ease;
+}
+
+.bub-scope.bub-testimonial .testimonial-card:hover .testimonial-background {
+  transform: scale(1.05);
 }
 
 .bub-scope.bub-testimonial .testimonial-overlay {
@@ -22,10 +34,10 @@
   inset: 0;
   z-index: 1;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.75) 45%,
-    rgba(0, 0, 0, 0.9) 100%
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.4) 55%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
@@ -40,15 +52,16 @@
 .bub-scope.bub-testimonial .quote-icon {
   color: var(--primary) !important;
   font-size: 56px !important;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   display: inline-block;
 }
 
 .bub-scope.bub-testimonial .testimonial-content h2 {
-  font-size: clamp(24px, 4vw, 36px) !important;
+  font-size: clamp(30px, 4vw, 36px) !important;
   font-weight: 700 !important;
   font-style: italic !important;
-  line-height: 1.35 !important;
+  line-height: 1.375 !important;
+  letter-spacing: -0.02em !important;
   color: #fff !important;
   margin: 0 0 32px;
 }
@@ -90,14 +103,14 @@
 
 .bub-scope.bub-testimonial .author-name {
   margin: 0;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   font-size: 18px !important;
   color: #fff !important;
 }
 
 .bub-scope.bub-testimonial .author-role {
   margin: 0;
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: #94a3b8 !important;
   font-size: 13px !important;
   font-weight: 500 !important;
 }

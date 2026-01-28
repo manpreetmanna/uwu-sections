@@ -4,67 +4,144 @@
   <div class="container">
     <div class="pricing-grid">
       {% for block in section.blocks %}
-        {%- liquid
-          assign card_style = block.settings.card_style
-          assign card_classes = 'pricing-card'
-          if card_style == 'featured'
-            assign card_classes = card_classes | append: ' featured'
-          elsif card_style == 'enterprise'
-            assign card_classes = card_classes | append: ' enterprise'
-          endif
-          assign price_class = 'price'
-          if card_style == 'featured'
-            assign price_class = price_class | append: ' highlight'
-          endif
-          assign features = block.settings.features | split: '\n'
-        -%}
-        <article class="{{ card_classes }}" {{ block.shopify_attributes }}>
-          {% if card_style == 'featured' and block.settings.badge_text != blank %}
-            <div class="featured-badge">{{ block.settings.badge_text | escape }}</div>
-          {% endif %}
-          <div class="pricing-head">
-            <h3>{{ block.settings.title | escape }}</h3>
-            <p>{{ block.settings.description | escape }}</p>
-            <div class="pricing-value">
-              <span class="{{ price_class }}">{{ block.settings.price | escape }}</span>
-              <span class="price-note">{{ block.settings.price_note | escape }}</span>
-            </div>
-          </div>
-          <div class="pricing-features">
-            {% for feature in features %}
-              {% assign feature_text = feature | strip %}
-              {% if feature_text != blank %}
-                <div class="feature-line{% if card_style == 'featured' %} strong{% endif %}">
-                  <span class="material-symbols-outlined">check_circle</span>
-                  <span>{{ feature_text | escape }}</span>
-                </div>
+        {% if block.type == 'pricing_split' %}
+          {%- liquid
+            assign content_style = block.settings.content_style
+            assign content_classes = 'pricing-card pricing-split__content'
+            if content_style == 'featured'
+              assign content_classes = content_classes | append: ' featured'
+            elsif content_style == 'enterprise'
+              assign content_classes = content_classes | append: ' enterprise'
+            endif
+            assign price_class = 'price'
+            if content_style == 'featured'
+              assign price_class = price_class | append: ' highlight'
+            endif
+            assign features = block.settings.features | split: '\n'
+          -%}
+          <article class="pricing-split" {{ block.shopify_attributes }}>
+            <div class="pricing-split__media">
+              {% if block.settings.image != blank %}
+                {{
+                  block.settings.image
+                  | image_url: width: 1800
+                  | image_tag: class: 'pricing-split__image', loading: 'lazy', sizes: '(min-width: 1024px) 66vw, 100vw'
+                }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'pricing-split__image placeholder' }}
               {% endif %}
-            {% endfor %}
-          </div>
-          {% if block.settings.button_text != blank %}
-            {% if block.settings.button_link != blank %}
-              <a
-                class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
-                href="{{ block.settings.button_link }}"
-              >
-                {{ block.settings.button_text | escape }}
-                {% if block.settings.button_icon != blank %}
-                  <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+            </div>
+            <div class="{{ content_classes }}">
+              {% if content_style == 'featured' and block.settings.badge_text != blank %}
+                <div class="featured-badge">{{ block.settings.badge_text | escape }}</div>
+              {% endif %}
+              <div class="pricing-head">
+                <h3>{{ block.settings.title | escape }}</h3>
+                <p>{{ block.settings.description | escape }}</p>
+                <div class="pricing-value">
+                  <span class="{{ price_class }}">{{ block.settings.price | escape }}</span>
+                  <span class="price-note">{{ block.settings.price_note | escape }}</span>
+                </div>
+              </div>
+              <div class="pricing-features">
+                {% for feature in features %}
+                  {% assign feature_text = feature | strip %}
+                  {% if feature_text != blank %}
+                    <div class="feature-line{% if content_style == 'featured' %} strong{% endif %}">
+                      <span class="material-symbols-outlined">check_circle</span>
+                      <span>{{ feature_text | escape }}</span>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+              {% if block.settings.button_text != blank %}
+                {% if block.settings.button_link != blank %}
+                  <a
+                    class="btn btn-primary btn-block{% if content_style == 'featured' %} btn-emphasis{% endif %}"
+                    href="{{ block.settings.button_link }}"
+                  >
+                    {{ block.settings.button_text | escape }}
+                    {% if block.settings.button_icon != blank %}
+                      <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                    {% endif %}
+                  </a>
+                {% else %}
+                  <button
+                    class="btn btn-primary btn-block{% if content_style == 'featured' %} btn-emphasis{% endif %}"
+                    type="button"
+                  >
+                    {{ block.settings.button_text | escape }}
+                    {% if block.settings.button_icon != blank %}
+                      <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                    {% endif %}
+                  </button>
                 {% endif %}
-              </a>
-            {% else %}
-              <button
-                class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
-                type="button"
-              >
-                {{ block.settings.button_text | escape }}
-                {% if block.settings.button_icon != blank %}
-                  <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
-                {% endif %}
-              </button>
+              {% endif %}
+            </div>
+          </article>
+        {% else %}
+          {%- liquid
+            assign card_style = block.settings.card_style
+            assign card_classes = 'pricing-card'
+            if card_style == 'featured'
+              assign card_classes = card_classes | append: ' featured'
+            elsif card_style == 'enterprise'
+              assign card_classes = card_classes | append: ' enterprise'
+            endif
+            assign price_class = 'price'
+            if card_style == 'featured'
+              assign price_class = price_class | append: ' highlight'
+            endif
+            assign features = block.settings.features | split: '\n'
+          -%}
+          <article class="{{ card_classes }}" {{ block.shopify_attributes }}>
+            {% if card_style == 'featured' and block.settings.badge_text != blank %}
+              <div class="featured-badge">{{ block.settings.badge_text | escape }}</div>
             {% endif %}
-          {% endif %}
-        </article>
+            <div class="pricing-head">
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p>{{ block.settings.description | escape }}</p>
+              <div class="pricing-value">
+                <span class="{{ price_class }}">{{ block.settings.price | escape }}</span>
+                <span class="price-note">{{ block.settings.price_note | escape }}</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              {% for feature in features %}
+                {% assign feature_text = feature | strip %}
+                {% if feature_text != blank %}
+                  <div class="feature-line{% if card_style == 'featured' %} strong{% endif %}">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span>{{ feature_text | escape }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% if block.settings.button_text != blank %}
+              {% if block.settings.button_link != blank %}
+                <a
+                  class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
+                  href="{{ block.settings.button_link }}"
+                >
+                  {{ block.settings.button_text | escape }}
+                  {% if block.settings.button_icon != blank %}
+                    <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                  {% endif %}
+                </a>
+              {% else %}
+                <button
+                  class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
+                  type="button"
+                >
+                  {{ block.settings.button_text | escape }}
+                  {% if block.settings.button_icon != blank %}
+                    <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                  {% endif %}
+                </button>
+              {% endif %}
+            {% endif %}
+          </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -153,9 +230,93 @@
           "default": "MOST POPULAR"
         }
       ]
+    },
+    {
+      "type": "pricing_split",
+      "name": "Pricing split",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "The Enterprise"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Strategic agency for multi-creator teams."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "Custom"
+        },
+        {
+          "type": "text",
+          "id": "price_note",
+          "label": "Price note",
+          "default": "/quote"
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features (one per line)",
+          "default": "Multi-creator management\nWhite-label warehouses\n24/7 dedicated support"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Contact Sales"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_icon",
+          "label": "Button icon",
+          "default": "business_center"
+        },
+        {
+          "type": "select",
+          "id": "content_style",
+          "label": "Content style",
+          "default": "enterprise",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Standard"
+            },
+            {
+              "value": "featured",
+              "label": "Featured"
+            },
+            {
+              "value": "enterprise",
+              "label": "Enterprise"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Featured badge text",
+          "default": "MOST POPULAR"
+        }
+      ]
     }
   ],
-  "max_blocks": 8,
+  "max_blocks": 4,
   "presets": [
     {
       "name": "Bub Pricing",
@@ -201,33 +362,7 @@
           }
         },
         {
-          "type": "pricing_card",
-          "settings": {
-            "title": "TBD",
-            "description": "Bespoke accessories and lifestyle goods.",
-            "price": "$1,499",
-            "price_note": "/launch",
-            "features": "Custom jewelry & pins\nPremium phone cases\nSpecialty gift packaging",
-            "button_text": "Get This",
-            "button_icon": "diamond",
-            "card_style": "standard"
-          }
-        },
-        {
-          "type": "pricing_card",
-          "settings": {
-            "title": "TBD",
-            "description": "Infrastructure for major global brands.",
-            "price": "$3,499",
-            "price_note": "/mo",
-            "features": "Custom cut-and-sew\nWorldwide warehousing\nPriority global logistics",
-            "button_text": "Get This",
-            "button_icon": "public",
-            "card_style": "standard"
-          }
-        },
-        {
-          "type": "pricing_card",
+          "type": "pricing_split",
           "settings": {
             "title": "The Enterprise",
             "description": "Strategic agency for multi-creator teams.",
@@ -236,7 +371,7 @@
             "features": "Multi-creator management\nWhite-label warehouses\n24/7 dedicated support",
             "button_text": "Contact Sales",
             "button_icon": "business_center",
-            "card_style": "enterprise"
+            "content_style": "enterprise"
           }
         }
       ]

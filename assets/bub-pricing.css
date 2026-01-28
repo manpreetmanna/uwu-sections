@@ -122,6 +122,29 @@
   color: rgba(248, 250, 252, 0.6) !important;
 }
 
+.bub-scope.bub-pricing .pricing-split {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 24px;
+  grid-column: 1 / -1;
+}
+
+.bub-scope.bub-pricing .pricing-split__media {
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  min-height: 260px;
+}
+
+.bub-scope.bub-pricing .pricing-split__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (min-width: 768px) {
   .bub-scope.bub-pricing .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -131,5 +154,15 @@
 @media (min-width: 1024px) {
   .bub-scope.bub-pricing .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bub-scope.bub-pricing .pricing-split {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .bub-scope.bub-pricing .pricing-split__media {
+    min-height: 100%;
   }
 }
