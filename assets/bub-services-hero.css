@@ -21,10 +21,10 @@
 }
 
 .bub-scope.bub-services-hero .services-title {
-  font-size: clamp(40px, 6vw, 60px) !important;
-  font-weight: 700 !important;
+  font-size: 60px !important;
+  font-weight: 900 !important;
   margin: 0 0 24px;
-  font-family: "Epilogue", sans-serif !important;
+  font-style: italic !important;
 }
 
 .bub-scope.bub-services-hero .services-subtitle {
