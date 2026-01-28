@@ -114,6 +114,10 @@
   color: #fff !important;
 }
 
+.bub-scope.bub-pricing .pricing-card.enterprise .price{
+  color: #fff !important;
+}
+
 .bub-scope.bub-pricing .pricing-card.enterprise h3 {
   color: #fff !important;
 }
