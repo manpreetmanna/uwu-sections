@@ -9,7 +9,7 @@
   --border-light: #e5e7eb;
   --muted: rgba(26, 26, 26, 0.5);
   margin: 0;
-  font-family: "Epilogue", sans-serif;
+  font-family: "Epilogue", sans-serif !important;
 }
 
 .bub-scope img {
@@ -18,13 +18,13 @@
 }
 
 .bub-scope a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: 500;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
 .bub-scope button {
-  font-family: inherit;
+  font-family: inherit !important;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -71,9 +71,9 @@
   gap: 8px;
   padding: 10px 24px;
   border-radius: 0.5rem;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.25rem;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1.25rem !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
     color 0.2s ease, border-color 0.2s ease;
 }
@@ -84,7 +84,7 @@
 
 .bub-scope .btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 12px 24px rgba(237, 36, 142, 0.25);
 }
 
@@ -94,7 +94,7 @@
 
 .bub-scope .btn-secondary {
   background: var(--section-gray);
-  color: var(--charcoal);
+  color: var(--charcoal) !important;
   box-shadow: none !important;
 }
 
@@ -103,18 +103,18 @@
 }
 
 .bub-scope .btn-ghost {
-  color: var(--charcoal);
-  font-weight: 700;
+  color: var(--charcoal) !important;
+  font-weight: 700 !important;
 }
 
 .bub-scope .btn-ghost:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .bub-scope .btn-lg {
   padding: 20px 48px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 16px !important;
   box-shadow: 0 18px 32px rgba(237, 36, 142, 0.2);
   width: 100%;
 }
@@ -176,36 +176,36 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 10px 18px rgba(237, 36, 142, 0.2);
 }
 
 .bub-scope .brand-icon .material-symbols-outlined {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .bub-scope .brand-title {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  text-transform: uppercase !important;
   margin: 0;
 }
 
 .bub-scope .services-page .brand-title {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .bub-scope .site-nav {
   display: none;
   gap: 32px;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(26, 26, 26, 0.7);
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: rgba(26, 26, 26, 0.7) !important;
 }
 
 .bub-scope .site-nav a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .bub-scope .header-actions {
@@ -224,8 +224,8 @@
 }
 
 .bub-scope .accent {
-  color: var(--primary);
-  font-style: italic;
+  color: var(--primary) !important;
+  font-style: italic !important;
 }
 
 .bub-scope .site-footer {
@@ -246,8 +246,8 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
 }
 
 .bub-scope .footer-logo {
@@ -258,7 +258,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #fff !important;
 }
 
 .bub-scope .footer-logo.small {
@@ -267,23 +267,23 @@
 }
 
 .bub-scope .footer-logo .material-symbols-outlined {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .bub-scope .footer-logo.small .material-symbols-outlined {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .bub-scope .footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  color: rgba(26, 26, 26, 0.4);
-  font-weight: 500;
+  color: rgba(26, 26, 26, 0.4) !important;
+  font-weight: 500 !important;
 }
 
 .bub-scope .footer-links a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .bub-scope .footer-bottom {
@@ -293,26 +293,26 @@
   align-items: center;
   padding-top: 24px;
   border-top: 1px solid #e5e7eb;
-  color: rgba(26, 26, 26, 0.4);
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  color: rgba(26, 26, 26, 0.4) !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.15em !important;
 }
 
 .bub-scope .footer-legal {
   display: flex;
   gap: 24px;
-  letter-spacing: normal;
-  text-transform: none;
+  letter-spacing: normal !important;
+  text-transform: none !important;
 }
 
 .bub-scope .footer-legal a {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .bub-scope .services-page {
-  color: #0f172a;
+  color: #0f172a !important;
   background: #fff;
 }
 
@@ -323,12 +323,12 @@
 .bub-scope .services-footer {
   background: #fff;
   border-top: 1px solid var(--border-light);
-  color: #0f172a;
+  color: #0f172a !important;
 }
 
 .bub-scope .services-footer .footer-brand {
-  text-transform: none;
-  letter-spacing: 0;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
 }
 
 .bub-scope .footer-services {
@@ -336,14 +336,14 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .bub-scope .footer-services p {
   margin: 0;
-  color: #64748b;
-  font-size: 14px;
-  font-weight: 500;
+  color: #64748b !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }
 
 .bub-scope .footer-socials {
@@ -359,17 +359,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
+  color: #64748b !important;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .bub-scope .footer-socials .material-symbols-outlined {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .bub-scope .footer-socials a:hover {
   background: var(--primary);
-  color: #fff;
+  color: #fff !important;
 }
 
 @media (min-width: 768px) {
@@ -389,7 +389,7 @@
   }
 
   .bub-scope .footer-bottom {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
   }
 }
 

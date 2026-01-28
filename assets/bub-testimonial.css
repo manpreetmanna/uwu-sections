@@ -41,23 +41,23 @@
 .bub-scope .bub-testimonial .testimonial-content {
   position: relative;
   z-index: 2;
-  color: #fff;
-  text-align: center;
+  color: #fff !important;
+  text-align: center !important;
   max-width: 640px;
 }
 
 .bub-scope .bub-testimonial .quote-icon {
-  color: var(--primary);
-  font-size: 56px;
+  color: var(--primary) !important;
+  font-size: 56px !important;
   margin-bottom: 24px;
   display: inline-block;
 }
 
 .bub-scope .bub-testimonial .testimonial-content h2 {
-  font-size: clamp(24px, 4vw, 36px);
-  font-weight: 700;
-  font-style: italic;
-  line-height: 1.4;
+  font-size: clamp(24px, 4vw, 36px) !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  line-height: 1.4 !important;
   margin: 0 0 32px;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .bub-scope .bub-testimonial .author-info {
-  text-align: left;
+  text-align: left !important;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -92,13 +92,13 @@
 
 .bub-scope .bub-testimonial .author-name {
   margin: 0;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 700 !important;
+  font-size: 18px !important;
 }
 
 .bub-scope .bub-testimonial .author-role {
   margin: 0;
-  color: #94a3b8;
-  font-size: 13px;
-  font-weight: 500;
+  color: #94a3b8 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
 }
