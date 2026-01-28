@@ -143,7 +143,8 @@
   border: none;
   overflow: hidden;
   background: #fff;
-  min-height: 260px;
+  min-height: 350px;
+  padding: 24px;
 }
 
 .bub-scope.bub-pricing .pricing-split__content.pricing-card {
@@ -157,6 +158,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 16px;
 }
 
 @media (min-width: 768px) {
