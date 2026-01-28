@@ -2,11 +2,13 @@
 
 <section class="services-hero bub-services-hero">
   <div class="container-sm">
-    <span class="badge badge-primary">Professional Creator Solutions</span>
-    <h1 class="services-title">Choose your <span class="accent">Package</span></h1>
+    <span class="badge badge-primary">{{ section.settings.badge_text | escape }}</span>
+    <h1 class="services-title">
+      {{ section.settings.title_text | escape }}
+      <span class="accent">{{ section.settings.title_accent | escape }}</span>
+    </h1>
     <p class="services-subtitle">
-      Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you
-      can focus on your audience.
+      {{ section.settings.subtitle | escape | newline_to_br }}
     </p>
   </div>
 </section>
@@ -14,7 +16,32 @@
 {% schema %}
 {
   "name": "Bub Services Hero",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Professional Creator Solutions"
+    },
+    {
+      "type": "text",
+      "id": "title_text",
+      "label": "Title text",
+      "default": "Choose your"
+    },
+    {
+      "type": "text",
+      "id": "title_accent",
+      "label": "Title accent",
+      "default": "Package"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you can focus on your audience."
+    }
+  ],
   "presets": [
     {
       "name": "Bub Services Hero"

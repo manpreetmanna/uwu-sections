@@ -3,29 +3,18 @@
 <section class="stats bub-stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat">
-        <span class="stat-label">Items Produced</span>
-        <div class="stat-value">
-          <span class="stat-number">1.2M</span>
-          <span class="stat-unit">Units</span>
+      {% for block in section.blocks %}
+        <div class="stat{% if block.settings.is_bordered %} stat-bordered{% endif %}" {{ block.shopify_attributes }}>
+          <span class="stat-label">{{ block.settings.label | escape }}</span>
+          <div class="stat-value">
+            <span class="stat-number">{{ block.settings.number | escape }}</span>
+            <span class="stat-unit">{{ block.settings.unit | escape }}</span>
+          </div>
+          {% if block.settings.caption != blank %}
+            <p class="stat-caption">{{ block.settings.caption | escape }}</p>
+          {% endif %}
         </div>
-        <p class="stat-caption">High-Quality Custom Goods</p>
-      </div>
-      <div class="stat stat-bordered">
-        <span class="stat-label">Global Reach</span>
-        <div class="stat-value">
-          <span class="stat-number">180+</span>
-          <span class="stat-unit">Countries</span>
-        </div>
-        <p class="stat-caption">Door-to-Door Delivery</p>
-      </div>
-      <div class="stat">
-        <span class="stat-label">Partnered Creators</span>
-        <div class="stat-value">
-          <span class="stat-number">1000+</span>
-          <span class="stat-unit">Global</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -34,9 +23,80 @@
 {
   "name": "Bub Stats",
   "settings": [],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Items Produced"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "1.2M"
+        },
+        {
+          "type": "text",
+          "id": "unit",
+          "label": "Unit",
+          "default": "Units"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption",
+          "default": "High-Quality Custom Goods"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_bordered",
+          "label": "Show border",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
   "presets": [
     {
-      "name": "Bub Stats"
+      "name": "Bub Stats",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "label": "Items Produced",
+            "number": "1.2M",
+            "unit": "Units",
+            "caption": "High-Quality Custom Goods",
+            "is_bordered": false
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "Global Reach",
+            "number": "180+",
+            "unit": "Countries",
+            "caption": "Door-to-Door Delivery",
+            "is_bordered": true
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "Partnered Creators",
+            "number": "1000+",
+            "unit": "Global",
+            "caption": "",
+            "is_bordered": false
+          }
+        }
+      ]
     }
   ]
 }

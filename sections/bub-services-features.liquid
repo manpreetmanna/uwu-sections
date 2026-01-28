@@ -3,38 +3,19 @@
 <section class="services-features bub-services-features">
   <div class="container-md">
     <div class="section-heading">
-      <h2>Standard Manufacturing Features</h2>
-      <p>Included in every package tier as a standard of quality.</p>
+      <h2>{{ section.settings.section_title | escape }}</h2>
+      <p>{{ section.settings.section_description | escape | newline_to_br }}</p>
     </div>
     <div class="features-grid">
-      <div class="feature-item">
-        <div class="feature-badge">
-          <span class="material-symbols-outlined">inventory_2</span>
+      {% for block in section.blocks %}
+        <div class="feature-item" {{ block.shopify_attributes }}>
+          <div class="feature-badge">
+            <span class="material-symbols-outlined">{{ block.settings.icon | escape }}</span>
+          </div>
+          <h3>{{ block.settings.title | escape }}</h3>
+          <p>{{ block.settings.description | escape | newline_to_br }}</p>
         </div>
-        <h3>Quality Control</h3>
-        <p>Rigorous three-stage inspection protocol for every single garment produced.</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-badge">
-          <span class="material-symbols-outlined">local_shipping</span>
-        </div>
-        <h3>Global Shipping</h3>
-        <p>International door-to-door delivery network optimized for fan fulfillment.</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-badge">
-          <span class="material-symbols-outlined">brush</span>
-        </div>
-        <h3>Design Support</h3>
-        <p>Collaborate with our world-class artists and designers</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-badge">
-          <span class="material-symbols-outlined">eco</span>
-        </div>
-        <h3>Eco-Sourcing</h3>
-        <p>Sustainable organic fabrics and verified ethical labor practices worldwide.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -42,10 +23,84 @@
 {% schema %}
 {
   "name": "Bub Services Features",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "Standard Manufacturing Features"
+    },
+    {
+      "type": "textarea",
+      "id": "section_description",
+      "label": "Section description",
+      "default": "Included in every package tier as a standard of quality."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "default": "inventory_2"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Quality Control"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Rigorous three-stage inspection protocol for every single garment produced."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
   "presets": [
     {
-      "name": "Bub Services Features"
+      "name": "Bub Services Features",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "inventory_2",
+            "title": "Quality Control",
+            "description": "Rigorous three-stage inspection protocol for every single garment produced."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "local_shipping",
+            "title": "Global Shipping",
+            "description": "International door-to-door delivery network optimized for fan fulfillment."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "brush",
+            "title": "Design Support",
+            "description": "Collaborate with our world-class artists and designers"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "eco",
+            "title": "Eco-Sourcing",
+            "description": "Sustainable organic fabrics and verified ethical labor practices worldwide."
+          }
+        }
+      ]
     }
   ]
 }

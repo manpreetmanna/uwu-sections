@@ -3,175 +3,69 @@
 <section class="pricing bub-pricing">
   <div class="container">
     <div class="pricing-grid">
-      <article class="pricing-card">
-        <div class="pricing-head">
-          <h3>UwU Starter Pack</h3>
-          <p>Essential launching kit for new creators.</p>
-          <div class="pricing-value">
-            <span class="price">$54</span>
-            <span class="price-note">/launch</span>
+      {% for block in section.blocks %}
+        {%- liquid
+          assign card_style = block.settings.card_style
+          assign card_classes = 'pricing-card'
+          if card_style == 'featured'
+            assign card_classes = card_classes | append: ' featured'
+          elsif card_style == 'enterprise'
+            assign card_classes = card_classes | append: ' enterprise'
+          endif
+          assign price_class = 'price'
+          if card_style == 'featured'
+            assign price_class = price_class | append: ' highlight'
+          endif
+          assign features = block.settings.features | split: '\n'
+        -%}
+        <article class="{{ card_classes }}" {{ block.shopify_attributes }}>
+          {% if card_style == 'featured' and block.settings.badge_text != blank %}
+            <div class="featured-badge">{{ block.settings.badge_text | escape }}</div>
+          {% endif %}
+          <div class="pricing-head">
+            <h3>{{ block.settings.title | escape }}</h3>
+            <p>{{ block.settings.description | escape }}</p>
+            <div class="pricing-value">
+              <span class="{{ price_class }}">{{ block.settings.price | escape }}</span>
+              <span class="price-note">{{ block.settings.price_note | escape }}</span>
+            </div>
           </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Full apparel line manufacturing</span>
+          <div class="pricing-features">
+            {% for feature in features %}
+              {% assign feature_text = feature | strip %}
+              {% if feature_text != blank %}
+                <div class="feature-line{% if card_style == 'featured' %} strong{% endif %}">
+                  <span class="material-symbols-outlined">check_circle</span>
+                  <span>{{ feature_text | escape }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Custom shop integration</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Inventory management</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block">
-          Get This
-          <span class="material-symbols-outlined">rocket_launch</span>
-        </button>
-      </article>
-      <article class="pricing-card">
-        <div class="pricing-head">
-          <h3>Art Submission</h3>
-          <p>High-fidelity prototyping for your vision.</p>
-          <div class="pricing-value">
-            <span class="price">$169</span>
-            <span class="price-note">/setup</span>
-          </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Custom design + 1 prototype</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Fabric sourcing consultation</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Professional tech pack</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block">
-          Get This
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
-      </article>
-      <article class="pricing-card featured">
-        <div class="featured-badge">MOST POPULAR</div>
-        <div class="pricing-head">
-          <h3>Creator Complete</h3>
-          <p>Limited edition hype-cycles made easy.</p>
-          <div class="pricing-value">
-            <span class="price highlight">$369</span>
-            <span class="price-note">/launch</span>
-          </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line strong">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Limited edition 1-3 items</span>
-          </div>
-          <div class="feature-line strong">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Basic fulfillment services</span>
-          </div>
-          <div class="feature-line strong">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Standard packaging</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block btn-emphasis">
-          Get This
-          <span class="material-symbols-outlined">timer</span>
-        </button>
-      </article>
-      <article class="pricing-card">
-        <div class="pricing-head">
-          <h3>TBD</h3>
-          <p>Bespoke accessories and lifestyle goods.</p>
-          <div class="pricing-value">
-            <span class="price">$1,499</span>
-            <span class="price-note">/launch</span>
-          </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Custom jewelry &amp; pins</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Premium phone cases</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Specialty gift packaging</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block">
-          Get This
-          <span class="material-symbols-outlined">diamond</span>
-        </button>
-      </article>
-      <article class="pricing-card">
-        <div class="pricing-head">
-          <h3>TBD</h3>
-          <p>Infrastructure for major global brands.</p>
-          <div class="pricing-value">
-            <span class="price">$3,499</span>
-            <span class="price-note">/mo</span>
-          </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Custom cut-and-sew</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Worldwide warehousing</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Priority global logistics</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block">
-          Get This
-          <span class="material-symbols-outlined">public</span>
-        </button>
-      </article>
-      <article class="pricing-card enterprise">
-        <div class="pricing-head">
-          <h3>The Enterprise</h3>
-          <p>Strategic agency for multi-creator teams.</p>
-          <div class="pricing-value">
-            <span class="price">Custom</span>
-            <span class="price-note">/quote</span>
-          </div>
-        </div>
-        <div class="pricing-features">
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>Multi-creator management</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>White-label warehouses</span>
-          </div>
-          <div class="feature-line">
-            <span class="material-symbols-outlined">check_circle</span>
-            <span>24/7 dedicated support</span>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-block">
-          Contact Sales
-          <span class="material-symbols-outlined">business_center</span>
-        </button>
-      </article>
+          {% if block.settings.button_text != blank %}
+            {% if block.settings.button_link != blank %}
+              <a
+                class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
+                href="{{ block.settings.button_link }}"
+              >
+                {{ block.settings.button_text | escape }}
+                {% if block.settings.button_icon != blank %}
+                  <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                {% endif %}
+              </a>
+            {% else %}
+              <button
+                class="btn btn-primary btn-block{% if card_style == 'featured' %} btn-emphasis{% endif %}"
+                type="button"
+              >
+                {{ block.settings.button_text | escape }}
+                {% if block.settings.button_icon != blank %}
+                  <span class="material-symbols-outlined">{{ block.settings.button_icon | escape }}</span>
+                {% endif %}
+              </button>
+            {% endif %}
+          {% endif %}
+        </article>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -180,9 +74,172 @@
 {
   "name": "Bub Pricing",
   "settings": [],
+  "blocks": [
+    {
+      "type": "pricing_card",
+      "name": "Pricing card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "UwU Starter Pack"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Essential launching kit for new creators."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$54"
+        },
+        {
+          "type": "text",
+          "id": "price_note",
+          "label": "Price note",
+          "default": "/launch"
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features (one per line)",
+          "default": "Full apparel line manufacturing\nCustom shop integration\nInventory management"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Get This"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "text",
+          "id": "button_icon",
+          "label": "Button icon",
+          "default": "rocket_launch"
+        },
+        {
+          "type": "select",
+          "id": "card_style",
+          "label": "Card style",
+          "default": "standard",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Standard"
+            },
+            {
+              "value": "featured",
+              "label": "Featured"
+            },
+            {
+              "value": "enterprise",
+              "label": "Enterprise"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Featured badge text",
+          "default": "MOST POPULAR"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
   "presets": [
     {
-      "name": "Bub Pricing"
+      "name": "Bub Pricing",
+      "blocks": [
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "UwU Starter Pack",
+            "description": "Essential launching kit for new creators.",
+            "price": "$54",
+            "price_note": "/launch",
+            "features": "Full apparel line manufacturing\nCustom shop integration\nInventory management",
+            "button_text": "Get This",
+            "button_icon": "rocket_launch",
+            "card_style": "standard"
+          }
+        },
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "Art Submission",
+            "description": "High-fidelity prototyping for your vision.",
+            "price": "$169",
+            "price_note": "/setup",
+            "features": "Custom design + 1 prototype\nFabric sourcing consultation\nProfessional tech pack",
+            "button_text": "Get This",
+            "button_icon": "arrow_forward",
+            "card_style": "standard"
+          }
+        },
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "Creator Complete",
+            "description": "Limited edition hype-cycles made easy.",
+            "price": "$369",
+            "price_note": "/launch",
+            "features": "Limited edition 1-3 items\nBasic fulfillment services\nStandard packaging",
+            "button_text": "Get This",
+            "button_icon": "timer",
+            "card_style": "featured",
+            "badge_text": "MOST POPULAR"
+          }
+        },
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "TBD",
+            "description": "Bespoke accessories and lifestyle goods.",
+            "price": "$1,499",
+            "price_note": "/launch",
+            "features": "Custom jewelry & pins\nPremium phone cases\nSpecialty gift packaging",
+            "button_text": "Get This",
+            "button_icon": "diamond",
+            "card_style": "standard"
+          }
+        },
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "TBD",
+            "description": "Infrastructure for major global brands.",
+            "price": "$3,499",
+            "price_note": "/mo",
+            "features": "Custom cut-and-sew\nWorldwide warehousing\nPriority global logistics",
+            "button_text": "Get This",
+            "button_icon": "public",
+            "card_style": "standard"
+          }
+        },
+        {
+          "type": "pricing_card",
+          "settings": {
+            "title": "The Enterprise",
+            "description": "Strategic agency for multi-creator teams.",
+            "price": "Custom",
+            "price_note": "/quote",
+            "features": "Multi-creator management\nWhite-label warehouses\n24/7 dedicated support",
+            "button_text": "Contact Sales",
+            "button_icon": "business_center",
+            "card_style": "enterprise"
+          }
+        }
+      ]
     }
   ]
 }

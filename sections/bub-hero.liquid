@@ -7,19 +7,39 @@
         <span class="pill-dot-ping"></span>
         <span class="pill-dot-core"></span>
       </span>
-      Premium Merch Manufacturing
+      {{ section.settings.pill_text | escape }}
     </div>
     <h1 class="hero-title">
-      BUILD YOUR<br>
-      <span class="accent">BRAND.</span>
+      {{ section.settings.title_line | escape -}}
+      <br>
+      <span class="accent">{{ section.settings.title_accent | escape }}</span>
     </h1>
     <p class="hero-subtitle">
-      Turn your ideas into custom merch collections. We handle the design, ethical manufacturing, and global shipping so
-      you can focus on creating.
+      {{ section.settings.subtitle | escape | newline_to_br }}
     </p>
     <div class="hero-actions">
-      <button class="btn btn-primary btn-lg">View Product Packages</button>
-      <button class="btn btn-secondary btn-lg">Learn More</button>
+      {% if section.settings.primary_button_text != blank %}
+        {% if section.settings.primary_button_link != blank %}
+          <a class="btn btn-primary btn-lg" href="{{ section.settings.primary_button_link }}">
+            {{ section.settings.primary_button_text | escape }}
+          </a>
+        {% else %}
+          <button class="btn btn-primary btn-lg" type="button">
+            {{ section.settings.primary_button_text | escape }}
+          </button>
+        {% endif %}
+      {% endif %}
+      {% if section.settings.secondary_button_text != blank %}
+        {% if section.settings.secondary_button_link != blank %}
+          <a class="btn btn-secondary btn-lg" href="{{ section.settings.secondary_button_link }}">
+            {{ section.settings.secondary_button_text | escape }}
+          </a>
+        {% else %}
+          <button class="btn btn-secondary btn-lg" type="button">
+            {{ section.settings.secondary_button_text | escape }}
+          </button>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
 </section>
@@ -27,7 +47,54 @@
 {% schema %}
 {
   "name": "Bub Hero",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "pill_text",
+      "label": "Pill text",
+      "default": "Premium Merch Manufacturing"
+    },
+    {
+      "type": "text",
+      "id": "title_line",
+      "label": "Title line",
+      "default": "BUILD YOUR"
+    },
+    {
+      "type": "text",
+      "id": "title_accent",
+      "label": "Title accent",
+      "default": "BRAND."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Turn your ideas into custom merch collections. We handle the design, ethical manufacturing, and global shipping so you can focus on creating."
+    },
+    {
+      "type": "text",
+      "id": "primary_button_text",
+      "label": "Primary button text",
+      "default": "View Product Packages"
+    },
+    {
+      "type": "url",
+      "id": "primary_button_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_text",
+      "label": "Secondary button text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "Secondary button link"
+    }
+  ],
   "presets": [
     {
       "name": "Bub Hero"
