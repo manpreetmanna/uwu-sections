@@ -53,7 +53,7 @@
 }
 
 .bub-scope.bub-hero .hero-title {
-  font-size: 3.5rem !important;
+  font-size: 60px !important;
   font-weight: 900 !important;
   font-family: "Epilogue", sans-serif !important;
   line-height: 0.85 !important;
@@ -90,7 +90,7 @@
   }
 
   .bub-scope.bub-hero .hero-title {
-    font-size: 8rem !important;
+    font-size: 128px !important;
     line-height: 1 !important;
   }
 }

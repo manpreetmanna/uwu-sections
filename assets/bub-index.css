@@ -12,6 +12,10 @@
   font-family: "Epilogue", sans-serif !important;
 }
 
+.bub-scope{
+  color: #000;
+}
+
 .bub-scope img {
   max-width: 100%;
   display: block;
