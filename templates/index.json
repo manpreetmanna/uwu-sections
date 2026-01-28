@@ -123,7 +123,9 @@
       "settings": {
         "quote": "\"UwUMarket took my merch from basic screen-prints to a premium fashion line. The quality and global fulfillment are absolute game-changers.\"",
         "author_name": "Sarah Jenkins",
-        "author_role": "Lifestyle Creator • 2.4M Fans"
+        "author_role": "Lifestyle Creator • 2.4M Fans",
+        "background_image": "shopify://shop_images/pexels-molnartamasphotography-34932925.jpg",
+        "author_photo": "shopify://shop_images/pexels-molnartamasphotography-34932925.jpg"
       }
     },
     "bub_services_hero_xmQNhn": {
