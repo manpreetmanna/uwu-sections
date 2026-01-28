@@ -142,7 +142,7 @@
   border-radius: 0;
   border: none;
   overflow: hidden;
-  background: #fff;
+  background: var(--dark-charcoal);
   min-height: 350px;
   padding: 24px;
 }
