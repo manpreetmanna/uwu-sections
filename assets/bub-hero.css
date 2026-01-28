@@ -1,4 +1,4 @@
-.bub-hero {
+.bub-scope .bub-hero {
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -8,11 +8,11 @@
   background: #fff;
 }
 
-.bub-hero .hero-content {
+.bub-scope .bub-hero .hero-content {
   max-width: 100%;
 }
 
-.bub-hero .pill {
+.bub-scope .bub-hero .pill {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -28,13 +28,13 @@
   margin-bottom: 32px;
 }
 
-.bub-hero .pill-dot {
+.bub-scope .bub-hero .pill-dot {
   position: relative;
   width: 8px;
   height: 8px;
 }
 
-.bub-hero .pill-dot-ping {
+.bub-scope .bub-hero .pill-dot-ping {
   position: absolute;
   inset: 0;
   border-radius: 999px;
@@ -43,7 +43,7 @@
   animation: ping 1.3s ease-in-out infinite;
 }
 
-.bub-hero .pill-dot-core {
+.bub-scope .bub-hero .pill-dot-core {
   position: relative;
   display: block;
   width: 8px;
@@ -52,7 +52,7 @@
   background: var(--primary);
 }
 
-.bub-hero .hero-title {
+.bub-scope .bub-hero .hero-title {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 0.85;
@@ -62,7 +62,7 @@
   font-style: italic;
 }
 
-.bub-hero .hero-subtitle {
+.bub-scope .bub-hero .hero-subtitle {
   font-size: clamp(18px, 2.5vw, 24px);
   font-weight: 300;
   color: rgba(26, 26, 26, 0.5);
@@ -71,7 +71,7 @@
   line-height: 2rem;
 }
 
-.bub-hero .hero-actions {
+.bub-scope .bub-hero .hero-actions {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -79,16 +79,16 @@
 }
 
 @media (min-width: 768px) {
-  .bub-hero .hero-content {
+  .bub-scope .bub-hero .hero-content {
     max-width: 960px;
   }
 
-  .bub-hero .hero-actions {
+  .bub-scope .bub-hero .hero-actions {
     flex-direction: row;
     justify-content: center;
   }
 
-  .bub-hero .hero-title {
+  .bub-scope .bub-hero .hero-title {
     font-size: 8rem;
     line-height: 1;
   }
