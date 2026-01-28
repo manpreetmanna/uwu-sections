@@ -23,6 +23,9 @@
       "name": "Bub Hero",
       "settings": {
         "pill_text": "Premium Merch Manufacturing",
+        "background_image": "shopify://shop_images/pexels-molnartamasphotography-34932925.jpg",
+        "overlay_opacity": 50,
+        "invert_text": true,
         "title_line": "BUILD YOUR",
         "title_accent": "BRAND.",
         "subtitle": "Turn your ideas into custom merch collections. We handle the design, ethical manufacturing, and global shipping so you can focus on creating.",
@@ -83,7 +86,8 @@
             "icon": "diversity_3",
             "title": "Sell Alongside Other Creators",
             "description": "60% of orders on UwU Market include more than 1 creator's merch! This allows creators to benefit from selling merch along side our large network of other creators.",
-            "footer_text": "Network Effect"
+            "footer_text": "Network Effect",
+            "popup_image": "shopify://shop_images/pexels-molnartamasphotography-34932925.jpg"
           }
         },
         "feature_kDchjB": {
