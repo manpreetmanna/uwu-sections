@@ -117,7 +117,7 @@
       "name": "Bub Features",
       "settings": {}
     },
-    "bub_testimonial_m6GgFR": {
+    "bub_testimonial_L9rQWB": {
       "type": "bub-testimonial",
       "name": "Bub Testimonial",
       "settings": {
@@ -138,10 +138,10 @@
         "subtitle": "Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you can focus on your audience."
       }
     },
-    "bub_pricing_FjPUaX": {
+    "bub_pricing_RttTPj": {
       "type": "bub-pricing",
       "blocks": {
-        "pricing_card_84iwjt": {
+        "pricing_card_jjY4LA": {
           "type": "pricing_card",
           "settings": {
             "title": "UwU Starter Pack",
@@ -156,7 +156,7 @@
             "badge_text": "MOST POPULAR"
           }
         },
-        "pricing_card_93NxcY": {
+        "pricing_card_DKVdY6": {
           "type": "pricing_card",
           "settings": {
             "title": "Art Submission",
@@ -171,7 +171,7 @@
             "badge_text": "MOST POPULAR"
           }
         },
-        "pricing_card_jCH7MY": {
+        "pricing_card_hAcEwY": {
           "type": "pricing_card",
           "settings": {
             "title": "Creator Complete",
@@ -186,39 +186,10 @@
             "badge_text": "MOST POPULAR"
           }
         },
-        "pricing_card_4qaTzW": {
-          "type": "pricing_card",
+        "pricing_split_G6hR9h": {
+          "type": "pricing_split",
           "settings": {
-            "title": "TBD",
-            "description": "Bespoke accessories and lifestyle goods.",
-            "price": "$1,499",
-            "price_note": "/launch",
-            "features": "Custom jewelry & pins\nPremium phone cases\nSpecialty gift packaging",
-            "button_text": "Get This",
-            "button_link": "",
-            "button_icon": "diamond",
-            "card_style": "standard",
-            "badge_text": "MOST POPULAR"
-          }
-        },
-        "pricing_card_wQdjiq": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "TBD",
-            "description": "Infrastructure for major global brands.",
-            "price": "$3,499",
-            "price_note": "/mo",
-            "features": "Custom cut-and-sew\nWorldwide warehousing\nPriority global logistics",
-            "button_text": "Get This",
-            "button_link": "",
-            "button_icon": "public",
-            "card_style": "standard",
-            "badge_text": "MOST POPULAR"
-          }
-        },
-        "pricing_card_mdtMkK": {
-          "type": "pricing_card",
-          "settings": {
+            "image": "shopify://shop_images/pexels-molnartamasphotography-34932925.jpg",
             "title": "The Enterprise",
             "description": "Strategic agency for multi-creator teams.",
             "price": "Custom",
@@ -227,18 +198,16 @@
             "button_text": "Contact Sales",
             "button_link": "",
             "button_icon": "business_center",
-            "card_style": "enterprise",
+            "content_style": "enterprise",
             "badge_text": "MOST POPULAR"
           }
         }
       },
       "block_order": [
-        "pricing_card_84iwjt",
-        "pricing_card_93NxcY",
-        "pricing_card_jCH7MY",
-        "pricing_card_4qaTzW",
-        "pricing_card_wQdjiq",
-        "pricing_card_mdtMkK"
+        "pricing_card_jjY4LA",
+        "pricing_card_DKVdY6",
+        "pricing_card_hAcEwY",
+        "pricing_split_G6hR9h"
       ],
       "name": "Bub Pricing",
       "settings": {}
@@ -297,9 +266,9 @@
     "bub_hero_rpjxrD",
     "bub_stats_wMbmGh",
     "bub_features_QdyeLF",
-    "bub_testimonial_m6GgFR",
+    "bub_testimonial_L9rQWB",
     "bub_services_hero_xmQNhn",
-    "bub_pricing_FjPUaX",
+    "bub_pricing_RttTPj",
     "bub_services_features_CPfYpy"
   ]
 }
