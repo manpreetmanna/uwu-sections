@@ -55,6 +55,7 @@
 .bub-scope.bub-hero .hero-title {
   font-size: 3.5rem !important;
   font-weight: 900 !important;
+  font-family: "Epilogue", sans-serif !important;
   line-height: 0.85 !important;
   letter-spacing: -0.05em !important;
   margin: 0 0 32px;
@@ -68,7 +69,7 @@
   color: rgba(26, 26, 26, 0.5) !important;
   max-width: 768px;
   margin: 0 auto 48px;
-  line-height: 2rem !important;
+  line-height: 3rem !important;
 }
 
 .bub-scope.bub-hero .hero-actions {
