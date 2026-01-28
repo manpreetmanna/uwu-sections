@@ -9,291 +9,51 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "hero",
-      "settings": {
-        "badge_text": "Premium Merch Manufacturing",
-        "headline_line1": "BUILD YOUR",
-        "headline_accent": "BRAND.",
-        "subtitle": "Turn your ideas into custom merch collections. We handle the design, ethical manufacturing, and global shipping so you can focus on creating.",
-        "primary_button_text": "View Product Packages",
-        "primary_button_url": "",
-        "secondary_button_text": "Learn More",
-        "secondary_button_url": ""
-      }
-    },
-    "stats": {
-      "type": "stats",
+    "rich_text_kthjDT": {
+      "type": "rich-text",
       "blocks": {
-        "stat_1": {
-          "type": "stat",
+        "heading_XAeV7k": {
+          "type": "heading",
           "settings": {
-            "label": "Items Produced",
-            "value": "1.2M",
-            "unit": "Units",
-            "description": "High-Quality Custom Goods"
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
           }
         },
-        "stat_2": {
-          "type": "stat",
+        "text_ckK7kQ": {
+          "type": "text",
           "settings": {
-            "label": "Global Reach",
-            "value": "180+",
-            "unit": "Countries",
-            "description": "Door-to-Door Delivery"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
-        "stat_3": {
-          "type": "stat",
+        "button_NEAMzV": {
+          "type": "button",
           "settings": {
-            "label": "Partnered Creators",
-            "value": "1000+",
-            "unit": "Global",
-            "description": ""
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "stat_1",
-        "stat_2",
-        "stat_3"
+        "heading_XAeV7k",
+        "text_ckK7kQ",
+        "button_NEAMzV"
       ],
-      "settings": {}
-    },
-    "feature_cards": {
-      "type": "feature-cards",
-      "blocks": {
-        "card_1": {
-          "type": "card",
-          "settings": {
-            "icon": "people",
-            "title": "Sell Alongside Other Creators",
-            "description": "60% of orders on UwU Market include more than 1 creator's merch! This allows creators to benefit from selling merch along side our large network of other creators.",
-            "footer_label": "Network Effect"
-          }
-        },
-        "card_2": {
-          "type": "card",
-          "settings": {
-            "icon": "chart",
-            "title": "Track Your Sales",
-            "description": "Gain access to UwU Market's backend dashboard to track your sales, view your customer's notes, payouts and more!",
-            "footer_label": "Dashboard"
-          }
-        },
-        "card_3": {
-          "type": "card",
-          "settings": {
-            "icon": "medal",
-            "title": "Earn Rewards",
-            "description": "Get the recognition your deserve by earning rewards the more you sell.",
-            "footer_label": "Milestones"
-          }
-        }
-      },
-      "block_order": [
-        "card_1",
-        "card_2",
-        "card_3"
-      ],
-      "settings": {}
-    },
-    "pricing_header": {
-      "type": "pricing-header",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "badge_text": "Professional Creator Solutions",
-        "headline_text": "Choose your",
-        "headline_accent": "Package",
-        "subtitle": "Scale your brand with industry-leading production. We handle the complexity of manufacturing and logistics so you can focus on your audience."
-      }
-    },
-    "pricing_cards": {
-      "type": "pricing-cards",
-      "blocks": {
-        "pricing_1": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "UwU Starter Pack",
-            "description": "Essential launching kit for new creators.",
-            "price": "$54",
-            "price_unit": "/launch",
-            "feature_1": "Full apparel line manufacturing",
-            "feature_2": "Custom shop integration",
-            "feature_3": "Inventory management",
-            "button_text": "Get This",
-            "button_url": "",
-            "button_icon": "rocket",
-            "is_featured": false,
-            "popular_text": "MOST POPULAR",
-            "is_dark": false
-          }
-        },
-        "pricing_2": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "Art Submission",
-            "description": "High-fidelity prototyping for your vision.",
-            "price": "$169",
-            "price_unit": "/setup",
-            "feature_1": "Custom design + 1 prototype",
-            "feature_2": "Fabric sourcing consultation",
-            "feature_3": "Professional tech pack",
-            "button_text": "Get This",
-            "button_url": "",
-            "button_icon": "arrow",
-            "is_featured": false,
-            "popular_text": "MOST POPULAR",
-            "is_dark": false
-          }
-        },
-        "pricing_3": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "Creator Complete",
-            "description": "Limited edition hype-cycles made easy.",
-            "price": "$369",
-            "price_unit": "/launch",
-            "feature_1": "Limited edition 1-3 items",
-            "feature_2": "Basic fulfillment services",
-            "feature_3": "Standard packaging",
-            "button_text": "Get This",
-            "button_url": "",
-            "button_icon": "timer",
-            "is_featured": true,
-            "popular_text": "MOST POPULAR",
-            "is_dark": false
-          }
-        },
-        "pricing_4": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "TBD",
-            "description": "Bespoke accessories and lifestyle goods.",
-            "price": "$1,499",
-            "price_unit": "/launch",
-            "feature_1": "Custom jewelry & pins",
-            "feature_2": "Premium phone cases",
-            "feature_3": "Specialty gift packaging",
-            "button_text": "Get This",
-            "button_url": "",
-            "button_icon": "diamond",
-            "is_featured": false,
-            "popular_text": "MOST POPULAR",
-            "is_dark": false
-          }
-        },
-        "pricing_5": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "TBD",
-            "description": "Infrastructure for major global brands.",
-            "price": "$3,499",
-            "price_unit": "/mo",
-            "feature_1": "Custom cut-and-sew",
-            "feature_2": "Worldwide warehousing",
-            "feature_3": "Priority global logistics",
-            "button_text": "Get This",
-            "button_url": "",
-            "button_icon": "globe",
-            "is_featured": false,
-            "popular_text": "MOST POPULAR",
-            "is_dark": false
-          }
-        },
-        "pricing_6": {
-          "type": "pricing_card",
-          "settings": {
-            "title": "The Enterprise",
-            "description": "Strategic agency for multi-creator teams.",
-            "price": "Custom",
-            "price_unit": "/quote",
-            "feature_1": "Multi-creator management",
-            "feature_2": "White-label warehouses",
-            "feature_3": "24/7 dedicated support",
-            "button_text": "Contact Sales",
-            "button_url": "",
-            "button_icon": "business",
-            "is_featured": false,
-            "popular_text": "MOST POPULAR",
-            "is_dark": true
-          }
-        }
-      },
-      "block_order": [
-        "pricing_1",
-        "pricing_2",
-        "pricing_3",
-        "pricing_4",
-        "pricing_5",
-        "pricing_6"
-      ],
-      "settings": {}
-    },
-    "standard_features": {
-      "type": "standard-features",
-      "blocks": {
-        "feature_1": {
-          "type": "feature",
-          "settings": {
-            "icon": "quality",
-            "title": "Quality Control",
-            "description": "Rigorous three-stage inspection protocol for every single garment produced."
-          }
-        },
-        "feature_2": {
-          "type": "feature",
-          "settings": {
-            "icon": "shipping",
-            "title": "Global Shipping",
-            "description": "International door-to-door delivery network optimized for fan fulfillment."
-          }
-        },
-        "feature_3": {
-          "type": "feature",
-          "settings": {
-            "icon": "design",
-            "title": "Design Support",
-            "description": "Collaborate with our world-class artists and designers."
-          }
-        },
-        "feature_4": {
-          "type": "feature",
-          "settings": {
-            "icon": "eco",
-            "title": "Eco-Sourcing",
-            "description": "Sustainable organic fabrics and verified ethical labor practices worldwide."
-          }
-        }
-      },
-      "block_order": [
-        "feature_1",
-        "feature_2",
-        "feature_3",
-        "feature_4"
-      ],
-      "settings": {
-        "title": "Standard Manufacturing Features",
-        "subtitle": "Included in every package tier as a standard of quality."
-      }
-    },
-    "testimonial": {
-      "type": "testimonial",
-      "settings": {
-        "background_image": "",
-        "quote": "UwUMarket took my merch from basic screen-prints to a premium fashion line. The quality and global fulfillment are absolute game-changers.",
-        "author_image": "",
-        "author_name": "Sarah Jenkins",
-        "author_title": "Lifestyle Creator • 2.4M Fans"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "hero",
-    "stats",
-    "feature_cards",
-    "pricing_header",
-    "pricing_cards",
-    "standard_features",
-    "testimonial"
+    "rich_text_kthjDT"
   ]
 }
