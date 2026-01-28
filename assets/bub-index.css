@@ -10,9 +10,6 @@
   --muted: rgba(26, 26, 26, 0.5);
   margin: 0;
   font-family: "Epilogue", sans-serif;
-  color: var(--charcoal);
-  background: var(--background-light);
-  min-height: 100vh;
 }
 
 .bub-scope img {
